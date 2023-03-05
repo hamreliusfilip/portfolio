@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import Footer from './footer'
 import Hello from './hello'
+import Typewriters from './TypeWriter'
+
 
 const Dashboard = () => {
   return (
@@ -11,11 +13,9 @@ const Dashboard = () => {
       <Hello />
 
       <Wrapper2>
-        <Ellipse>
-          <Name>
-            FILIP HAMRELIUS
-          </Name>
-        </Ellipse>
+        {/* <Ellipse> */}
+          <Typewriters />
+        {/* </Ellipse> */}
       </Wrapper2>
 
     </Container>

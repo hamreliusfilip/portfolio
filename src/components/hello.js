@@ -2,6 +2,7 @@ import React from "react";
 import styled from 'styled-components'
 import CourseMap from './CourseMap'
 import ProjectMap from './ProjectMap'
+import Contact from './Contact'
 
 const Hello = () => {
     return (
@@ -14,7 +15,15 @@ const Hello = () => {
                 <Heading2> EDUCATION</Heading2>
                 <Heading4> M.Sc in Media Technology and Engineering </Heading4>
                 <CourseMap></CourseMap>
+
+                <Wrapper3> 
+
                 <Heading3> CONTACT </Heading3>
+                <Contact> Hej</Contact>
+
+
+                </Wrapper3>
+              
             </Line>
         </Wrapper>
     );
@@ -68,16 +77,24 @@ font-weight: 700;
 font-size: 100px;
 color: #1F1D1D;
 `
+
+
+const Wrapper3 = styled.div`
+  position: relative;
+  width: 2000px;
+  height: 500px;
+  margin-left: 20px;
+  border: 1px dashed black;
+  margin-top: 1600px;
+`
 const Heading3 = styled.h1`
 position: absolute;
 margin-left: 20px;
-margin-top: 1600px;
 font-family: 'Helvetica Neue';
 font-weight: 700;
 font-size: 100px;
 color: #1F1D1D;
 `
-
 const Heading4 = styled.p`
 position: absolute;
 margin-left: 20px;

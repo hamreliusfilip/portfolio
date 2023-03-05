@@ -9,7 +9,7 @@ margin-left: 400px;
 margin-top: 600px;
 font-family: 'Helvetica Neue';
 font-weight: 700;
-font-size: 400px;
+font-size: 200px;
 color: #282626;
 `
 

@@ -15,8 +15,13 @@ const Hello = () => {
                 
                 <Heading2> EDUCATION</Heading2>
                 <Heading4> M.Sc in Media Technology and Engineering </Heading4>
-                <CourseMap></CourseMap>
 
+                <MT> master of science in media technology is a broad program of study in engineering, 
+                    where the classic subjects of engineering are mixed with topics such as visualization, 
+                    computer graphics, machine learning, interaction design and image processing.</MT>
+                    
+                <CourseMap></CourseMap>
+                
                 <Wrapper3> 
                 <Heading3> CONTACT ME </Heading3>
                 <Contact />
@@ -67,7 +72,7 @@ color: #DCDCDC;
 const Heading2 = styled.h1`
 position: absolute;
 margin-left: 80px;
-margin-top: 2400px;
+margin-top: 2300px;
 font-family: 'Helvetica Neue';
 font-weight: 700;
 font-size: 100px;
@@ -94,9 +99,20 @@ color: #DCDCDC;
 const Heading4 = styled.p`
 position: absolute;
 margin-left: 80px;
-margin-top: 2525px;
+margin-top: 2425px;
 font-family: 'Helvetica Neue';
 font-weight: 700;
 font-size: 60px;
+color: #DCDCDC;
+`
+
+const MT = styled.p`
+position: absolute;
+margin-left: 80px;
+margin-top: 2525px;
+width: 650px;
+font-family: 'Helvetica Neue';
+font-weight: 700;
+font-size: 20px;
 color: #DCDCDC;
 `

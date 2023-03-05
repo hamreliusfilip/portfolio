@@ -21,21 +21,21 @@ margin-left: 30px;
 `
 
 const Wrapper = styled.div`
-margin-top: 2630px;
+margin-top: 2830px;
 width: 100 vh;
 margin-left: 50px;
-height: 500x;
+height: 600x;
 `
 
 const Outline = styled.div`
 width: 3500px;
-height: 250px;
+height: 300px;
 `
 
 const CourseMap = () => {
   return (
     <Wrapper>
-      <Text1> completed courses:</Text1>
+      <Text1> completed courses: </Text1>
       <Outline>
       <Total>
         {courseData.map(course => <Course courseName={course.name} key={course.coursecCode} />)}

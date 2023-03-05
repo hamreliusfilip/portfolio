@@ -47,7 +47,7 @@ height: 1200px;
 left: 1800px;
 margin-top:200px;
 
-background: #1F1D1D;
+background: #DCDCDC;
 `
 const Name = styled.h2`
 position: absolute;

@@ -22,7 +22,7 @@ color: #1F1D1D;
 `
 
 const Wrapper = styled.div`
-margin-top: 2300px;
+margin-top: 2230px;
 width: 2400px;
 height: 500x;
 margin-left:12px;

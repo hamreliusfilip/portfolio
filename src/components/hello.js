@@ -1,6 +1,7 @@
 import React from "react";
 import styled from 'styled-components'
 import CourseMap from './CourseMap'
+import ProjectMap from './ProjectMap'
 
 const Hello = () => {
     return (
@@ -8,6 +9,8 @@ const Hello = () => {
             <Hellotext> HELLO. </Hellotext>
             <Line>
                 <Heading1> PROJECTS</Heading1>
+                <ProjectMap></ProjectMap>
+                
                 <Heading2> EDUCATION</Heading2>
                 <Heading4> M.Sc in Media Technology and Engineering </Heading4>
                 <CourseMap></CourseMap>

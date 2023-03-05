@@ -42,15 +42,18 @@ color: #1F1D1D;
 const Line = styled.div`
 postion: absolute;
 width: 0px;
-height: 6000px;
+height: 8000px;
 margin-top: 6%;
 margin-left:11.3%;
 border: 17.5px solid #1F1D1D;
 `
+
+
+
 const Heading1 = styled.h1`
 position: absolute;
 margin-left: 20px;
-margin-top: 1000px;
+margin-top: 1600px;
 font-family: 'Helvetica Neue';
 font-weight: 700;
 font-size: 100px;
@@ -59,7 +62,7 @@ color: #1F1D1D;
 const Heading2 = styled.h1`
 position: absolute;
 margin-left: 20px;
-margin-top: 2000px;
+margin-top: 2400px;
 font-family: 'Helvetica Neue';
 font-weight: 700;
 font-size: 100px;
@@ -68,7 +71,7 @@ color: #1F1D1D;
 const Heading3 = styled.h1`
 position: absolute;
 margin-left: 20px;
-margin-top: 1800px;
+margin-top: 1600px;
 font-family: 'Helvetica Neue';
 font-weight: 700;
 font-size: 100px;
@@ -78,7 +81,7 @@ color: #1F1D1D;
 const Heading4 = styled.p`
 position: absolute;
 margin-left: 20px;
-margin-top: 2125px;
+margin-top: 2525px;
 font-family: 'Helvetica Neue';
 font-weight: 700;
 font-size: 60px;

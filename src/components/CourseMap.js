@@ -22,7 +22,7 @@ color: #1F1D1D;
 `
 
 const Wrapper = styled.div`
-margin-top: 2230px;
+margin-top: 2630px;
 width: 2400px;
 height: 500x;
 margin-left:12px;
@@ -35,7 +35,7 @@ width: 2300px;
 height: 250px;
 padding-left:6px;
 padding-right: 10px;
-border: 2px dashed black;
+border: 5px dashed black;
 `
 
 const CourseMap = () => {

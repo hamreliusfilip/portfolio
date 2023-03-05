@@ -1,11 +1,9 @@
 import styled from 'styled-components'
 
 const Box = styled.div`
-height: 220px;
-min-width: 300px;
+height: 300px;
+min-width: 800px;
 margin: 16px -5px 15px 30px;
-box-shadow: 0px 0px 15px rgba(33, 33, 33, 0.2);
-border-radius: 14px;
 background-color: #1F1D1D;
 font-family: 'Helvetica Neue';
 color: #1F1D1D;
@@ -42,14 +40,32 @@ color: #DCDCDC;
 padding: 30px 10px 10px 10px;
 `
 
+const Link = styled.a`
+color: #DCDCDC;
+margin-bottom: 20px;
+font-family: 'Helvetica Neue';
+font-size: 18px;
+font-weight: bold;
+
+&:hover {
+	color: white;
+	transition: 200ms ease-in;
+}
+`;
+
 const Project = ({ projectName, githubInfo, urlInfo }) => {
 
   return (
-      <Box>
-        <Name>{projectName}</Name>
-        <UrlText>{githubInfo}</UrlText>
-        <GithubText>{urlInfo}</GithubText>
-      </Box>
+    <Box>
+      <Name>{projectName}</Name>
+      <Link href={githubInfo}>
+        <GithubText>GITHUB</GithubText>
+      </Link>
+
+      <Link href={urlInfo}>
+        <UrlText>WEBSITE</UrlText>
+      </Link>
+    </Box>
   )
 }
 

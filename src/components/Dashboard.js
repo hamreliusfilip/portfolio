@@ -44,18 +44,18 @@ const Ellipse = styled.div `
 position: absolute;
 width: 1200px;
 height: 1200px;
-left: 2600px;
-border-radius: 50%;
+left: 1800px;
+margin-top:200px;
 
 background: #1F1D1D;
 `
 const Name = styled.h2`
 position: absolute;
-margin-left: 5%;
-margin-top: 45%;
+margin-left: -2%;
+margin-top: 30%;
 font-family: 'Helvetica Neue';
 font-weight: 900;
-font-size: 70px;
+font-size: 209px;
 color: #DCDCDC;
 `
 

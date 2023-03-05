@@ -23,7 +23,7 @@ color: #1F1D1D;
 `
 
 const Wrapper = styled.div`
-margin-top: 1130px;
+margin-top: 1730px;
 width: 2400px;
 height: 500x;
 margin-left:12px;
@@ -33,10 +33,10 @@ padding-left:1px;
 const Outline = styled.div`
 margin-left:12px;
 width: 2300px;
-height: 250px;
-padding-left:6px;
+height: 340px;
+padding-left:3px;
 padding-right: 10px;
-border: 2px dashed black;
+border: 5px dashed black;
 `
 
 const ProjectMap = () => {

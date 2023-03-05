@@ -9,7 +9,8 @@ const Hello = () => {
         <Wrapper>
             <Hellotext> HELLO. </Hellotext>
             <Line>
-                <Heading1> PROJECTS</Heading1>
+
+                <Heading1> MY PROJECTS</Heading1>
                 <ProjectMap></ProjectMap>
                 
                 <Heading2> EDUCATION</Heading2>
@@ -17,11 +18,8 @@ const Hello = () => {
                 <CourseMap></CourseMap>
 
                 <Wrapper3> 
-
-                <Heading3> CONTACT </Heading3>
-                <Contact> Hej</Contact>
-
-
+                <Heading3> CONTACT ME </Heading3>
+                <Contact />
                 </Wrapper3>
               
             </Line>
@@ -36,7 +34,7 @@ const Wrapper = styled.div`
   position: relative;
   width: 1800px;
   height: 4000px;
-  border: 1px dashed #DCDCDC;
+  border: 1px dashed #1F1D1D;
   margin: 10px;
 `
 const Hellotext = styled.h2`
@@ -46,7 +44,7 @@ margin-top: 0;
 font-family: 'Helvetica Neue';
 font-weight: 700;
 font-size: 220px;
-color: #1F1D1D;
+color: #DCDCDC;
 `
 const Line = styled.div`
 postion: absolute;
@@ -54,28 +52,26 @@ width: 0px;
 height: 8000px;
 margin-top: 6%;
 margin-left:11.3%;
-border: 17.5px solid #1F1D1D;
+border: 17.5px solid #DCDCDC;
 `
-
-
 
 const Heading1 = styled.h1`
 position: absolute;
-margin-left: 20px;
-margin-top: 1600px;
+margin-left: 80px;
+margin-top: 1900px;
 font-family: 'Helvetica Neue';
 font-weight: 700;
 font-size: 100px;
-color: #1F1D1D;
+color: #DCDCDC;
 `
 const Heading2 = styled.h1`
 position: absolute;
-margin-left: 20px;
+margin-left: 80px;
 margin-top: 2400px;
 font-family: 'Helvetica Neue';
 font-weight: 700;
 font-size: 100px;
-color: #1F1D1D;
+color: #DCDCDC;
 `
 
 
@@ -84,23 +80,23 @@ const Wrapper3 = styled.div`
   width: 2000px;
   height: 500px;
   margin-left: 20px;
-  border: 1px dashed black;
+  border: 1px dashed #1F1D1D;
   margin-top: 1600px;
 `
 const Heading3 = styled.h1`
 position: absolute;
-margin-left: 20px;
+margin-left: 80px;
 font-family: 'Helvetica Neue';
 font-weight: 700;
 font-size: 100px;
-color: #1F1D1D;
+color: #DCDCDC;
 `
 const Heading4 = styled.p`
 position: absolute;
-margin-left: 20px;
+margin-left: 80px;
 margin-top: 2525px;
 font-family: 'Helvetica Neue';
 font-weight: 700;
 font-size: 60px;
-color: #1F1D1D;
+color: #DCDCDC;
 `

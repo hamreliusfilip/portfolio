@@ -1,42 +1,28 @@
 import React from 'react'
-import Course from './Course'
 import Project from './Project'
 import styled from 'styled-components'
 import { projectData } from '../data/DB2'
 
 const Total = styled.div`
-z-index:2;
-width: 2300px;
+width: 100 vh;
 overflow: scroll;
 display: flex;
-color: #1F1D1D;
+color: #DCDCDC;
 &::-webkit-scrollbar {
 display: none;
 }
 `
-const Text1 = styled.h1`
-font-size: 20px;
-margin-left: 10px;
-font-family: 'Helvetica Neue';
-font-weight: 900;
-color: #1F1D1D;
-`
 
 const Wrapper = styled.div`
-margin-top: 1730px;
-width: 2400px;
+margin-top: 2030px;
+width: 100 vh;
+margin-left: 50px;
 height: 500x;
-margin-left:12px;
-padding-left:1px;
 `
 
 const Outline = styled.div`
-margin-left:12px;
-width: 2300px;
-height: 340px;
-padding-left:3px;
-padding-right: 10px;
-border: 5px dashed black;
+width: 3500px;
+height: 250px;
 `
 
 const ProjectMap = () => {
@@ -44,10 +30,13 @@ const ProjectMap = () => {
     <Wrapper>
       <Outline>
         <Total>
-          {projectData.map(project => <Project
-            projectName={project.name}
-            githubInfo={project.github}
-            urlInfo={project.url} />)}
+          {projectData.map(project =>
+            <Project
+              projectName={project.name}
+              githubInfo={project.github}
+              projectDesc={project.desc}
+              urlInfo={project.url}
+            />)}
         </Total>
       </Outline>
     </Wrapper>

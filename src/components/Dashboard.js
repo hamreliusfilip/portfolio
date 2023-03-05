@@ -28,7 +28,7 @@ export default Dashboard
 const Container = styled.div`
 width: 100%;
 min-height: 100vh;
-background-color: #DCDCDC;
+background-color: #1F1D1D;
 justify-content: space-evenly;
 `
 

@@ -3,20 +3,22 @@ import styled from 'styled-components'
 const Container = styled.div`
   z-index: 1; 
   text-align: left;
-  margin-left: 20px; 
+  margin-left: 150px;
   margin-top: 10%;
   padding: 30px 10px 10px 10px;
 `
 
 const Link = styled.a`
-color: black;
+color: #DCDCDC;
 font-family: 'Helvetica Neue';
 font-size: 60px;
 font-weight: bold;
+text-decoration: none; 
 
 &:hover {
-	color: white;
-	transition: 200ms ease-in;
+	color: black;
+	transition: 200ms ease;
+  transition: 200ms ease-out;
 }
 `;
 
@@ -24,7 +26,11 @@ const Contact = () => {
 
   return (
     <Container> 
-      <Link href = "https://www.linkedin.com/in/filip-hamrelius/" > LINKEDIN</Link>
+      <Link href = "https://www.linkedin.com/in/filip-hamrelius/" >linkedin.</Link>
+      <p></p>
+      <Link href = "https://www.linkedin.com/in/filip-hamrelius/" >instagram.</Link>
+      <p></p>
+      <Link href = "https://www.instagram.com/filiphamrelius/" >facebook.</Link>
     </Container>
   )
 }

@@ -1,43 +1,31 @@
 import styled from 'styled-components'
 
 const Box = styled.div`
-height: 300px;
+height: 500px;
 min-width: 800px;
-margin: 16px -5px 15px 30px;
-background-color: #1F1D1D;
+margin: 20px 20px 20px 20px;
 font-family: 'Helvetica Neue';
-color: #1F1D1D;
+color: #DCDCDC;
+background-color: #282626;
 text-decoration: none;
 `
 
 const Name = styled.div`
   z-index: 1; 
-  text-align: center; 
+  text-align: left; 
   font-size: 30px;
   font-family: 'Helvetica Neue';
   font-weight: 800;
   color: #DCDCDC;
-  padding: 30px 10px 10px 10px;
 `
 
 const UrlText= styled.div`
 z-index: 1; 
-text-align: center; 
+text-align: left; 
 font-size: 30px;
 font-family: 'Helvetica Neue';
 font-weight: 800;
 color: #DCDCDC;
-padding: 30px 10px 10px 10px;
-`
-
-const GithubText = styled.div`
-z-index: 1; 
-text-align: center; 
-font-size: 30px;
-font-family: 'Helvetica Neue';
-font-weight: 800;
-color: #DCDCDC;
-padding: 30px 10px 10px 10px;
 `
 
 const Link = styled.a`
@@ -53,13 +41,25 @@ font-weight: bold;
 }
 `;
 
-const Project = ({ projectName, githubInfo, urlInfo }) => {
+const Info = styled.a`
+text-align: left; 
+font-size: 20px;
+font-family: 'Helvetica Neue';
+font-weight: 800;
+color: #DCDCDC;
+`
+
+
+const Project = ({ projectName, githubInfo, projectDesc, urlInfo }) => {
 
   return (
     <Box>
       <Name>{projectName}</Name>
+
+      <Info>{projectDesc}</Info>
+
       <Link href={githubInfo}>
-        <GithubText>GITHUB</GithubText>
+        <UrlText>GITHUB</UrlText>
       </Link>
 
       <Link href={urlInfo}>

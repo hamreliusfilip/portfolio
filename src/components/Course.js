@@ -4,9 +4,9 @@ const Box = styled.div`
 height: 220px;
 min-width: 300px;
 margin: 16px -5px 15px 30px;
-background-color: #1F1D1D;
+background-color: #282626;
 font-family: 'Helvetica Neue';
-color: #1F1D1D;
+color: #282626;
 text-decoration: none;
 `
 

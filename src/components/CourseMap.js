@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { courseData } from '../data/DB'
 
 const Total = styled.div`
-width: 100 vh;
+width: 80vw;
 overflow: scroll;
 display: flex;
 color: #DCDCDC;
@@ -21,8 +21,8 @@ margin-left: 30px;
 `
 
 const Wrapper = styled.div`
-margin-top: 2830px;
-width: 100 vh;
+margin-top: 2660px;
+width: 80vw;
 margin-left: 50px;
 height: 600x;
 `

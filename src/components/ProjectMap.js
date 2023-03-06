@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { projectData } from '../data/DB2'
 
 const Total = styled.div`
-width: 100 vh;
+width: 80vw;
 overflow: scroll;
 display: flex;
 color: #DCDCDC;
@@ -15,13 +15,13 @@ display: none;
 
 const Wrapper = styled.div`
 margin-top: 2030px;
-width: 100 vh;
+width: 80vw;
 margin-left: 50px;
 height: 500x;
 `
 
 const Outline = styled.div`
-width: 3500px;
+width: 80vw;
 height: 250px;
 `
 

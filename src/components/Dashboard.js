@@ -26,10 +26,12 @@ const Dashboard = () => {
 export default Dashboard
 
 const Container = styled.div`
-width: 100%;
+max-width: 100%;
 min-height: 100vh;
 background-color: #1F1D1D;
 justify-content: space-evenly;
+width: 100%;
+overflow-x: hidden;
 `
 
 const Wrapper2 = styled.div`

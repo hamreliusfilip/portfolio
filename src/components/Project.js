@@ -53,19 +53,19 @@ margin-top: 20px;
 `
 
 
-const Project = ({ projectName, githubInfo, projectDesc, urlInfo }) => {
+const Project = (props) => {
 
   return (
     <Box>
-      <Name>{projectName}</Name>
+      <Name>{props.projectName}</Name>
 
-      <Info>{projectDesc}</Info>
+      <Info>{props.projectDesc}</Info>
 
-      <Link href={githubInfo}>
+      <Link href={props.githubInfo} >
         <UrlText>GITHUB</UrlText>
       </Link>
 
-      <Link href={urlInfo}>
+      <Link href={props.urlInfo} >
         <UrlText>WEBSITE</UrlText>
       </Link>
     </Box>

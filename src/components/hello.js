@@ -10,21 +10,18 @@ import Contact from './Contact'
 const Hello = () => {
     return (
         <Wrapper>
-            <Hellotext> HELLO. </Hellotext>
+            <Hellotext id = "hello"> HELLO. </Hellotext>
             <Line>
 
-              <PortText>a personal portfolio</PortText>
-              <Name> by filip hamrelius.</Name>
-              <SmallLine1 /> 
-              <SmallLine2 /> 
+              <Name>a portfolio by filip hamrelius</Name>
 
-                  <ProjectWrapper> 
+                <ProjectWrapper id = "project"> 
                 <Heading1> MY PROJECTS</Heading1>
                   <Heading4> freelance- & school projects </Heading4>
                  <ProjectMap /> 
                  </ProjectWrapper>  
                 
-                 <WrapperEducation> 
+                 <WrapperEducation id = "education"> 
                   <Heading1> EDUCATION</Heading1>
                   <Heading4> M.Sc in Media Technology and Engineering </Heading4>
                   <Text> master of science in media technology is a broad program of study in engineering, 
@@ -33,7 +30,7 @@ const Hello = () => {
                    <CourseMap /> 
                  </WrapperEducation> 
                 
-                 <Wrapper3> 
+                 <Wrapper3 id = "contact"> 
                   <Heading1> CONTACT ME </Heading1>
                   <Contact />
                 </Wrapper3> 
@@ -50,52 +47,46 @@ export default Hello;
 
 // LINES AND TITLE 
 const Wrapper = styled.div`
-  position: relative;
-  width: 100%;
+  position: absolute;
+  width: 90%;
   height: 100%;
   margin: 10px;
 `
 const Hellotext = styled.h2`
 position: absolute;
 margin-left: 5%;
-margin-top: -3%;
+margin-top: 6%;
 font-family: 'Helvetica Neue';
 font-weight: 700;
 font-size: 220px;
 color: #1F1D1D;
 `
 const Line = styled.div`
-postion: absolute;
+postion: realtive;
 width: 0px;
 height: 7000px;
-margin-top: 5%;
-margin-left:10.05%;
+margin-top: 12%;
+margin-left:10.6%;
 border: 17.4px solid #1F1D1D;
 `
-const SmallLine1 = styled.div`
-postion: absolute;
-width: 0px;
-height: 150px;
-margin-top: 153px;
-margin-left: 806px;
-border: 5.334px solid #282626;
-`
-const SmallLine2 = styled.div`
-postion: absolute;
-width: 0px;
-height: 240px;
-margin-top: 150px;
-margin-left: 363.4px;
-border: 3.299px solid #282626;
+
+const Name = styled.h2`
+position: absolute;
+margin-left: 5%;
+margin-top: 8%;
+font-family: 'Helvetica Neue';
+font-weight: 900;
+font-size: 40px;
+color: #1F1D1D;
 `
 // END LINES AND TITLE 
 
 //PROJECT 
 const ProjectWrapper = styled.div`
 postion: absolute;
-width: 1000px;
+width: 900px;
 height: 2000px;
-margin-top: 600px;
+margin-top: 1200px;
 `
 const Heading1 = styled.h1`
 margin-left: 80px;
@@ -161,25 +152,6 @@ color: #1F1D1D;
 
 
 
-
-const PortText = styled.h2`
-position: absolute;
-margin-left: 10%;
-margin-top: 13%;
-font-family: 'Helvetica Neue';
-font-weight: 900;
-font-size: 70px;
-color: #1F1D1D;
-`
-const Name = styled.h2`
-position: absolute;
-margin-left: 10%;
-margin-top: 19%;
-font-family: 'Helvetica Neue';
-font-weight: 900;
-font-size: 40px;
-color: #1F1D1D;
-`
 
 
 

@@ -6,19 +6,13 @@ import NavBar from './components/NavBar'
 import PortFolioText from './components/PortFolioText'
 import Hello from './components/hello'
 
+
 function App() {
   return (
 
   <div> 
     <Container>
-    <NavBar
-      li={[
-        ["about."],
-        ["projects."],
-        ["education."],
-        ["contact."],
-      ]}
-    />
+    <NavBar /> 
       <Hello />
     </Container>
       
@@ -38,20 +32,16 @@ function App() {
 
 export default App;
 
-//WALLPAPER 
-const ImgStyle1 = styled.img`
-margin-top:-10000px;
-`
 // background-color: #1F1D1D;
 const Container = styled.div`
 max-width: 100%;
-min-height: 100vh;
+min-height: 7300px;
 justify-content: space-evenly;
 width: 100%;
 overflow-x: hidden;
-background-image: url("SVG/wallpaper.svg");
-`
 
+`
+//background-image: url("SVG/wallpaper2.svg");
 const ImageWrapper = styled.div`
 margin-top: 3660px;
 padding-left:50%;

@@ -4,41 +4,25 @@ const Box = styled.div`
 height: 500px;
 min-width: 800px;
 margin: 20px 20px 20px 20px;
-font-family: 'Helvetica Neue';
-color: #DCDCDC;
 background-color: #282626;
 text-decoration: none;
 `
 
 const Name = styled.div`
   z-index: 1; 
-  text-align: left; 
   font-size: 30px;
-  font-family: 'Helvetica Neue';
-  font-weight: 800;
-  color: #DCDCDC;
   margin-top: 20px;
-  margin-left: 20px;
 `
 
 const UrlText= styled.div`
 z-index: 1; 
-margin-left: 20px;
-text-align: left; 
 font-size: 30px;
-font-family: 'Helvetica Neue';
-font-weight: 800;
-color: #DCDCDC;
 margin-top: 20px;
 `
 
 const Link = styled.a`
 color: #DCDCDC;
-margin-left: 20px;
-margin-bottom: 20px;
-font-family: 'Helvetica Neue';
 font-size: 18px;
-font-weight: bold;
 
 &:hover {
 	color: white;
@@ -49,11 +33,15 @@ font-weight: bold;
 const Info = styled.a`
 text-align: left; 
 font-size: 20px;
-font-family: 'Helvetica Neue';
-font-weight: 800;
-color: #DCDCDC;
 margin-top: 20px;
-margin-left: 40px;
+`
+
+const TextWrapper = styled.div`
+text-align:left;
+font-family: 'Helvetica Neue';
+padding: 10px 20px 20px 20px;
+font-weight: bold;
+color: #DCDCDC;
 `
 
 
@@ -61,6 +49,7 @@ const Project = (props) => {
 
   return (
     <Box>
+      <TextWrapper> 
       <Name>{props.projectName}</Name>
 
       <Info>{props.projectDesc}</Info>
@@ -72,6 +61,7 @@ const Project = (props) => {
       <Link href={props.urlInfo} >
         <UrlText>WEBSITE</UrlText>
       </Link>
+      </TextWrapper> 
     </Box>
   )
 }

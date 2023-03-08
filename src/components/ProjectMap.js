@@ -30,6 +30,7 @@ const ProjectMap = () => {
               githubInfo={project.github}
               projectDesc={project.desc}
               urlInfo={project.url}
+              key={project.value}
             />)}
         </Total>
     </Wrapper>

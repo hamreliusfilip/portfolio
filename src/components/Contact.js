@@ -7,7 +7,7 @@ const Container = styled.div`
 `
 
 const Link = styled.a`
-color: #DCDCDC;
+color: #282626;
 font-family: 'Helvetica Neue';
 font-size: 60px;
 font-weight: bold;

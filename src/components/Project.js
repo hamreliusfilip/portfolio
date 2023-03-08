@@ -18,10 +18,12 @@ const Name = styled.div`
   font-weight: 800;
   color: #DCDCDC;
   margin-top: 20px;
+  margin-left: 20px;
 `
 
 const UrlText= styled.div`
 z-index: 1; 
+margin-left: 20px;
 text-align: left; 
 font-size: 30px;
 font-family: 'Helvetica Neue';
@@ -32,6 +34,7 @@ margin-top: 20px;
 
 const Link = styled.a`
 color: #DCDCDC;
+margin-left: 20px;
 margin-bottom: 20px;
 font-family: 'Helvetica Neue';
 font-size: 18px;
@@ -50,6 +53,7 @@ font-family: 'Helvetica Neue';
 font-weight: 800;
 color: #DCDCDC;
 margin-top: 20px;
+margin-left: 40px;
 `
 
 

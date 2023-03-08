@@ -5,12 +5,13 @@ import styled from 'styled-components'
 
 const Text = styled.h1`
 position: absolute;
-margin-left: 400px;
-margin-top: 600px;
+margin: 0 auto;
+margin-left:25%;
 font-family: 'Helvetica Neue';
 font-weight: 700;
-font-size: 200px;
-color: #282626;
+font-size: 50px;
+color: #DCDCDC;
+margin-top:100px;
 `
 
 function Typewriters(){ 
@@ -22,8 +23,8 @@ function Typewriters(){
                     options={{
                         autoStart: true,
                         loop: true,
-                        delay: 100,
-                        strings: ["filip hamrelius"]
+                        delay: 300,
+                        strings: ["thank you for visiting."]
                     }}
                />
             </Text>

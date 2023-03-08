@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { projectData } from '../data/DB2'
 
 const Total = styled.div`
-width: 80vw;
+width: 75vw;
 overflow: scroll;
 display: flex;
 color: #DCDCDC;
@@ -14,21 +14,15 @@ display: none;
 `
 
 const Wrapper = styled.div`
-margin-top: 2030px;
-width: 80vw;
-margin-left: 50px;
+margin-top: 10px;
+width: 75vw;
+margin-left: 65px;
 height: 500x;
-`
-
-const Outline = styled.div`
-width: 80vw;
-height: 250px;
 `
 
 const ProjectMap = () => {
   return (
     <Wrapper>
-      <Outline>
         <Total>
           {projectData.map(project =>
             <Project
@@ -38,7 +32,6 @@ const ProjectMap = () => {
               urlInfo={project.url}
             />)}
         </Total>
-      </Outline>
     </Wrapper>
   )
 }

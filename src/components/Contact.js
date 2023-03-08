@@ -4,8 +4,6 @@ const Container = styled.div`
   z-index: 1; 
   text-align: left;
   margin-left: 150px;
-  margin-top: 10%;
-  padding: 30px 10px 10px 10px;
 `
 
 const Link = styled.a`

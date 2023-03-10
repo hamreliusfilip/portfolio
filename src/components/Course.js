@@ -3,17 +3,18 @@ import styled from 'styled-components'
 const Box = styled.div`
 height: 220px;
 min-width: 300px;
-margin: 16px -5px 15px 30px;
-background-color: #282626;
-font-family: 'Helvetica Neue';
-color: #282626;
+margin: 20px 20px 20px 20px;
 text-decoration: none;
+background-color: #303A40;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
 `
 
 const Name = styled.div`
-  z-index: 1; 
+  z-index: 500; 
   text-align: center; 
-  font-size: 30px;
+  margin-top:5%;
+  font-size: 20px;
   font-family: 'Helvetica Neue';
   font-weight: 800;
   color: #DCDCDC;

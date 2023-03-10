@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 const Container = styled.div`
-  z-index: 1; 
   text-align: left;
   margin-left: 150px;
 `
@@ -9,12 +8,13 @@ const Container = styled.div`
 const Link = styled.a`
 color: #282626;
 font-family: 'Helvetica Neue';
-font-size: 60px;
+font-size: 40px;
 font-weight: bold;
 text-decoration: none; 
+cursor: pointer;
 
 &:hover {
-	color: black;
+	color: red;
 	transition: 200ms ease;
   transition: 200ms ease-out;
 }
@@ -26,9 +26,7 @@ const Contact = () => {
     <Container> 
       <Link href = "https://www.linkedin.com/in/filip-hamrelius/" >linkedin.</Link>
       <p></p>
-      <Link href = "https://www.linkedin.com/in/filip-hamrelius/" >instagram.</Link>
-      <p></p>
-      <Link href = "https://www.instagram.com/filiphamrelius/" >facebook.</Link>
+      <Link href = "https://github.com/hamreliusfilip" >github.</Link>
     </Container>
   )
 }

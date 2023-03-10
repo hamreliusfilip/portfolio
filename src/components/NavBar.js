@@ -3,11 +3,13 @@ import styled from 'styled-components'
 import { Link } from "react-scroll"
 
 const CustomNav = () => {
-  const [window, setWindow] = useState(false);
+  const [window, setWindow] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    setIsActive(!isActive);
   };
 
   let openClose = () => {
@@ -22,9 +24,9 @@ const CustomNav = () => {
     <NavbarMenu style={{ width: window === false ? 250 : 120 }}>
 
     <Burger onClick={toggleMenu}>
-      <div onClick={() => openClose()}>
-        <img src={isOpen ? "img/menu.svg" : "img/cross.svg"} alt="burger" />
-      </div>
+      <Icon onClick={() => openClose()} isActive={isActive}>
+        <LogoStyle src={isOpen ? "img/cross.svg" : "img/menu.svg"} alt="burger" />
+      </Icon>
     </Burger>
 
       <NavbarList>
@@ -33,9 +35,9 @@ const CustomNav = () => {
           <br></br>
           <Link to="project" spy={true} smooth={true} offset={160} duration={500}>projects.</Link>
           <br></br>
-          <Link to="education" spy={true} smooth={true} duration={500}>education</Link>
+          <Link to="education" spy={true} smooth={true} duration={500}>education.</Link>
           <br></br>
-          <Link to="contact" spy={true} smooth={true} offset={-20} duration={500}>contact</Link>
+          <Link to="about" spy={true} smooth={true} offset={-20} duration={500}>about & contact.</Link>
         </Navigation>
       </NavbarList>
     </NavbarMenu>
@@ -44,57 +46,73 @@ const CustomNav = () => {
 
 export default CustomNav;
 
+const LogoStyle = styled.img`
+postion: relative;
+z-index: 9999 !important;
+cursor:pointer;
+}
+`
+
 const NavbarMenu = styled.div`
+  z-index:1;
   position: fixed;
   height: 100vh;
-  background-color: #282626;
+  background-color: white;
   transition: all 1s ease;
   right:0;
 `;
 
 const Burger = styled.div`
+position: relative;
+z-index:999;
 height: auto;
 margin: 0 auto;
 padding: 10px;
-position: relative;
-  cursor: pointer;
-  
-  img {
-    padding: 25px 8px 0px 0px;
-    
-    transition: transform 0.3s ease-in-out;
-    transform: ${props => (props.isOpen ? 'rotate(90deg)' : 'rotate(0deg)')};
-    
-  }
+cursor: pointer;
+margin-top:50px;
+margin-right:50px;
+
+&:hover{
+  transition: all 0.5s ease-in-out;
+  transform: scale(0.90);
+}
 `;
 
 const NavbarList = styled.ul`
+  z-index:1;
   list-style-type: none;
 `;
 
 const Navigation = styled.div`
-display: inline-block;
 position: relative;
-font-size: 34px;
+z-index:999;
+display: inline-block;
+font-size: 20px;
 margin-top:100px;
 line-height: 500%;
-color: #DCDCDC;
+color: #303A40;
 font-family: 'Helvetica Neue';
 font-weight: 900;
 
 display: flex;
 justify-content: space-between;
 width: 100%;
-max-width: 360px;
-
-  & > a {
-    white-space: nowrap;
-    text-decoration: none;
-    transition: .2s;
-    &:hover {
-      cursor: pointer;
-      text-shadow: 0 2px 50px white;
-      } 
-  }  
+cursor:pointer;
 `;
 
+const Icon = styled.div`
+  position: absolute;
+  width: 30px;
+  height: 1px;
+  left: 15px;
+  top: 30px;
+  background-color: white;
+  transition: all 0.5s ease;
+
+  ${(props) =>
+    props.isActive &&`  
+    transition: all 0.5s ease;
+    margin-top:14px;
+    -webkit-transform: rotate(90deg);
+  `}
+`;

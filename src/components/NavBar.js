@@ -47,17 +47,16 @@ const CustomNav = () => {
 export default CustomNav;
 
 const LogoStyle = styled.img`
-postion: relative;
+position: fixed;
 z-index: 9999 !important;
 cursor:pointer;
 }
 `
 
 const NavbarMenu = styled.div`
-  z-index:1;
   position: fixed;
-  height: 100vh;
-  background-color: white;
+  z-index: 9999 !important;
+  height: 20vh;
   transition: all 1s ease;
   right:0;
 `;
@@ -84,13 +83,13 @@ const NavbarList = styled.ul`
 `;
 
 const Navigation = styled.div`
-position: relative;
-z-index:999;
+position: fixed;
+z-index: 9999 !important;
 display: inline-block;
 font-size: 20px;
 margin-top:100px;
 line-height: 500%;
-color: #303A40;
+color: black;
 font-family: 'Helvetica Neue';
 font-weight: 900;
 

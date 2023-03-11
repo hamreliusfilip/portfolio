@@ -26,7 +26,6 @@ const Logo = () => {
           </StyledA>
         </LogoWrapper>
      
-
         <Heading6> about site.</Heading6>
         <Heading5> this site is built with react js and the project can be viewed on github.</Heading5>
         <LogoWrapper> 
@@ -51,26 +50,31 @@ width: 2000px;
 height: 500px;
 `
 const LogoStyle = styled.img`
-postion: relative;
-z-index: 9999;
-width: 65px;
-height: 65px;
-margin: 25px 25px 25px 25px;
-cursor:pointer;
-margin-top:-1%;
-margin-left:70px;
-&:hover {
-  transition: all 300ms ease-in-out;
-  transform: rotate(25deg);
-}
-`
+  position: relative;
+  z-index: 9999;
+  width: 65px;
+  height: 65px;
+  margin: 25px 25px 25px 25px;
+  margin-top:-1%;
+  margin-left:70px;
+  cursor: pointer;
+  &:hover {
+    animation: rotate 3s linear infinite;
+  }
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+`;
+
+
 const LogoStyleStatic = styled.img`
 postion: relative;
 z-index: 9999;
 width: 65px;
 height: 65px;
 margin: 25px 25px 25px 25px;
-cursor:pointer;
 margin-top:-1%;
 margin-left:70px;
 `
@@ -88,7 +92,7 @@ font-family: 'Helvetica Neue';
 position: relative;
 font-weight: 700;
 font-size: 100px;
-color: #303A40;
+color: black;
 `
 
 const Heading4 = styled.p`
@@ -98,7 +102,7 @@ margin-left: 80px;
 font-family: 'Helvetica Neue';
 font-weight: 700;
 font-size: 40px;
-color: #303A40;
+color: black;
 margin-top:-3%;
 `
 const Heading6 = styled.p`
@@ -108,7 +112,7 @@ margin-left: 80px;
 font-family: 'Helvetica Neue';
 font-weight: 700;
 font-size: 40px;
-color: #303A40;
+color: black;
 margin-top:-20%;
 `
 
@@ -119,7 +123,7 @@ margin-left: 80px;
 font-family: 'Helvetica Neue';
 font-weight: 700;
 font-size: 20px;
-color: #303A40;
+color: black;
 padding-bottom: 40px;
 `
 

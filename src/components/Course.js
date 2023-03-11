@@ -5,8 +5,7 @@ height: 220px;
 min-width: 300px;
 margin: 20px 20px 20px 20px;
 text-decoration: none;
-background-color: #303A40;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+background-color: black;
 border-radius: 15px;
 `
 

@@ -1,12 +1,10 @@
 import styled from 'styled-components'
 
 const Box = styled.div`
-height: 300px;
-min-width: 800px;
-margin: 20px 20px 20px 20px;
-text-decoration: none;
-background-color: #303A40;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+height: 360px;
+min-width: 900px;
+margin: 40px 20px 20px 20px;
+background-color: black;
 border-radius: 15px;
 `
 const LogoStyle = styled.img`
@@ -14,34 +12,32 @@ postion: relative;
 z-index: 9999 !important;
 width: 50px;
 height: 50px;
-margin-top: 30px;
-margin-left: 30px;
-cursor:pointer;
+padding: 20px 20px 20px 20px;
+
+cursor:ponter;
 &:hover {
   transition: all 300ms ease-in-out;
   transform: rotate(25deg);
 }
 `
 const Name = styled.div`
-  z-index: 1; 
-  font-size: 30px;
-  color: #DCDCDC;
+  font-size: 45px;
   font-weight: 900;
+  padding: 20px 20px 20px 20px;
 `
 
 const Info = styled.a`
-text-align: left; 
 font-size: 20px;
-color: #DCDCDC;
 font-weight: 450;
-margin-top:50px;
 `
 
 const TextWrapper = styled.div`
-text-align:left;
 font-family: 'Helvetica Neue';
-color: #DCDCDC;
-padding: 30px 30px 30px 30px;
+color: #FDFDFD;
+max-width:700px;
+text-decoration: none;
+padding: 20px 20px 20px 20px;
+text-align: "." center;
 `
 
 const StyledA = styled.a`
@@ -54,8 +50,8 @@ const Project = (props) => {
 
   return (
     <Box>
-      <TextWrapper> 
         <Name>{props.projectName}</Name>
+      <TextWrapper> 
         <Info>{props.projectDesc}</Info>
       </TextWrapper> 
 

@@ -2,9 +2,7 @@ import React from "react";
 import styled from 'styled-components'
 import CourseMap from './CourseMap'
 import ProjectMap from './ProjectMap'
-import Contact from './Contact'
 import Typewriters from './TypeWriter'
-// import aboutSite from './aboutSite'
 import Logo from './Logo'
 
 
@@ -59,16 +57,16 @@ margin-top: 1%;
 font-family: 'Helvetica Neue';
 font-weight: 700;
 font-size: 220px;
-color: #303A40;
+color: black;
 `
 const Line = styled.div`
 z-index:2;
 postion: realtive;
 width: 0px;
-height: 100%;
+height: 4150px;
 margin-left: 7.30%;
 margin-top: 5%;
-border: 17.5px solid #303A40;
+border: 17.5px solid black;
 `
 // END LINES AND TITLE 
 
@@ -89,7 +87,7 @@ font-family: 'Helvetica Neue';
 position: relative;
 font-weight: 700;
 font-size: 100px;
-color: #303A40;
+color: black;
 `
 // END PROJECT
 
@@ -111,7 +109,7 @@ margin-top: 20px;
 font-family: 'Helvetica Neue';
 font-weight: 700;
 font-size: 40px;
-color: #303A40;
+color: black;
 position: relative;
 margin-top:-50px;
 `
@@ -124,7 +122,7 @@ font-family: 'Helvetica Neue';
 font-weight: 700;
 font-size: 20px;
 margin-top:-10px;
-color: #303A40;
+color: black;
 `
 // END EDUCATION
 
@@ -148,7 +146,7 @@ margin-left: 80px;
 font-family: 'Helvetica Neue';
 font-weight: 700;
 font-size: 100px;
-color: #303A40;
+color: black;
 `
 // END CONTACT
 

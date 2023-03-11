@@ -5,6 +5,8 @@ import Hello from './components/hello'
 
 
 function App() {
+
+  
   return (
     <div>
       <Container>
@@ -18,11 +20,10 @@ function App() {
 export default App;
 
 const Container = styled.div`
-position: absolute;
-max-width: 100%;
-height: 4500px;
+position: fixed;
+min-height: 100%;
 justify-content: space-evenly;
 width: 100%;
 overflow-x: hidden;
-background-image: url("grad/TempWallpaper2.svg");
+// background-image: url("grad/TempWallpaper2.svg");
 `

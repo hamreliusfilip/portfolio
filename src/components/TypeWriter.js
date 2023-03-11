@@ -11,7 +11,7 @@ margin-left:5%;
 font-family: 'Helvetica Neue';
 font-weight: 700;
 font-size: 50px;
-color: #303A40;
+color: black;
 margin-top:200px;
 `
 

@@ -3,10 +3,7 @@ import styled from 'styled-components'
 import NavBar from './components/NavBar'
 import Hello from './components/hello'
 
-
 function App() {
-
-  
   return (
     <div>
       <Container>

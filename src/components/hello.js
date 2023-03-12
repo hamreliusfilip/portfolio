@@ -5,14 +5,12 @@ import ProjectMap from './ProjectMap'
 import Typewriters from './TypeWriter'
 import Logo from './Logo'
 
-
-
 const Hello = () => {
     return (
         <Wrapper>
             <Hellotext id = "hello"> HELLO. </Hellotext>
-            <Line>
-              <Typewriters />
+              <Line>
+               <Typewriters />
 
                 <ProjectWrapper id = "project"> 
                 <Heading1> MY PROJECTS</Heading1>
@@ -32,7 +30,6 @@ const Hello = () => {
                  <Wrapper3 id = "about"> 
                   <Logo/> 
                 </Wrapper3> 
-
             </Line>
         </Wrapper>
     );

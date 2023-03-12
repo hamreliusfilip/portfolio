@@ -3,8 +3,6 @@ import Project from './Project'
 import styled from 'styled-components'
 import { projectData } from '../data/DB2'
 
-
-
 const ProjectMap = () => {
   const ref1 = useRef(0);
   const ref2 = useRef(0);
@@ -17,8 +15,6 @@ const ProjectMap = () => {
     ref1.current.scrollLeft = middleScroll;
     setScrollLeft(ref1.current.scrollLeft);
   }, []);
-
-
 
   const handleScroll1 = (scrollOffset) => {
     ref1.current.scrollLeft += scrollOffset;
@@ -93,7 +89,6 @@ display: none;
 scroll-behavior: smooth;
 }
 `
-
 const Wrapper = styled.div`
 position: relative;
 z-index:999;
@@ -102,7 +97,6 @@ margin-left:16px;
 z-index:3;
 margin-right:5%;
 `
-
 const Button = styled.button`
   position: absolute;
   all: unset;
@@ -110,7 +104,6 @@ const Button = styled.button`
   z-index: 4;
   scroll-behavior: smooth;
 `
-
 const ImageLeft = styled.img`
 padding: 10px 10px 10px 10px;
 cursor: pointer;

@@ -1,51 +1,5 @@
 import styled from 'styled-components'
 
-const Box = styled.div`
-height: 360px;
-min-width: 900px;
-margin: 40px 20px 20px 20px;
-background-color: black;
-border-radius: 15px;
-`
-const LogoStyle = styled.img`
-postion: relative;
-z-index: 9999 !important;
-width: 50px;
-height: 50px;
-padding: 20px 20px 20px 20px;
-
-cursor:ponter;
-&:hover {
-  transition: all 300ms ease-in-out;
-  transform: rotate(25deg);
-}
-`
-const Name = styled.div`
-  font-size: 45px;
-  font-weight: 900;
-  padding: 20px 20px 20px 20px;
-`
-
-const Info = styled.a`
-font-size: 20px;
-font-weight: 450;
-`
-
-const TextWrapper = styled.div`
-font-family: 'Helvetica Neue';
-color: #FDFDFD;
-max-width:700px;
-text-decoration: none;
-padding: 20px 20px 20px 20px;
-text-align: "." center;
-`
-
-const StyledA = styled.a`
-postion: relative;
-z-index: 9999 !important;
-`
-
-
 const Project = (props) => {
 
   return (
@@ -71,3 +25,45 @@ const Project = (props) => {
 }
 
 export default Project
+
+const Box = styled.div`
+  height: 360px;
+  min-width: 900px;
+  margin: 40px 20px 20px 20px;
+  background-color: black;
+  border-radius: 15px;
+
+  
+`
+const LogoStyle = styled.img`
+  postion: relative;
+  width: 50px;
+  height: 50px;
+  padding: 20px 20px 20px 20px;
+
+  cursor:ponter;
+  &:hover {
+    transition: all 300ms ease-in-out;
+    transform: rotate(25deg);
+  }
+`
+const Name = styled.div`
+  font-size: 45px;
+  font-weight: 900;
+  padding: 20px 20px 20px 20px;
+`
+const Info = styled.a`
+  font-size: 20px;
+  font-weight: 450;
+`
+const TextWrapper = styled.div`
+  font-family: 'Helvetica Neue';
+  color: #FDFDFD;
+  max-width:700px;
+  text-decoration: none;
+  padding: 20px 20px 20px 20px;
+  text-align: "." center;
+`
+const StyledA = styled.a`
+  postion: relative;
+`

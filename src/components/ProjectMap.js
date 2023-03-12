@@ -55,7 +55,7 @@ const ProjectMap = () => {
         ))}
       </Total>
 
-      {/* <Button disabled={scrollLeft1 === 0} onClick={() => handleScroll1(-1000)}>
+      <Button disabled={scrollLeft1 === 0} onClick={() => handleScroll1(-1000)}>
         <ImageLeft src="img/arrow.svg" />
       </Button>
       <Button disabled={scrollLeft1 === ref1.current.scrollWidth - ref1.current.clientWidth} onClick={() => handleScroll1(1000)}>
@@ -67,7 +67,7 @@ const ProjectMap = () => {
       </Button>
       <Button disabled={scrollLeft2 === ref2.current.scrollWidth - ref2.current.clientWidth} onClick={() => handleScroll2(1000)}>
         <ImageRight src="img/arrow.svg" />
-      </Button> */}
+      </Button>
     </Wrapper>
   );
 };
@@ -76,26 +76,23 @@ export { projectData }
 export default ProjectMap
 
 const Total = styled.div`
-align: center;
-width: 100vw;
-overflow: scroll;
-position: relative;
-display: flex;
-margin-top:-20px;
-color: #DCDCDC;
-z-index:3;
-&::-webkit-scrollbar {
-display: none;
-scroll-behavior: smooth;
-}
+  align: center;
+  width: 100vw;
+  overflow: scroll;
+  position: relative;
+  display: flex;
+  margin-top:-20px;
+  color: #DCDCDC;
+  z-index:3;
+  &::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+  }
 `
 const Wrapper = styled.div`
-position: relative;
-z-index:999;
-width: 100vw;
-margin-left:16px;
-z-index:3;
-margin-right:5%;
+  position: relative;
+  width: 100vw;
+  z-index:3;
 `
 const Button = styled.button`
   position: absolute;
@@ -105,14 +102,13 @@ const Button = styled.button`
   scroll-behavior: smooth;
 `
 const ImageLeft = styled.img`
-padding: 10px 10px 10px 10px;
-cursor: pointer;
-right:0;
-transform: scaleX(-1);
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+  right:0;
+  transform: scaleX(-1);
 `
-
 const ImageRight = styled.img`
-left: 0;
-padding: 10px 10px 10px 10px;
-cursor: pointer;
+  left: 0;
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
 `

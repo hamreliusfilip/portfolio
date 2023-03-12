@@ -44,86 +44,71 @@ const Logo = () => {
 
 
 const LogoWrapper = styled.div`
-position: relative;
-z-index: 9999;
-width: 2000px;
-height: 500px;
+  position: relative;
+  width: 2000px;
+  height: 500px;
 `
 const LogoStyle = styled.img`
   position: relative;
-  z-index: 9999;
+  width: 65px;
+  height: 65px;
+  margin: 25px 25px 25px 25px; 
+  margin-top: 3%;
+  margin-left:70px;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.3) translateY(-20px);
+  }
+  
+`;
+
+const LogoStyleStatic = styled.img`
+  postion: relative;
   width: 65px;
   height: 65px;
   margin: 25px 25px 25px 25px;
   margin-top:-1%;
   margin-left:70px;
-  cursor: pointer;
-  &:hover {
-    animation: rotate 3s linear infinite;
-  }
-  @keyframes rotate {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-`;
-
-
-const LogoStyleStatic = styled.img`
-postion: relative;
-z-index: 9999;
-width: 65px;
-height: 65px;
-margin: 25px 25px 25px 25px;
-margin-top:-1%;
-margin-left:70px;
 `
-
 const StyledA = styled.a`
-postion: relative;
-z-index: 9999;
+  postion: relative;
 `
 const Heading1 = styled.h1`
-postion: relative;
-z-index: 9999;
-margin-left: 80px;
-margin-top: 20px;
-font-family: 'Helvetica Neue';
-position: relative;
-font-weight: 700;
-font-size: 100px;
-color: black;
+  postion: relative;  
+  margin-left: 80px;
+  margin-top: 20px;
+  font-family: 'Helvetica Neue';
+  position: relative;
+  font-weight: 700;
+  font-size: 100px;
+  color: black;
 `
-
 const Heading4 = styled.p`
-postion: relative;
-z-index: 9999 !important;
-margin-left: 80px;
-font-family: 'Helvetica Neue';
-font-weight: 700;
-font-size: 40px;
-color: black;
-margin-top:-3%;
+  postion: relative;
+  margin-left: 80px;
+  font-family: 'Helvetica Neue';
+  font-weight: 700;
+  font-size: 40px;
+  color: black;
+  margin-top:-3%;
 `
 const Heading6 = styled.p`
-postion: relative;
-z-index: 9999 !important;
-margin-left: 80px;
-font-family: 'Helvetica Neue';
-font-weight: 700;
-font-size: 40px;
-color: black;
-margin-top:-20%;
+  postion: relative;
+  margin-left: 80px;
+  font-family: 'Helvetica Neue';
+  font-weight: 700;
+  font-size: 40px;
+  color: black;
+  margin-top:-20%;
 `
 
 const Heading5 = styled.p`
-postion: relative;
-z-index: 9999 !important;
-margin-left: 80px;
-font-family: 'Helvetica Neue';
-font-weight: 700;
-font-size: 20px;
-color: black;
-padding-bottom: 40px;
+  postion: relative;
+  margin-left: 80px;
+  font-family: 'Helvetica Neue';
+  font-weight: 700;
+  font-size: 20px;
+  color: black;
+  padding-bottom: 40px;
 `
 

@@ -7,18 +7,17 @@ const Text = styled.h1`
 position: absolute;
 margin: 0 auto;
 width: 280px;
-margin-left:5%;
+margin-left: 5%;
 font-family: 'Helvetica Neue';
 font-weight: 700;
 font-size: 50px;
 color: black;
-margin-top:200px;
+margin-top:300px;
 `
 
-function Typewriters(){ 
-    return( 
-
-        <div> 
+function Typewriters() {
+    return (
+        <div>
             <Text>
                 <Typewriter
                     options={{
@@ -27,10 +26,9 @@ function Typewriters(){
                         dealy: 300,
                         strings: ["a portfolio by filip hamrelius."]
                     }}
-               />
+                />
             </Text>
         </div>
-
     )
 }
 

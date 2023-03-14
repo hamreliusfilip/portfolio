@@ -98,17 +98,18 @@ const Button = styled.button`
   font-size: 30px;
   font-weight: 700;
   color: #ff7576;
-  background-color: #242424;
+  background-color: var(--text);
   border: none;
   outline: none;
   cursor: pointer;
   padding: 18px 35px;
   position: relative;
+  margin-left: 3.2%;
   line-height: 24px;
   font-family: 'Helvetica Neue';
   border-radius: 9px;
-  box-shadow: 0px 1px 2px #2B3044,
-    0px 4px 16px #2B3044;
+  box-shadow: 0px 1px 2px var(--background);,
+    0px 4px 16px var(--background);;
   transform-style: preserve-3d;
   transform: scale(var(--s, 1)) perspective(600px)
     rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
@@ -121,14 +122,7 @@ const Button = styled.button`
   }
 `
 const SP = styled.span`
-background: linear-gradient(
-  90deg,
-  #866ee7,
-  #ea60da,
-  #ed8f57,
-  #fbd41d,
-  #2cca91
-);
+background: var(--background);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 background-clip: text;

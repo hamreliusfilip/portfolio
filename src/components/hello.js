@@ -3,16 +3,20 @@ import styled from 'styled-components'
 import CourseMap from './CourseMap'
 import ProjectMap from './ProjectMap'
 import Typewriters from './TypeWriter'
-import Logo from './Logo'
+import Contact from './Contact'
 import Mail from './Mail'
 import SlideText from './SlideText'
+import Info from './Info'
+
+
 
 const Hello = () => {
   return (
     <Wrapper>
-
+      
         <TitleWrapper id="title">
           <Hellotext>HELLO.</Hellotext>
+          
           
         </TitleWrapper>
 
@@ -23,6 +27,11 @@ const Hello = () => {
           <ProjectMap />
         </ProjectWrapper>
 
+
+        <WhatCan> 
+          <Heading1>WHAT CAN I DO?</Heading1>
+          <Info />
+        </WhatCan>
         
 
         <WrapperEducation id="education">
@@ -34,14 +43,14 @@ const Hello = () => {
           <CourseMap />
         </WrapperEducation>
 
+
         <ContactWrapper id = "about">
-          <Heading1>ABOUT</Heading1>
-          <Logo />
+          <Contact />
         </ContactWrapper>
  
 
         <MailWrapper id = "mail">
-          <Heading1>SEND ME A MAIL</Heading1>
+          <Heading1>WRITE SOMETHING</Heading1>
           <Mail />
         </MailWrapper>
 
@@ -76,6 +85,14 @@ const WrapperEducation = styled.div`
   width: 100vw;
   margin-top:10%;
 `
+
+const WhatCan = styled.div`
+  postion: absolute;
+  z-index: 3;
+  width: 100vw;
+  margin-top:10%;
+`
+
 const ContactWrapper = styled.div`
   postion: absolute;
   z-index: 3;
@@ -95,11 +112,11 @@ const MailWrapper = styled.div`
 // ---------------------------------- TEXT ---------------------------------- //
 const Hellotext = styled.h2`
   position: absolute;
-  margin-left: 4%;
-  margin-top: -2%;
+  margin-left: 2%;
+  margin-top: -4%;
   font-family: 'Helvetica Neue';
   font-weight: bold;
-  font-size: 20em;
+  font-size: 10em;
   color: var(--text);
 `
 const Heading1 = styled.h1`

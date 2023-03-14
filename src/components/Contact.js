@@ -1,10 +1,13 @@
 import React from "react";
 import styled from 'styled-components'
 
-const Logo = () => {
+const Contact = () => {
 
     return (
       <Contairer>
+
+        <Heading>ABOUT</Heading>
+
         <Box>
           <Heading1>me.</Heading1>
           <StyledA href="https://github.com/hamreliusfilip" target="_blank">
@@ -33,11 +36,23 @@ const Logo = () => {
     )
   }
   
-  export default Logo
+  export default Contact
 
 const Contairer = styled.div`
   display: flex;
   flex-direction: row;
+  width: 63%;
+`
+
+const Heading = styled.h1`
+  flex-grow: 1;
+  position: relative;
+  margin-left: 3%;
+  font-family: 'Helvetica Neue';
+  font-weight: 700;
+  font-size: 10em;
+  color: var(--text);
+  margin-top: -0.6%;
 `
 
 const Heading1 = styled.p`
@@ -58,7 +73,7 @@ const Heading2 = styled.p`
   margin-top: -5%;
 `
 const Box = styled.div`
-  flex-grow: 4;
+  flex-grow: 2;
   height: 260px;
   max-width: 655px;
   margin: -1.3% 20px 20px 20px;

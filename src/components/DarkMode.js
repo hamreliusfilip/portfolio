@@ -24,7 +24,7 @@ const DarkMode = () => {
             onChange = {toggleTheme}
             />
 
-            <LabelStyle className="slider" for="darlmode-toggle"> TOGGLE DARK/LIGHT MODE</LabelStyle>
+            <LabelStyle className="slider" for="darlmode-toggle"> TOGGLE DARK/LIGHT MODE.</LabelStyle>
         </Wrapper> 
     )
 }; 
@@ -40,14 +40,16 @@ const Wrapper = styled.div`
     font-weight: bold;
     font-size: 2em;
     color: var(--text);
-    margin-top: 1%;
-    margin-left: 93%;
+    margin-top: 2%;
+    margin-left: 92%;
+    cursor: pointer;
 `
 
 const InputStyle = styled.input`
     position: absolute;
     cursor: pointer;
     -webkit-appearance: none;
+    cursor: pointer;
 `
 
 const LabelStyle = styled.label`

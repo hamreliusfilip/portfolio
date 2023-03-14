@@ -1,16 +1,13 @@
 import React from 'react'
-import Typewriter from 'typewriter-effect'
 import styled from 'styled-components'
 import Marquee from 'react-fast-marquee'
 
 function SlideText() {
     return (
         <Wrapper>
-          <LineSmall/>
-          <Marquee pauseOnHover = 'true' gradientWidth = '0'> 
-            <Text> a portfolio by filip hamrelius </Text>
+          <Marquee pauseOnHover = 'true' gradientWidth = '0' speed = '100'> 
+            <Text> a personal website by filip hamrelius . . . . . .  . </Text>
           </Marquee>
-          <LineSmall/>
         </Wrapper>
     )
 }

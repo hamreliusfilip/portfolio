@@ -56,7 +56,7 @@ const LogoStyle = styled.img`
 const NavbarMenu = styled.div`
   position: fixed;
   z-index: 10;
-  height: 20vh;
+  height: 100vh;
   transition: all 1s ease;
   right:0;
 `
@@ -115,7 +115,7 @@ const Button = styled.button`
   font-size: 30px;
   font-weight: 700;
   color: #ff7576;
-  background-color: #242424;
+  background-color: var(--text);
   border: none;
   outline: none;
   cursor: pointer;
@@ -139,14 +139,7 @@ const Button = styled.button`
 `
 
 const SP = styled.span`
-background: linear-gradient(
-  90deg,
-  #866ee7,
-  #ea60da,
-  #ed8f57,
-  #fbd41d,
-  #2cca91
-);
+background: var(--background);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 background-clip: text;

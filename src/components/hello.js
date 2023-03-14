@@ -4,160 +4,181 @@ import CourseMap from './CourseMap'
 import ProjectMap from './ProjectMap'
 import Typewriters from './TypeWriter'
 import Logo from './Logo'
-import { ScrollReveal } from "reveal-on-scroll-react"
+import Mail from './Mail'
+import SlideText from './SlideText'
 
 const Hello = () => {
   return (
     <Wrapper>
-      <Hellotext id="hello"> HELLO. </Hellotext>
-      {/* <Line> */}
-      <Typewriters />
 
+        <TitleWrapper id="title">
+          <Hellotext>HELLO.</Hellotext>
+          
+        </TitleWrapper>
+
+        <SlideText /> 
+
+        <ProjectWrapper id="project">
+          <Heading1>SOME THINGS I'VE BUILT</Heading1>
+          <ProjectMap />
+        </ProjectWrapper>
+
+        
+
+        <WrapperEducation id="education">
+          <Heading1>EDUCATION</Heading1>
+          <Heading2> Third year M.Sc in Media Technology and Engineering </Heading2>
+          <Text> master of science in media technology is a broad program of study in engineering,
+            where the classic subjects of engineering are mixed with topics such as visualization,
+            computer graphics, machine learning, interaction design and image processing.</Text>
+          <CourseMap />
+        </WrapperEducation>
+
+        <ContactWrapper id = "about">
+          <Heading1>ABOUT</Heading1>
+          <Logo />
+        </ContactWrapper>
+ 
+
+        <MailWrapper id = "mail">
+          <Heading1>SEND ME A MAIL</Heading1>
+          <Mail />
+        </MailWrapper>
+
+        <Typewriters />
       
-      <ImgStyle src='/grad/gradient.png' />
-
-      <ProjectWrapper id="project">
-        <Heading1> MY PROJECTS</Heading1>
-        <Heading4> freelance- & school projects </Heading4>
-        <ProjectMap />
-      </ProjectWrapper>
-
-      <ImgStyle2 src='/grad/gradient.png' />
-
-      <WrapperEducation id="education">
-        <Heading1> EDUCATION</Heading1>
-        <Heading4> Third year M.Sc in Media Technology and Engineering </Heading4>
-        <Text> master of science in media technology is a broad program of study in engineering,
-          where the classic subjects of engineering are mixed with topics such as visualization,
-          computer graphics, machine learning, interaction design and image processing.</Text>
-        <CourseMap />
-      </WrapperEducation>
-
-      <ImgStyle src='/grad/gradient.png' />
-
-      <Wrapper3 id="about">
-        <Logo />
-      </Wrapper3>
-      {/* </Line> */}
     </Wrapper>
   );
 };
 export default Hello;
 
 
-
-// LINES AND TITLE 
+// ------------------------------ WRAPPERS ------------------------------ // 
 const Wrapper = styled.div`
   position: absolute;
   z-index: 9; 
-  min-width: 1800px;
   height: 100%;
 `
-const Hellotext = styled.h2`
-  position: absolute;
-  margin-left: 5%;
-  margin-top: 1%;
-  font-family: 'Helvetica Neue';
-  font-weight: 700;
-  font-size: 220px;
-  color: black;
+const TitleWrapper = styled.div`
+  postion: absolute;
+  z-index: 3;
+  width: 100vw;
 `
-const Line = styled.div`
-  postion: realtive;
-  z-index: 9; 
-  width: 0px;
-  height: 4150px;
-  margin-left: 7.30%;
-  margin-top: 5%;
-  border: 17.5px solid black;
-`
-// END LINES AND TITLE 
-
-//PROJECT 
 const ProjectWrapper = styled.div`
-postion: absolute;
-z-index: 3;
-width: 100vw;
+  postion: absolute;
+  z-index: 3;
+  width: 100vw;
+  margin-top:25%;
 `
-const Heading1 = styled.h1`
-  position: relative;
-  margin-left: 5%;
-  font-family: 'Helvetica Neue';
-  font-weight: 700;
-  font-size: 8em;
-  color: black;
-`
-// END PROJECT
-
-// EDUCATION
 const WrapperEducation = styled.div`
   postion: absolute;
   z-index: 3;
   width: 100vw;
-  margin-top: -800px;
+  margin-top:10%;
 `
-const Heading4 = styled.p`
+const ContactWrapper = styled.div`
+  postion: absolute;
+  z-index: 3;
+  width: 100vw;
+  margin-top:10%;
+`
+const MailWrapper = styled.div`
+  postion: absolute;
+  z-index: 3;
+  width: 100vw;
+  margin-top:10%;
+`
+// ------------------------------ END WRAPPERS ------------------------------ //
+
+
+
+// ---------------------------------- TEXT ---------------------------------- //
+const Hellotext = styled.h2`
+  position: absolute;
+  margin-left: 4%;
+  margin-top: -2%;
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  font-size: 20em;
+  color: var(--text);
+`
+const Heading1 = styled.h1`
   position: relative;
-  margin-left: 5%;
+  margin-left: 2%;
+  font-family: 'Helvetica Neue';
+  font-weight: 700;
+  font-size: 8em;
+  color: var(--text);
+`
+const Heading2 = styled.p`
+  position: relative;
+  margin-left: 2%;
   font-family: 'Helvetica Neue';
   font-weight: 700;
   font-size: 2em;
-  color: black;
+  color: var(--text);
+  margin-top: -2%;
 `
 const Text = styled.p`
   position: absolute;
-  margin-left: 5%;
-  width: 650px;
+  margin-left: 2%;
+  width: 23%;
   font-family: 'Helvetica Neue';
   font-weight: 700;
-  font-size: 20px;
-  color: black;
+  font-size: 1.3em;
+  color: var(--text);
+  text-align: "." center;
 `
-// END EDUCATION
+// ------------------------------ END TEXT ------------------------------ //
 
-// CONTACT
-const Wrapper3 = styled.div`
-  position: relative;
-  z-index: 3;
-  width: 2000px;
-  height: 500px;
-  margin-left: 20px;
-  margin-top: -810px;
-`
-// END CONTACT
 
-const ImgStyle = styled.img`
+
+// ------------------------------ IMAGES ------------------------------ //
+const ImgStyle = styled.div`
+  background-image: url('/grad/gradient.png');
   postion: absolute; 
   z-index: 1;
 
   margin-top: -500px;
   margin-left: -500px;
-
-  width: 2000px;
-  height: 2000px;
 `
-
-const ImgStyle2 = styled.img`
+const ImgStyle2 = styled.div`
   postion: absolute; 
-  z-index: 1;
+  z-index: 999;
 
-  margin-top: -500px;
-  margin-left: -500px;
+  background-image: url('/grad/gradient.png');
+
+  margin-top: -48%;
+  margin-left: 0px;
 
   width: 2000px;
   height: 2000px;
 
   transform: scaleY(-1);
 `
+const ImgStyle3 = styled.div`
+  postion: absolute; 
+  z-index: 1;
 
+  margin-left: 50%;
+  margin-top: -5%;
 
+  width: 2200px;
+  height: 2200px;
 
+  transform: scaleX(-1);
+`
 
+// ------------------------------ END IMAGES ------------------------------ //
 
-
-
-
-
-
-
-
+// -------------------------------- LINES --------------------------------- //
+const LineSmall = styled.hr`
+  position: absolute;
+  z-index: 999;
+  width: 100vw;
+  height: 6px;
+  color: black;
+  background-color: #242424;
+  margin: 100px 0px 0px 0px;
+`
+// ------------------------------ END LINES ------------------------------ //

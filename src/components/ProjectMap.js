@@ -76,12 +76,11 @@ export { projectData }
 export default ProjectMap
 
 const Total = styled.div`
+  position: relative;
   align: center;
   width: 100vw;
   overflow: scroll;
-  position: relative;
   display: flex;
-  margin-top:-20px;
   color: #DCDCDC;
   z-index:3;
   &::-webkit-scrollbar {

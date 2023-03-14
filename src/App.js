@@ -1,25 +1,17 @@
 import styled from 'styled-components'
 import NavBar from './components/NavBar'
 import Hello from './components/hello'
-import Mail from './components/Mail'
+import DarkMode from './components/DarkMode'
 
 function App() {
   return (
     <div>
-
-      <Container>
-        
-        <NavBar />
-        <Hello />
-
-        {/* <ImgStyle src = '/grad/gradient.png' />
-        <ImgStyle2 src = '/grad/gradient.png' />  */}
-
-        <Mail /> 
-      
-      </Container>
-
-    </div> 
+        <Container>
+          <DarkMode /> 
+          <NavBar />
+          <Hello />
+        </Container>
+    </div>
   );
 }
 
@@ -32,16 +24,5 @@ const Container = styled.div`
   justify-content: space-evenly;
   width: 100vw;
   overflow-x: hidden;
-`
-const ImgStyle = styled.img`
-  postion: absolute; 
-  z-index: 1;
-
-  margin-left: -20%;
-  margin-top: -20%;
-`
-const ImgStyle2 = styled.img`
-  postion: absolute; 
-  z-index: -1;
-
+  background-color: var(--background);
 `

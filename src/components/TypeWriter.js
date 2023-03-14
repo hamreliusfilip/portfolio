@@ -4,15 +4,13 @@ import styled from 'styled-components'
 
 
 const Text = styled.h1`
-position: absolute;
-margin: 0 auto;
-width: 280px;
-margin-left: 5%;
+position: relative;
+margin-left: 40%;
 font-family: 'Helvetica Neue';
-font-weight: 700;
-font-size: 50px;
-color: black;
-margin-top:300px;
+font-weight: bold;
+font-size: 5em;
+color: #242424;
+padding: 50px;
 `
 
 function Typewriters() {
@@ -24,7 +22,7 @@ function Typewriters() {
                         autoStart: true,
                         loop: true,
                         dealy: 300,
-                        strings: ["a portfolio by filip hamrelius."]
+                        strings: ["thank you for visiting", "have a nice day"]
                     }}
                 />
             </Text>

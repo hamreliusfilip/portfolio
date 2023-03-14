@@ -28,18 +28,16 @@ export default Project
 
 const Box = styled.div`
   height: 360px;
-  min-width: 900px;
-  margin: 40px 20px 20px 20px;
-  background-color: black;
+  min-width: 1050px;
+  margin: 20px 20px 20px 20px;
+  background-color: #242424;
   border-radius: 15px;
-
-  
 `
 const LogoStyle = styled.img`
   postion: relative;
-  width: 50px;
-  height: 50px;
-  padding: 20px 20px 20px 20px;
+  width: 4em;
+  height: 4em;
+  padding: 20px 20px 0px 30px;
 
   cursor:ponter;
   &:hover {
@@ -48,20 +46,21 @@ const LogoStyle = styled.img`
   }
 `
 const Name = styled.div`
-  font-size: 45px;
+  font-size: 4em;
   font-weight: 900;
-  padding: 20px 20px 20px 20px;
+  padding: 20px 20px 0px 30px;
+  color: #DCDCDC;
 `
 const Info = styled.a`
-  font-size: 20px;
+  font-size: 1.4em;
   font-weight: 450;
+  color: #DCDCDC;
 `
 const TextWrapper = styled.div`
   font-family: 'Helvetica Neue';
-  color: #FDFDFD;
-  max-width:700px;
+  max-width:95%;
   text-decoration: none;
-  padding: 20px 20px 20px 20px;
+  padding: 10px 10px 0px 30px;
   text-align: "." center;
 `
 const StyledA = styled.a`

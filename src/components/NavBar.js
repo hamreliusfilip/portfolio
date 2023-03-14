@@ -31,16 +31,13 @@ const CustomNav = () => {
 
       <NavbarList>
         <Navigation style={{ display: window === false ? "inline-block" : "none" }}>
-          <Link to="hello" spy={true} smooth={true} offset={-20} duration={500}><Button><SP>ABOUT</SP></Button></Link>
+          <Link to="hello" spy={true} smooth={true} offset={-20} duration={500}><Button><SP>About.</SP></Button></Link>
           <br></br>
-          <Link to="project" spy={true} smooth={true} offset={160} duration={500}><Button><SP>PROJECTS</SP></Button></Link>
+          <Link to="project" spy={true} smooth={true} offset={160} duration={500}><Button><SP>Projects.</SP></Button></Link>
           <br></br>
-          <Link to="education" spy={true} smooth={true} duration={500}><Button><SP>EDUCATION</SP></Button></Link>
+          <Link to="education" spy={true} smooth={true} duration={500}><Button><SP>Education.</SP></Button></Link>
           <br></br>
-          <Link to="about" spy={true} smooth={true} offset={-20} duration={500}><Button><SP>CONTACT ME</SP></Button></Link>
-
-          
-
+          <Link to="about" spy={true} smooth={true} offset={-20} duration={500}><Button><SP>Contact.</SP></Button></Link>
         </Navigation>
       </NavbarList>
     </NavbarMenu>
@@ -118,7 +115,7 @@ const Button = styled.button`
   font-size: 30px;
   font-weight: 700;
   color: #ff7576;
-  background-color: black;
+  background-color: #242424;
   border: none;
   outline: none;
   cursor: pointer;
@@ -142,8 +139,6 @@ const Button = styled.button`
 `
 
 const SP = styled.span`
-
-
 background: linear-gradient(
   90deg,
   #866ee7,

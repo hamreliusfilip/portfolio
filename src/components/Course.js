@@ -1,23 +1,23 @@
 import styled from 'styled-components'
 
 const Box = styled.div`
-height: 220px;
-min-width: 300px;
+height: 280px;
+max-width: 450px;
+min-width: 250px;
 margin: 20px 20px 20px 20px;
 text-decoration: none;
-background-color: black;
+background-color: #242424;
 border-radius: 15px;
 `
 
 const Name = styled.div`
   z-index: 500; 
   text-align: center; 
-  margin-top:5%;
-  font-size: 20px;
+  font-size: 2.3em;
   font-family: 'Helvetica Neue';
   font-weight: 800;
   color: #DCDCDC;
-  padding: 30px 10px 10px 10px;
+  padding: 10% 10% 10% 10%;
 `
 
 const Course = ({ courseName }) => {

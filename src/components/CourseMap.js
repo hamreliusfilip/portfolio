@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import Course from './Course'
 import styled from 'styled-components'
 import { courseData } from '../data/DB'
+import Marquee from 'react-fast-marquee'
 
 const CourseMap = () => {
 
@@ -10,35 +11,38 @@ const CourseMap = () => {
   const [scrollLeft, setScrollLeft] = useState(0);
 
   useEffect(() => {
-    const middleScroll = (ref1.current.scrollWidth - ref1.current.clientWidth) / 2;
+    const middleScroll = (ref1.current.scrollWidth - ref1.current.clientWidth) * 2;
     ref1.current.scrollLeft = middleScroll;
     setScrollLeft(ref1.current.scrollLeft);
   }, []);
 
-  const course1 = courseData.slice(0, courseData.length / 3);
-  const course2 = courseData.slice(courseData.length / 3);
+  const course1 = courseData.slice(0, courseData.length / 2);
+  const course2 = courseData.slice(courseData.length / 2);
 
   return (
     <Wrapper>
 
       <Total ref={ref1}>
+        <Marquee pauseOnHover = 'true' gradientWidth = '0' speed = '40'> 
         {course1.map((course) => (
           <Course
             courseName={course.name} 
             key={course.coursecCode} 
           />
         ))}
+        </Marquee>
       </Total>
 
       <Total ref={ref2}>
+      <Marquee pauseOnHover = 'true' gradientWidth = '0' speed = '40'> 
         {course2.map((course) => (
           <Course
             courseName={course.name} 
             key={course.coursecCode} 
           />
         ))}
+        </Marquee>
       </Total>
-
     </Wrapper>
   );
 };
@@ -58,10 +62,9 @@ const Total = styled.div`
 }
 `
 const Wrapper = styled.div`
-  padding-top: 3%;
+  padding-top: 5%;
   width: 100vw;
   position: relative;
-  margin-top:160px;
 `
 const Button = styled.button`
   position: absolute;

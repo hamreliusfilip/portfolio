@@ -28,7 +28,7 @@ export default Project
 
 const Box = styled.div`
   height: 360px;
-  min-width: 1050px;
+  min-width: 800px;
   margin: 20px 20px 20px 20px;
   background-color: #242424;
   border-radius: 15px;
@@ -46,13 +46,13 @@ const LogoStyle = styled.img`
   }
 `
 const Name = styled.div`
-  font-size: 4em;
+  font-size: 3.5em;
   font-weight: 900;
   padding: 20px 20px 0px 30px;
   color: #DCDCDC;
 `
 const Info = styled.a`
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: 450;
   color: #DCDCDC;
 `

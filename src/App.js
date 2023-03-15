@@ -8,8 +8,7 @@ function App() {
   return (
     <div>
         <Container>
-          {/* <NavBar />
-          <MenuBar />  */}
+          {/* <NavBar />   */}
             <DarkMode /> 
           <Hello />
         </Container>

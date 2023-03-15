@@ -42,6 +42,10 @@ const Contairer = styled.div`
   display: flex;
   flex-direction: row;
   width: 63%;
+
+  @media (max-width: 1500px) {
+    flex-direction: column;
+}
 `
 
 const Heading = styled.h1`
@@ -75,11 +79,12 @@ const Heading2 = styled.p`
 const Box = styled.div`
   flex-grow: 2;
   height: 260px;
-  max-width: 655px;
+  max-width: 800px;
+  min-width: 700px;
   margin: -1.3% 20px 20px 20px;
   background-color: #242424;
   border-radius: 15px;
-  margin-left: 2%;
+  margin-left: 4%;
 `
 const LogoStyle = styled.img`
   position: relative;

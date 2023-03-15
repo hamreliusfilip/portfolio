@@ -5,7 +5,7 @@ import Marquee from 'react-fast-marquee'
 function SlideText() {
     return (
         <Wrapper>
-          <Marquee pauseOnHover = 'true' gradientWidth = '0' speed = '100'> 
+          <Marquee gradientWidth = '0' speed = '100'> 
             <Text> a personal website by filip hamrelius . . . . . .  . </Text>
           </Marquee>
         </Wrapper>

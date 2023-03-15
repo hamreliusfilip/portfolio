@@ -23,10 +23,11 @@ const CourseMap = () => {
     <Wrapper>
 
       <Total ref={ref1}>
-        <Marquee pauseOnHover = 'true' gradientWidth = '0' speed = '40'> 
+        <Marquee gradientWidth = '0' speed = '60'> 
         {course1.map((course) => (
           <Course
             courseName={course.name} 
+            courseLink={course.link}
             key={course.coursecCode} 
           />
         ))}
@@ -34,10 +35,11 @@ const CourseMap = () => {
       </Total>
 
       <Total ref={ref2}>
-      <Marquee pauseOnHover = 'true' gradientWidth = '0' speed = '40'> 
+      <Marquee gradientWidth = '0' speed = '40'> 
         {course2.map((course) => (
           <Course
             courseName={course.name} 
+            courseLink={course.link}
             key={course.coursecCode} 
           />
         ))}
@@ -62,25 +64,8 @@ const Total = styled.div`
 }
 `
 const Wrapper = styled.div`
-  padding-top: 5%;
+  margin-top: 5%;
   width: 100vw;
   position: relative;
 `
-const Button = styled.button`
-  position: absolute;
-  all: unset;
-  cursor: pointer;
-  z-index: 4;
-  scroll-behavior: smooth;
-`
-const ImageLeft = styled.img`
-  padding: 10px 10px 10px 10px;
-  cursor: pointer;
-  right:0;
-  transform: scaleX(-1);
-`
-const ImageRight = styled.img`
-  left: 0;
-  padding: 10px 10px 10px 10px;
-  cursor: pointer;
-`
+

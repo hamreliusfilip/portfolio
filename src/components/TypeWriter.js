@@ -21,8 +21,8 @@ function Typewriters() {
                     options={{
                         autoStart: true,
                         loop: true,
-                        dealy: 200,
-                        strings: ["thank you for visiting.", "have a nice day.", "vi hörs."]
+                        dealy: 10,
+                        strings: ["hejdå", "goodby", "ciao", "adios", "au revoir", "vale", "до побачення", "Tschüss", "さようなら", "再见"]
                     }}
                 />
             </Text>

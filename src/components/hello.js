@@ -8,8 +8,6 @@ import Mail from './Mail'
 import SlideText from './SlideText'
 import Info from './Info'
 
-
-
 const Hello = () => {
   return (
     <Wrapper>
@@ -29,7 +27,7 @@ const Hello = () => {
 
 
         <WhatCan> 
-          <Heading1>WHAT CAN I DO?</Heading1>
+          <Heading1>MY TOOLKIT</Heading1>
           <Info />
         </WhatCan>
         
@@ -111,9 +109,9 @@ const MailWrapper = styled.div`
 
 // ---------------------------------- TEXT ---------------------------------- //
 const Hellotext = styled.h2`
-  position: absolute;
+  position: relative;
   margin-left: 2%;
-  margin-top: -4%;
+  margin-top: -5.5%;
   font-family: 'Helvetica Neue';
   font-weight: bold;
   font-size: 10em;
@@ -137,9 +135,9 @@ const Heading2 = styled.p`
   margin-top: -2%;
 `
 const Text = styled.p`
-  position: absolute;
+  position: relative;
   margin-left: 2%;
-  width: 23%;
+  width: 40%;
   font-family: 'Helvetica Neue';
   font-weight: 700;
   font-size: 1.3em;
@@ -158,6 +156,7 @@ const ImgStyle = styled.div`
 
   margin-top: -500px;
   margin-left: -500px;
+  
 `
 const ImgStyle2 = styled.div`
   postion: absolute; 

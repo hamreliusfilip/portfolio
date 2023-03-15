@@ -5,7 +5,7 @@ const projectData = [
   value: '7', 
   github: null, 
   url: null, 
-  desc: 'A lab part of the bachlor project course. Complete system deisgn and implementation from the ground up. Built with, Catch2, Vcpkg & Tracy'
+  desc: 'A sole proprietorship with a focus on retail in web format.'
   },
     { name: 'ROCKET SIMULATION', 
     value: '5', 
@@ -49,14 +49,7 @@ const projectData = [
     value: '1', github: null , 
     url: 'https://www.svenska-klubben.ch', 
     desc: 'The Swedish Club Lausanne-Genève was founded in 1962 with the aim of promoting cohesion between Swedes living around Lake Geneva. The project included website design & development as well as restructuring of newsletters & social media.' 
-  },
-{ 
-  name: 'PLACEHOLDER #!', 
-  value: '8', 
-  github: null, 
-  url: null, 
-  desc: 'A lab part of the bachlor project course. Complete system deisgn and implementation from the ground up. Built with, Catch2, Vcpkg & Tracy'
-}
+  }
 
 
 

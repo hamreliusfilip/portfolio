@@ -33,6 +33,7 @@ export default DarkMode;
 
 const Wrapper = styled.div`
     position: relative;
+    z-index: 999;
     display: inline-block;
     width: 3.5em;
     height: 2em;
@@ -40,13 +41,13 @@ const Wrapper = styled.div`
     font-weight: bold;
     font-size: 2em;
     color: var(--text);
-    margin-top: 2%;
-    margin-left: 92%;
+    margin-top: 4%;
+    margin-left: 90%;
     cursor: pointer;
 `
 
 const InputStyle = styled.input`
-    position: absolute;
+    position: relative;
     cursor: pointer;
     -webkit-appearance: none;
     cursor: pointer;

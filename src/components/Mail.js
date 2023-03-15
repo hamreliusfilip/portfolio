@@ -21,22 +21,22 @@ export default function mail(){
       <Box>
         <form onSubmit={sendEmail}>
           <Label>
-            <Input type="text" name="subject" placeholder="SUBJECT" />
+            <Input type="text" name="subject" placeholder="subject" />
           </Label>
 
           <Label>
-            <Input type="text" name="name" placeholder="NAME"/>
+            <Input type="text" name="name" placeholder="name"/>
           </Label>
 
           <Label>
-            <Input type="email" name="email" placeholder="EMAIL" />
+            <Input type="email" name="email" placeholder="email" />
           </Label>
 
           <Label>
-            <InputText type="text" name="message" placeholder="MESSAGE" />
+            <InputText type="text" name="message" placeholder="message" />
           </Label>
           
-          <Button type="submit" value="Send" ><SP>Submit</SP></Button>
+          <Button type="submit" value="Send" >submit.</Button>
         </form>
       </Box>
     </Wrapper>
@@ -44,88 +44,102 @@ export default function mail(){
 }
 
 const Input = styled.input`
-  font-family: 'Helvetica Neue';
-  font-size: 1em;
-  font-weight: 900;
-  padding: 10px 10px 10px 10px;
-  border: none;
+  max-width: 50%;
+  height: 30px;
+  font-size: 0.6em;
+  font-weight: bold;
+  border: 2px solid transparent;
   outline: none;
-  width: 90%;
-  text-color: #242424;
-  margin: 20px 20px 20px 20px;
-  border-radius: 15px;
-  background-color: #DCDCDC;
+  border-bottom: 2px solid #DCDCDC;
+  caret-color: #DCDCDC;
+  background-color: #242424;
+  padding: 5px;
+  transition: .5s linear;
+  font-family: helvetica neue;
+  letter-spacing: 1px;
+
+  margin: 20px;
+
+  &:focus {
+    border: 2px solid #DCDCDC;
+    caret-color: #DCDCDC;
+    color: #DCDCDC;
+    border-radius: 15px;
+  }
 `
 const InputText = styled.textarea`
-  font-family: 'Helvetica Neue';
-  font-size: 0.5em;
-  font-weight: 900;
-  padding: 10px 10px 10px 10px;
-  border: none;
+  max-width: 66%;
+  min-width: 66%;
+  height: 30px;
+  font-size: 0.6em;
+  font-weight: bold;
+  text-color: #DCDCDC;
+  border: 2px solid transparent;
   outline: none;
-  width: 90%;
-  text-color: #242424;
-  margin: 20px 20px 20px 20px;
-  border-radius: 15px;
-  background-color: #DCDCDC;
+  border-bottom: 2px solid #DCDCDC;
+  caret-color: #DCDCDC;
+  background-color: #242424;
+  padding: 5px;
+  transition: .5s linear;
+  font-family: helvetica neue;
+  letter-spacing: 1px;
+
+  margin: 20px;
+
+  &:focus {
+    border: 2px solid #DCDCDC;
+    caret-color: #DCDCDC;
+    color: #DCDCDC;
+    border-radius: 15px;
+  }
 `
 const Wrapper = styled.div`
   position: relative; 
   z-index: 999;
   margin-left: 2%;
+  width: 50vw; 
+  align-items: center;
+  display: flex;
+  flex-direction: coloumn;
 `
 const Label = styled.label`
+  flex-grow: 1;
   font-size: 45px;
   font-weight: 900;
   padding: 20px 20px 20px 20px;
   font-family: 'Helvetica Neue';
-  color: #FDFDFD;
+  text-color: #DCDCDC;
   max-width:700px;
   text-decoration: none;
-  padding: 20px 20px 20px 20px;
   text-align: "." center;
 `
 const Box = styled.div`
   height: 100%;
-  width: 1400px;
-  padding: 50px 50px 50px 50px;
+  width: 50vw;
+  padding: 20px 20px 20px 20px;
   background-color: #242424;
   border-radius: 15px;
 `
 // BUTTON 
 const Button = styled.button`
-  padding: 20px 20px 20px 20px;
-  font-size: 30px;
-  font-weight: 700;
-  color: #ff7576;
+  flex-grow: 2;
+  margin-left: 5%;
+  font-size: 2em;
+  algin-items: center;
+  font-weight: bold;
+  color: var(--background);
   background-color: var(--text);
   border: none;
   outline: none;
   cursor: pointer;
   padding: 18px 35px;
   position: relative;
-  margin-left: 3.2%;
   line-height: 24px;
   font-family: 'Helvetica Neue';
   border-radius: 9px;
-  box-shadow: 0px 1px 2px var(--background);,
-    0px 4px 16px var(--background);;
-  transform-style: preserve-3d;
-  transform: scale(var(--s, 1)) perspective(600px)
-    rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
-  perspective: 600px;
-  transition: transform 0.1s;
 
   &:hover{
     transition: 0.3s;
-  transform: scale(0.93);
+    transform: scale(0.93);
   }
-`
-const SP = styled.span`
-background: var(--background);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
-display: block;
 `

@@ -1,13 +1,21 @@
 import styled from 'styled-components'
 
 const Box = styled.div`
-height: 280px;
-max-width: 450px;
-min-width: 250px;
-margin: 20px 20px 20px 20px;
-text-decoration: none;
-background-color: #242424;
-border-radius: 15px;
+  height: 280px;
+  width: 450px;
+  margin: 20px;
+  text-decoration: none;
+  background-color: #242424;
+  border-radius: 15px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    transition: all 300ms ease-in-out;
+    transform: scale(1.07);
+  }
 `
 
 const Name = styled.div`
@@ -17,15 +25,25 @@ const Name = styled.div`
   font-family: 'Helvetica Neue';
   font-weight: 800;
   color: #DCDCDC;
-  padding: 10% 10% 10% 10%;
+  padding: 10%;
+
+  &:hover {
+    color: #fff;
+  }
 `
 
-const Course = ({ courseName }) => {
+const StyledA = styled.a`
+  text-decoration: none;
+  text-align: center;
+`
 
+const Course = (props) => {
   return (
+    <StyledA href={props.courseLink} target="_blank">
       <Box>
-        <Name>{courseName}</Name>
+        <Name>{props.courseName}</Name>
       </Box>
+    </StyledA>
   )
 }
 

@@ -42,9 +42,10 @@ const Contairer = styled.div`
   flex-direction: row;
   width: 100%;
 
-  @media (max-width: 1500px) {
+  @media (max-width: 600px) {
     flex-direction: column;
     padding: 30px;
+    margin-top: -12%;
 }
 `
 
@@ -57,6 +58,11 @@ const Heading1 = styled.p`
   color: #DCDCDC;
   margin-left: 5%;
   margin-top: 4%;
+
+  @media (max-width: 600px) {
+    font-size: 1.5em;
+    width: 90%;
+  }
 `
 const Heading2 = styled.p`
   postion: relative;
@@ -68,6 +74,11 @@ const Heading2 = styled.p`
   color: #DCDCDC;
   margin-left: 5%;
   margin-top: 4%;
+
+  @media (max-width: 600px) {
+    font-size: 0.7em;
+    width: 90%;
+  }
 `
 const Box = styled.div`
   flex-grow: 1;
@@ -78,8 +89,13 @@ const Box = styled.div`
   background-color: #242424;
   border-radius: 15px;
   margin-left: 2%;
-  @media (max-width: 1600px) {
+
+  @media (max-width: 600px) {
     margin: 30px;
+    min-height: 350px;
+    max-width: 800px;
+    margin: 30px 0px 0px 0px;
+    margin-right: 15%;
 }
 `
 const LogoStyle = styled.img`
@@ -87,5 +103,10 @@ const LogoStyle = styled.img`
   width: 10em;
   height: 10em;
   padding: 1% 1% 1% 6%;
+
+  @media (max-width: 600px) {
+    width: 5em;
+    height: 5em;
+  }
 `
 

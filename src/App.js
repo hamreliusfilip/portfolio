@@ -1,8 +1,9 @@
 import styled from 'styled-components'
-import NavBar from './components/NavBar'
 import Hello from './components/hello'
-import DarkMode from './components/DarkMode'
+import {DarkMode} from './components/DarkMode'
 import MenuBar from './components/MenuBar'
+import NavBar from './components/NavBar'
+
 
 function App() {
   return (

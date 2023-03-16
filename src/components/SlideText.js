@@ -19,14 +19,11 @@ font-family: 'Helvetica Neue';
 font-weight: bold;
 font-size: 10em;
 color: var(--text);
-`
-const LineSmall = styled.hr`
-  position: absolute;
-  z-index: 999;
-  width: 100vw;
-  height: 6px;
-  color: black;
-  background-color: var(--text);
+
+@media (max-width: 600px) {
+  font-size: 2em;
+  margin-top:40%;
+}
 `
 const Wrapper = styled.div`
 margin-top: 20%;

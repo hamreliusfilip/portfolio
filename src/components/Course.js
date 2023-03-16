@@ -16,6 +16,13 @@ const Box = styled.div`
     transition: all 300ms ease-in-out;
     transform: scale(1.07);
   }
+
+  @media (max-width: 600px) {
+    font-size: 1em;
+    height: 140px;
+    width: 225px;
+    margin: 10px;
+  }
 `
 
 const Name = styled.div`
@@ -29,6 +36,10 @@ const Name = styled.div`
 
   &:hover {
     color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 1.3em;
   }
 `
 

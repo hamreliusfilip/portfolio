@@ -55,7 +55,7 @@ const ProjectMap = () => {
         ))}
       </Total>
 
-      <Button disabled={scrollLeft1 === 0} onClick={() => handleScroll1(-1000)}>
+      {/* <Button disabled={scrollLeft1 === 0} onClick={() => handleScroll1(-1000)}>
         <ImageLeft src="img/arrow.svg" />
       </Button>
       <Button disabled={scrollLeft1 === ref1.current.scrollWidth - ref1.current.clientWidth} onClick={() => handleScroll1(1000)}>
@@ -67,7 +67,8 @@ const ProjectMap = () => {
       </Button>
       <Button disabled={scrollLeft2 === ref2.current.scrollWidth - ref2.current.clientWidth} onClick={() => handleScroll2(1000)}>
         <ImageRight src="img/arrow.svg" />
-      </Button>
+      </Button> */}
+      
     </Wrapper>
   );
 };
@@ -83,6 +84,7 @@ const Total = styled.div`
   display: flex;
   color: #DCDCDC;
   z-index:3;
+  
   &::-webkit-scrollbar {
   display: none;
   scroll-behavior: smooth;

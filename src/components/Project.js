@@ -28,10 +28,18 @@ export default Project
 
 const Box = styled.div`
   height: 360px;
-  min-width: 800px;
+  width: 800px;
+  min-height: 270px;
+  min-width: 600px;
   margin: 20px 20px 20px 20px;
   background-color: #242424;
   border-radius: 15px;
+
+  @media (max-width: 600px) {
+    height: 255px;
+    min-width: 350px;
+    margin: 10px 10px 10px 10px;
+  }
 `
 const LogoStyle = styled.img`
   postion: relative;
@@ -44,17 +52,30 @@ const LogoStyle = styled.img`
     transition: all 300ms ease-in-out;
     transform: rotate(25deg);
   }
+
+  @media (max-width: 600px) {
+    width: 3em;
+    height: 3em;
+  }
 `
 const Name = styled.div`
   font-size: 3.5em;
   font-weight: 900;
   padding: 20px 20px 0px 30px;
   color: #DCDCDC;
+
+  @media (max-width: 600px) {
+    font-size: 1.5em;
+  }
 `
 const Info = styled.a`
   font-size: 1.2em;
   font-weight: 450;
   color: #DCDCDC;
+
+  @media (max-width: 600px) {
+    font-size: 0.7em;
+  }
 `
 const TextWrapper = styled.div`
   font-family: 'Helvetica Neue';

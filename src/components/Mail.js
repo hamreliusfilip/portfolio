@@ -17,6 +17,7 @@ export default function mail(){
   };
 
   return (
+    <div> 
     <Wrapper>
       <Box>
         <form onSubmit={sendEmail}>
@@ -40,6 +41,7 @@ export default function mail(){
         </form>
       </Box>
     </Wrapper>
+    </div>
   )
 }
 
@@ -66,6 +68,12 @@ const Input = styled.input`
     color: #DCDCDC;
     border-radius: 15px;
   }
+
+  @media (max-width: 600px) {
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+}
 `
 const InputText = styled.textarea`
   max-width: 66%;
@@ -92,15 +100,19 @@ const InputText = styled.textarea`
     color: #DCDCDC;
     border-radius: 15px;
   }
+
 `
 const Wrapper = styled.div`
   position: relative; 
   z-index: 999;
   margin-left: 2%;
-  width: 50vw; 
+  width: 30vw; 
   align-items: center;
   display: flex;
   flex-direction: coloumn;
+
+  
+
 `
 const Label = styled.label`
   flex-grow: 1;
@@ -112,13 +124,21 @@ const Label = styled.label`
   max-width:700px;
   text-decoration: none;
   text-align: "." center;
+
+  
 `
 const Box = styled.div`
   height: 100%;
-  width: 50vw;
+  width: 350px;
   padding: 20px 20px 20px 20px;
   background-color: #242424;
   border-radius: 15px;
+
+  @media (max-width: 600px) {
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+}
 `
 // BUTTON 
 const Button = styled.button`

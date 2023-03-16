@@ -57,6 +57,11 @@ const Heading = styled.h1`
   font-size: 10em;
   color: var(--text);
   margin-top: -0.6%;
+
+  @media (max-width: 600px) {
+    font-size: 3em;
+    margin-right: 10%;
+}
 `
 
 const Heading1 = styled.p`
@@ -66,15 +71,10 @@ const Heading1 = styled.p`
   font-size: 3em;
   color: #DCDCDC;
   margin-left: 5%;
-`
-const Heading2 = styled.p`
-  postion: relative;
-  font-family: 'Helvetica Neue';
-  font-weight: 700;
-  font-size: 1em;
-  color: #DCDCDC;
-  margin-left: 5%;
-  margin-top: -5%;
+
+  @media (max-width: 600px) {
+    font-size: 2em;
+}
 `
 const Box = styled.div`
   flex-grow: 2;
@@ -85,6 +85,12 @@ const Box = styled.div`
   background-color: #242424;
   border-radius: 15px;
   margin-left: 4%;
+
+  @media (max-width: 600px) {
+    max-width: 500px;
+    min-width: 400px;
+    height: 200px;
+}
 `
 const LogoStyle = styled.img`
   position: relative;
@@ -97,12 +103,24 @@ const LogoStyle = styled.img`
     transition: all 0.3s ease-in-out;
     transform: scale(1.3) translateY(-20px);
   }
+
+  @media (max-width: 600px) {
+    width: 3em;
+    height: 3em;
+    padding: 0px 6% 0px 6%;
+}
 `
 const LogoStyleStatic = styled.img`
   position: relative;
   width: 4em;
   height: 4em;
   padding: 0px 10% 0px 5.2%;
+
+  @media (max-width: 600px) {
+    width: 3em;
+    height: 3em;
+    padding: 0px 6% 0px 6%;
+}
 `
 const StyledA = styled.a`
   postion: relative;

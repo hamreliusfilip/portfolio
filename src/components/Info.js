@@ -42,6 +42,10 @@ const Contairer = styled.div`
   flex-direction: row;
   width: 100%;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   @media (max-width: 600px) {
     flex-direction: column;
     padding: 30px;
@@ -82,8 +86,8 @@ const Heading2 = styled.p`
 `
 const Box = styled.div`
   flex-grow: 1;
-  min-height: 750px;
-  max-width: 1025px;
+  height: 350px;
+  width: 1025px;
   text-align: left;
   margin: -1.3% 20px 20px 20px;
   background-color: #242424;
@@ -105,8 +109,8 @@ const LogoStyle = styled.img`
   padding: 1% 1% 1% 6%;
 
   @media (max-width: 600px) {
-    width: 2em;
-    height: 2em;
+   width: 2em;
+  height: 2em;
   }
 `
 

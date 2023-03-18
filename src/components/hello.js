@@ -30,10 +30,10 @@ const Hello = () => {
         <Info />
       </WhatCan>
 
-      <ImageWrapper> 
+      {/* <ImageWrapper> 
         <Heading2>SOME BLENDER RENDERS</Heading2>
         <Image />
-      </ImageWrapper>
+      </ImageWrapper> */}
 
       <WrapperEducation id="education">
         <Heading1>EDUCATION</Heading1>
@@ -116,6 +116,10 @@ const MailWrapper = styled.div`
   z-index: 3;
   width: 100vw;
   margin-top:15%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media (max-width: 600px) {
     margin-top:35%;

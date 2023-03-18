@@ -27,7 +27,7 @@ const Project = (props) => {
 export default Project
 
 const Box = styled.div`
-  height: 260px;
+  height: 160px;
   width: 500px;
   min-height: 270px;
   min-width: 600px;

@@ -96,8 +96,8 @@ const Box = styled.div`
 
   @media (max-width: 600px) {
     margin: 30px;
-    min-height: 350px;
-    max-width: 800px;
+    height: 250px;
+    width: 90%;
     margin: 30px 0px 0px 0px;
     margin-right: 15%;
 }

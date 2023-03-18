@@ -96,7 +96,7 @@ const Text = styled.p`
 
 const Box = styled.div`
   flex-grow: 2;
-  height: 400px;
+  min-height: 300px;
   max-width: 600px;
   min-width: 500px;
   margin: -4% 20px 20px 20px;
@@ -107,7 +107,8 @@ const Box = styled.div`
   @media (max-width: 600px) {
     max-width: 500px;
     min-width: 400px;
-    height: 260px;
+    min-height: 300px;
+    margin-top: 5%;
 }
 `
 const LogoStyle = styled.img`
@@ -131,9 +132,10 @@ const LogoStyle = styled.img`
 `
 const LogoStyleStatic = styled.img`
   position: relative;
-  width: 4em;
-  height: 4em;
+  width: 3em;
+  height: 3em;
   padding: 0px 10% 0px 5.2%;
+  margin-top: 5%;px 5.2%;
   margin-top: 5%;
 
   @media (max-width: 600px) {

@@ -49,7 +49,6 @@ const Hello = () => {
       </ContactWrapper>
 
       <MailWrapper id="mail">
-        <Heading1>WRITE SOMETHING</Heading1>
         <Mail />
       </MailWrapper>
 
@@ -116,13 +115,17 @@ const MailWrapper = styled.div`
   z-index: 3;
   width: 100vw;
   margin-top:15%;
-
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
 
   @media (max-width: 600px) {
     margin-top:35%;
+    flex-direction: row;
+    align-items: left; 
+    justify-content: left; 
+    margin-left: 3%;
 }
 `
 const ImageWrapper = styled.div`

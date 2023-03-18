@@ -17,8 +17,8 @@ export default function mail(){
   };
 
   return (
-
     <Wrapper>
+      <Heading1> WRITE SOMETHING </Heading1>
       <Box>
         <form onSubmit={sendEmail}>
           <Label>
@@ -46,6 +46,15 @@ export default function mail(){
     </Wrapper>
   )
 }
+
+const Heading1 = styled.h1`
+  position: relative;
+  font-family: 'Helvetica Neue';
+  font-weight: 700;
+  font-size: 4.2em;
+  color: var(--text);
+  display: flex;
+`
 
 const ButtonWrapper = styled.div`
   display: flex;
@@ -106,14 +115,15 @@ const InputText = styled.textarea`
 const Wrapper = styled.div`
   position: relative; 
   z-index: 999;
-  margin-left: 2%;
   width: 30vw; 
-  
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;   
 `
 const Label = styled.label`
   flex-grow: 1;
   font-size: 45px;
-  font-weight: 900;
+  font-weight: bold;
   padding: 20px 20px 20px 20px;
   font-family: 'Helvetica Neue';
   text-color: #DCDCDC;
@@ -125,8 +135,6 @@ const Box = styled.div`
   padding: 20px 20px 20px 20px;
   background-color: #242424;
   border-radius: 15px;
-
-  
 
   @media (max-width: 600px) {
     width: 340px;

@@ -39,27 +39,27 @@ export const DarkMode = () => {
 
     return (
       <div>
-        <Nav style={{ height: window === false ? 120 : 70 }}>
+        {/* <Nav style={{ height: window === false ? 120 : 70 }}>
 
           <Burger onClick={toggleMenu}>
             <Icon onClick={() => openClose()} isActive={isActive}>
               <LogoStyle src={isOpen ? "img/cross.svg" : "img/menu.svg"} alt="MENU" />
             </Icon>
-          </Burger>
+          </Burger> */}
 
-          <Navigation style={{ display: window === false ? "inline-block" : "none" }}>
+          {/* <Navigation style={{ display: window === false ? "inline-block" : "none" }}>
               <Link href="project" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>PROJECTS.</LabelStyle></Link>
               <Link to="whatcan" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>MY TOOLKIT.</LabelStyle></Link>
               <Link to="education" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>EDUCATION.</LabelStyle></Link>
               <Link to="about" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>ABOUT.</LabelStyle></Link>
               <Link to="mail" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>MAIL.</LabelStyle></Link>
              
-          </Navigation>
+          </Navigation> */}
           <DarkWrapper> 
               <InputStyle type="checkbox" id="darlmode-toggle" onChange={toggleTheme} />
               <LabelStyle for="darlmode-toggle">TOGGLE DARK/LIGHT MODE.</LabelStyle>
           </DarkWrapper>
-        </Nav>
+        {/* </Nav> */}
 
 
 
@@ -99,30 +99,33 @@ export const Gradient2 = ({ isDarkMode }) =>{
 
 
 const DarkWrapper = styled.div`
-
-  margin-top: 50px;
-
-  text-align: center;
-  width: 10%;
-  margin-top: 1.2%;
+  position: relative;
+  z-index: 999 !important;
+  float:right;
   font-family: 'Helvetica Neue';
   font-weight: bold;
-  float: right;
-  font-size: 0.5em;
+  font-size: 1em;
   color: #DCDCDC;
-
+  color: var(--text);
   cursor:pointer;
+  width: 10%;
+  text-align: right;
+  margin: 2%;
+  margin-top:7%;
 
+  @media (max-width: 600px) {
+    width: 30%;
+    text-align: right;
+    margin: 2%;
+    margin-top:7%;
+  }
 `
 
 const InputStyle = styled.input`
-    position: relative;
     -webkit-appearance: none;
 `
 const LabelStyle = styled.label`
-    position: relative;
     cursor: pointer;
-    padding: 40px;
 `
 const Nav = styled.nav`
   background-color: #242424;

@@ -100,8 +100,8 @@ const Box = styled.div`
 `
 const LogoStyle = styled.img`
   position: relative;
-  width: 10em;
-  height: 10em;
+  width: 5em;
+  height: 5em;
   padding: 1% 1% 1% 6%;
 
   @media (max-width: 600px) {

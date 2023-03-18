@@ -43,8 +43,8 @@ const Box = styled.div`
 `
 const LogoStyle = styled.img`
   postion: relative;
-  width: 2em;
-  height: 2em;
+  width: 3em;
+  height: 3em;
   padding: 20px 20px 0px 30px;
 
   cursor:ponter;

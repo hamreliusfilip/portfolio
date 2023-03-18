@@ -10,7 +10,11 @@ font-family: 'Helvetica Neue';
 font-weight: bold;
 font-size: 2em;
 color: var(--text);
-padding: 10% 0px 200px 0px;
+padding: 30% 0px 200px 0px;
+
+display: flex;
+justify-content: center;
+align-items: center;
 `
 
 function Typewriters() {
@@ -22,7 +26,7 @@ function Typewriters() {
                         autoStart: true,
                         loop: true,
                         dealy: 10,
-                        strings: ["hejdå", "goodby", "ciao", "adios", "au revoir", "vale", "до побачення", "Tschüss", "さようなら", "再见"]
+                        strings: ["hejdå.", "goodby.", "ciao.", "adios.", "au revoir.", "再见.","vale.", "до побачення.", "Tschüss.", "さようなら."]
                     }}
                 />
             </Text>

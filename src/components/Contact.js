@@ -10,6 +10,7 @@ const Contact = () => {
 
         <Box>
           <Heading1>me.</Heading1>
+          <Text>Feel free to contact me on your preffered platform. Or send me a email with form down below.</Text>
           <StyledA href="https://github.com/hamreliusfilip" target="_blank">
             <LogoStyle src="loggor/githubgrey.svg" />
           </StyledA>
@@ -26,6 +27,7 @@ const Contact = () => {
 
         <Box>
           <Heading1>site.</Heading1>
+          <Text>This website was built using React js. This is an open source project. You can clone or download the project via my Github repository. </Text>
           <LogoStyleStatic src="loggor/react.svg" />
           <LogoStyleStatic src="loggor/js.svg" />
           <StyledA href="https://github.com/hamreliusfilip/portfolio" target="_blank">
@@ -54,7 +56,7 @@ const Heading = styled.h1`
   margin-left: 3%;
   font-family: 'Helvetica Neue';
   font-weight: 700;
-  font-size: 10em;
+  font-size: 5em;
   color: var(--text);
   margin-top: -0.6%;
 
@@ -68,7 +70,7 @@ const Heading1 = styled.p`
   postion: relative;
   font-family: 'Helvetica Neue';
   font-weight: 700;
-  font-size: 3em;
+  font-size: 2em;
   color: #DCDCDC;
   margin-left: 5%;
 
@@ -76,12 +78,28 @@ const Heading1 = styled.p`
     font-size: 2em;
 }
 `
+const Text = styled.p`
+  postion: relative;
+  font-family: 'Helvetica Neue';
+  font-weight: 700;
+  font-size: 1em;
+  color: #DCDCDC;
+  margin-left: 5%;
+  width: 90%;
+
+  @media (max-width: 600px) {
+    font-size: 0.7em;
+    width: 90%;
+}
+`
+
+
 const Box = styled.div`
   flex-grow: 2;
-  height: 260px;
-  max-width: 800px;
-  min-width: 700px;
-  margin: -1.3% 20px 20px 20px;
+  height: 400px;
+  max-width: 600px;
+  min-width: 500px;
+  margin: -4% 20px 20px 20px;
   background-color: #242424;
   border-radius: 15px;
   margin-left: 4%;
@@ -89,7 +107,7 @@ const Box = styled.div`
   @media (max-width: 600px) {
     max-width: 500px;
     min-width: 400px;
-    height: 200px;
+    height: 260px;
 }
 `
 const LogoStyle = styled.img`
@@ -97,6 +115,7 @@ const LogoStyle = styled.img`
   width: 4em;
   height: 4em;
   padding: 0px 10% 0px 5.2%;
+  margin-top: 5%;
 
   cursor: pointer;
   &:hover {
@@ -115,6 +134,7 @@ const LogoStyleStatic = styled.img`
   width: 4em;
   height: 4em;
   padding: 0px 10% 0px 5.2%;
+  margin-top: 5%;
 
   @media (max-width: 600px) {
     width: 3em;

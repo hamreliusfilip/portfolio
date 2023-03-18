@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
 const Box = styled.div`
-  height: 280px;
-  width: 450px;
-  margin: 20px;
+  height: 180px;
+  width: 300px;
+  margin: 10px;
   text-decoration: none;
   background-color: #242424;
   border-radius: 15px;
@@ -28,7 +28,7 @@ const Box = styled.div`
 const Name = styled.div`
   z-index: 500; 
   text-align: center; 
-  font-size: 2.3em;
+  font-size: 1.4em;
   font-family: 'Helvetica Neue';
   font-weight: 800;
   color: #DCDCDC;

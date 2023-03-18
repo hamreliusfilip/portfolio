@@ -21,28 +21,26 @@ const CourseMap = () => {
 
   return (
     <Wrapper>
-
       <Total ref={ref1}>
-        <Marquee gradientWidth = '0' speed = '60'> 
-        {course1.map((course) => (
-          <Course
-            courseName={course.name} 
-            courseLink={course.link}
-            key={course.coursecCode} 
-          />
-        ))}
+        <Marquee gradientWidth='0' speed='60'>
+          {course1.map((course) => (
+            <Course
+              courseName={course.name}
+              courseLink={course.link}
+              key={course.coursecCode}
+            />
+          ))}
         </Marquee>
       </Total>
-
       <Total ref={ref2}>
-      <Marquee gradientWidth = '0' speed = '40'> 
-        {course2.map((course) => (
-          <Course
-            courseName={course.name} 
-            courseLink={course.link}
-            key={course.coursecCode} 
-          />
-        ))}
+        <Marquee gradientWidth='0' speed='40'>
+          {course2.map((course) => (
+            <Course
+              courseName={course.name}
+              courseLink={course.link}
+              key={course.coursecCode}
+            />
+          ))}
         </Marquee>
       </Total>
     </Wrapper>

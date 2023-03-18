@@ -9,6 +9,7 @@ import Mail from './Mail'
 import SlideText from './SlideText'
 import Info from './Info'
 import Greeting from "./Greeting";
+import Image from "./Image";
 
 const Hello = () => {
   return (
@@ -28,6 +29,11 @@ const Hello = () => {
         <Heading1>MY TOOLKIT</Heading1>
         <Info />
       </WhatCan>
+
+      <ImageWrapper> 
+        <Heading2>SOME BLENDER RENDERS</Heading2>
+        <Image />
+      </ImageWrapper>
 
       <WrapperEducation id="education">
         <Heading1>EDUCATION</Heading1>
@@ -58,8 +64,7 @@ export default Hello;
 // ------------------------------ WRAPPERS ------------------------------ // 
 const Wrapper = styled.div`
   position: absolute;
-  z-index: 9; 
-  height: 100%;
+  z-index: 8; 
 `
 const TitleWrapper = styled.div`
   postion: absolute;
@@ -116,6 +121,16 @@ const MailWrapper = styled.div`
     margin-top:35%;
 }
 `
+const ImageWrapper = styled.div`
+  postion: absolute;
+  z-index: 3;
+  width: 100vw;
+  margin-top:15%;
+
+  @media (max-width: 600px) {
+    margin-top:35%;
+}
+`
 // ------------------------------ END WRAPPERS ------------------------------ //
 
 // ---------------------------------- TEXT ---------------------------------- //
@@ -124,7 +139,7 @@ const Heading1 = styled.h1`
   margin-left: 2%;
   font-family: 'Helvetica Neue';
   font-weight: 700;
-  font-size: 8em;
+  font-size: 5em;
   color: var(--text);
 
   @media (max-width: 600px) {

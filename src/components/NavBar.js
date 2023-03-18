@@ -56,14 +56,12 @@ const LogoStyle = styled.img`
 const NavbarMenu = styled.div`
   position: fixed;
   z-index: 10;
-  height: 100vh;
   transition: all 1s ease;
   right:0;
 `
 const Burger = styled.div`
   position: relative;
-  height: auto;
-  margin: 0 auto;
+  z-index: 999 !important;
   padding: 10px;
   cursor: pointer;
   margin-top:50px;

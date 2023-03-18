@@ -27,8 +27,8 @@ const Project = (props) => {
 export default Project
 
 const Box = styled.div`
-  height: 360px;
-  width: 800px;
+  height: 260px;
+  width: 500px;
   min-height: 270px;
   min-width: 600px;
   margin: 20px 20px 20px 20px;
@@ -43,8 +43,8 @@ const Box = styled.div`
 `
 const LogoStyle = styled.img`
   postion: relative;
-  width: 4em;
-  height: 4em;
+  width: 2em;
+  height: 2em;
   padding: 20px 20px 0px 30px;
 
   cursor:ponter;
@@ -59,7 +59,7 @@ const LogoStyle = styled.img`
   }
 `
 const Name = styled.div`
-  font-size: 3.5em;
+  font-size: 2em;
   font-weight: 900;
   padding: 20px 20px 0px 30px;
   color: #DCDCDC;
@@ -69,7 +69,7 @@ const Name = styled.div`
   }
 `
 const Info = styled.a`
-  font-size: 1.2em;
+  font-size: 0.8em;
   font-weight: 450;
   color: #DCDCDC;
 

@@ -17,7 +17,7 @@ export default function mail(){
   };
 
   return (
-    <div> 
+
     <Wrapper>
       <Box>
         <form onSubmit={sendEmail}>
@@ -37,16 +37,24 @@ export default function mail(){
             <InputText type="text" name="message" placeholder="message" />
           </Label>
           
-          <Button type="submit" value="Send" >submit.</Button>
+          <ButtonWrapper> 
+            <Button type="submit" value="Send" >submit.</Button>
+          </ButtonWrapper>
+
         </form>
       </Box>
     </Wrapper>
-    </div>
   )
 }
 
+const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+`;
+
 const Input = styled.input`
-  max-width: 50%;
+  max-width: 90%;
   height: 30px;
   font-size: 0.6em;
   font-weight: bold;
@@ -60,7 +68,8 @@ const Input = styled.input`
   font-family: helvetica neue;
   letter-spacing: 1px;
 
-  margin: 20px;
+  padding: 10px;
+  margin:10px;
 
   &:focus {
     border: 2px solid #DCDCDC;
@@ -68,20 +77,12 @@ const Input = styled.input`
     color: #DCDCDC;
     border-radius: 15px;
   }
-
-  @media (max-width: 600px) {
-    display:flex; 
-    justify-content: center;
-    align-items: center;
-}
 `
 const InputText = styled.textarea`
-  max-width: 66%;
-  min-width: 66%;
+  max-width: 90%;
   height: 30px;
   font-size: 0.6em;
   font-weight: bold;
-  text-color: #DCDCDC;
   border: 2px solid transparent;
   outline: none;
   border-bottom: 2px solid #DCDCDC;
@@ -92,7 +93,8 @@ const InputText = styled.textarea`
   font-family: helvetica neue;
   letter-spacing: 1px;
 
-  margin: 20px;
+  padding: 10px;
+  margin:10px;
 
   &:focus {
     border: 2px solid #DCDCDC;
@@ -100,19 +102,13 @@ const InputText = styled.textarea`
     color: #DCDCDC;
     border-radius: 15px;
   }
-
 `
 const Wrapper = styled.div`
   position: relative; 
   z-index: 999;
   margin-left: 2%;
   width: 30vw; 
-  align-items: center;
-  display: flex;
-  flex-direction: coloumn;
-
   
-
 `
 const Label = styled.label`
   flex-grow: 1;
@@ -123,41 +119,33 @@ const Label = styled.label`
   text-color: #DCDCDC;
   max-width:700px;
   text-decoration: none;
-  text-align: "." center;
-
-  
 `
 const Box = styled.div`
-  height: 100%;
-  width: 350px;
+  width: 400px;
   padding: 20px 20px 20px 20px;
   background-color: #242424;
   border-radius: 15px;
 
+  
+
   @media (max-width: 600px) {
-    display:flex; 
-    justify-content: center;
-    align-items: center;
+    width: 340px;
 }
 `
-// BUTTON 
 const Button = styled.button`
   flex-grow: 2;
-  margin-left: 5%;
   font-size: 2em;
-  algin-items: center;
   font-weight: bold;
-  color: var(--background);
-  background-color: var(--text);
+  color: #242424;
+  background-color: #DCDCDC;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 18px 35px;
-  position: relative;
-  line-height: 24px;
+  padding: 13px 30px;
   font-family: 'Helvetica Neue';
   border-radius: 9px;
 
+  
   &:hover{
     transition: 0.3s;
     transform: scale(0.93);

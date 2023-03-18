@@ -8,7 +8,7 @@ const Greeting = () => {
 
     return (
         <Wrapper>
-            {hour >= 10 ? hour >= 12 ? hour >= 18 ? <Hellotext>GOOD EVNING.</Hellotext> : <Hellotext>GOOD AFTERNOON.</Hellotext> : <Hellotext>HELLO.</Hellotext> : <Hellotext>GOOD MORNING.</Hellotext>}
+            {hour >= 10 ? hour >= 12 ? hour >= 18 ? <Hellotext>GOOD EVENING.</Hellotext> : <Hellotext>GOOD AFTERNOON.</Hellotext> : <Hellotext>HELLO.</Hellotext> : <Hellotext>GOOD MORNING.</Hellotext>}
         </Wrapper>
     );
   };
@@ -17,7 +17,7 @@ const Greeting = () => {
 
   const Hellotext = styled.h2`
   position: relative;
-  margin-left: 10%;
+  margin-left: 2%;
   font-family: 'Helvetica Neue';
   font-weight: bold;
   font-size: 6em;

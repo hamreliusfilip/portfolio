@@ -54,7 +54,7 @@ const Heading1 = styled.p`
   text-align: left;
   font-family: 'Helvetica Neue';
   font-weight: 700;
-  font-size: 2.5em;
+  font-size: 2em;
   color: #DCDCDC;
   margin-left: 5%;
   margin-top: 4%;
@@ -70,7 +70,7 @@ const Heading2 = styled.p`
   font-family: 'Helvetica Neue';
   font-weight: 700;
   width: 70%;
-  font-size: 1.5em;
+  font-size: 1em;
   color: #DCDCDC;
   margin-left: 5%;
   margin-top: 4%;

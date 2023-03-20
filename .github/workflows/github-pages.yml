@@ -20,6 +20,7 @@ jobs:
 
     - name: Deploy
       run: |
+        CI=false
         git config --global user.name 'hamreliusfilip'
         git config --global user.email 'hamreliusfilip@gmail.com'
         git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}    

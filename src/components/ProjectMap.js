@@ -9,7 +9,7 @@ const ProjectMap = () => {
   const [scrollLeft1, setScrollLeft1] = useState(0);
   const [scrollLeft2, setScrollLeft2] = useState(0);
 
-  // Offset scroll on load, add useEffect to fix
+  // Offset scroll on load, add useEffect to use.
   // const [scrollLeft, setScrollLeft] = useState(0);
   // useEffect(() => {
   //   const middleScroll = (ref1.current.scrollWidth - ref1.current.clientWidth) / 2;

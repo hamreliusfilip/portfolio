@@ -9,7 +9,7 @@ import Mail from './Mail'
 import SlideText from './SlideText'
 import Info from './Info'
 import Greeting from "./Greeting";
-import Image from "./Image";
+// import Image from "./Image";
 
 const Hello = () => {
   return (
@@ -125,16 +125,16 @@ const MailWrapper = styled.div`
     margin-left: 3%;
 }
 `
-const ImageWrapper = styled.div`
-  postion: absolute;
-  z-index: 999;
-  width: 100vw;
-  margin-top:15%;
+// const ImageWrapper = styled.div`
+//   postion: absolute;
+//   z-index: 999;
+//   width: 100vw;
+//   margin-top:15%;
 
-  @media (max-width: 600px) {
-    margin-top:35%;
-}
-`
+//   @media (max-width: 600px) {
+//     margin-top:35%;
+// }
+// `
 // ------------------------------ END WRAPPERS ------------------------------ //
 
 // ---------------------------------- TEXT ---------------------------------- //

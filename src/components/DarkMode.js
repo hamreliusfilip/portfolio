@@ -39,7 +39,12 @@ export const DarkMode = () => {
 
     return (
       <div>
-        <Nav style={{ height: window === false ? 120 : 70 }}>
+        <Gradient1 isDarkMode={isDarkMode} />
+        <Gradient2 isDarkMode={isDarkMode} />
+        <Gradient3 isDarkMode={isDarkMode} />
+
+
+        <Nav style={{ height: window === false ? 290 : 80 }}>
 
           <Burger onClick={toggleMenu}>
             <Icon onClick={() => openClose()} isActive={isActive}>
@@ -49,82 +54,95 @@ export const DarkMode = () => {
 
           <Navigation style={{ display: window === false ? "inline-block" : "none" }}>
               <Link to="project" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>Projects.</LabelStyle></Link>
+              <br></br>
               <Link to="whatcan" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>My Toolkit.</LabelStyle></Link>
+              <br></br>
               <Link to="education" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>Education.</LabelStyle></Link>
+              <br></br>
               <Link to="about" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>About.</LabelStyle></Link>
+              <br></br>
               <Link to="mail" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>Mail.</LabelStyle></Link>
           </Navigation>
 
-          <DarkWrapper> 
-              <InputStyle type="checkbox" id="darlmode-toggle" onChange={toggleTheme} />
-              <LabelStyle for="darlmode-toggle">TOGGLE DARK/LIGHT MODE.</LabelStyle>
-          </DarkWrapper>
+          <CustomCheckboxContainer style={{ display: window === false ? "inline-block" : "none" }}>           
+            <CustomCheckboxInput type="checkbox" id="darlmode-toggle" onChange={toggleTheme} />
+            <Text>TOGGLE DARK/LIGHT MODE.</Text>
+            <CustomCheckmark></CustomCheckmark>
+          </CustomCheckboxContainer>
 
          </Nav> 
-
-        <Gradient1 isDarkMode={isDarkMode} />
-        <Gradient2 isDarkMode={isDarkMode} />
-        <Gradient3 isDarkMode={isDarkMode} />
       </div>
     )
 }; 
 
-export const Gradient1 = ({ isDarkMode }) =>{
-    const path = isDarkMode ? "grad/darkgradient.png" : "grad/gradient.png";
-    return (
-      <div> 
-        <IMG1 src = {path} />
-      </div>
-    );
-  };
-  
-export const Gradient2 = ({ isDarkMode }) =>{
-    const path = isDarkMode ? "grad/darkgradient.png" : "grad/gradient.png";
-    return (
-      <div> 
-        <IMG2 src = {path}  />
-      </div>
-    );
-  };
-
-  export const Gradient3 = ({ isDarkMode }) =>{
-    const path = isDarkMode ? "grad/darkgradient.png" : "grad/gradient.png";
-    return (
-      <div> 
-        <IMG3 src = {path}  />
-      </div>
-    );
-  };
-
-
-const DarkWrapper = styled.div`
+const Text = styled.p`
   position: relative;
   z-index: 999 !important;
-  float:right;
   font-family: 'Helvetica Neue';
   font-weight: bold;
-  font-size: 1.6em;
+  font-size: 0.6em;
   color: #DCDCDC;
-  color: var(--text);
-  cursor:pointer;
-  width: 10%;
   text-align: right;
-  margin: 2%;
-  margin-top:7%;
+  width: 50%;
+  float: right;
+  margin-right: 110%;
+  margin-top: 40%;
+`;
 
-  @media (max-width: 600px) {
-    width: 30%;
-    text-align: right;
-    margin: 2%;
-    margin-top:7%;
-    font-size: 1em;
+const CustomCheckboxContainer = styled.label`
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 2em;
+  user-select: none;
+  float: right;
+`;
+
+const CustomCheckboxInput = styled.input`
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+`;
+
+const CustomCheckmark = styled.div`
+  margin-right: 20%;
+  margin-top: 44%;
+  position: relative;
+  height: 1.3em;
+  width: 1.3em;
+  background: black;
+  border-radius: 50px;
+  transition: all 0.7s;
+  --spread: 20px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 0.45em;
+    top: 0.25em;
+    width: 0.25em;
+    height: 0.5em;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
   }
-`
-const InputStyle = styled.input`
-    -webkit-appearance: none;
-`
+
+  ${CustomCheckboxInput}:checked ~ & {
+    background: white;
+    box-shadow: -10px -10px var(--spread) 0px #5B51D8, 0 -10px var(--spread) 0px #833AB4, 10px -10px var(--spread) 0px #E1306C, 10px 0 var(--spread) 0px #FD1D1D, 10px 10px var(--spread) 0px #F77737, 0 10px var(--spread) 0px #FCAF45, -10px 10px var(--spread) 0px #FFDC80;
+
+    &:after {
+      display: block;
+    }
+  }
+`;
 const LabelStyle = styled.label`
     cursor: pointer;
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-size: 1em;
 `
 const Nav = styled.nav`
   background-color: #242424;
@@ -156,7 +174,7 @@ const Navigation = styled.div`
 
   font-family: 'Helvetica Neue';
   font-weight: bold;
-  font-size: 1em;
+  font-size: 2em;
   color: #DCDCDC;
 
   cursor:pointer;
@@ -186,6 +204,34 @@ const Icon = styled.div`
 `
 
 // ------- GRADIENTER ------- // 
+
+export const Gradient1 = ({ isDarkMode }) =>{
+  const path = isDarkMode ? "grad/darkgradient.png" : "grad/gradient.png";
+  return (
+    <div> 
+      <IMG1 src = {path} />
+    </div>
+  );
+};
+
+export const Gradient2 = ({ isDarkMode }) =>{
+  const path = isDarkMode ? "grad/darkgradient.png" : "grad/gradient.png";
+  return (
+    <div> 
+      <IMG2 src = {path}  />
+    </div>
+  );
+};
+
+export const Gradient3 = ({ isDarkMode }) =>{
+  const path = isDarkMode ? "grad/darkgradient.png" : "grad/gradient.png";
+  return (
+    <div> 
+      <IMG3 src = {path}  />
+    </div>
+  );
+};
+
 const IMG1 = styled.img`
   postion: relative;
   z-index:1;

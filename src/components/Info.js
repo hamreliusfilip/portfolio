@@ -52,7 +52,6 @@ const Contairer = styled.div`
     margin-top: -12%;
 }
 `
-
 const Heading1 = styled.p`
   postion: relative;
   text-align: left;
@@ -109,8 +108,8 @@ const LogoStyle = styled.img`
   padding: 1% 1% 1% 6%;
 
   @media (max-width: 600px) {
-   width: 2em;
-  height: 2em;
+    width: 3em;
+    height: 3em;
   }
 `
 

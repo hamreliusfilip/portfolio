@@ -49,7 +49,6 @@ const Contairer = styled.div`
     flex-direction: column;
 }
 `
-
 const Heading = styled.h1`
   flex-grow: 1;
   position: relative;
@@ -65,7 +64,6 @@ const Heading = styled.h1`
     margin-right: 10%;
 }
 `
-
 const Heading1 = styled.p`
   postion: relative;
   font-family: 'Helvetica Neue';
@@ -92,8 +90,6 @@ const Text = styled.p`
     width: 90%;
 }
 `
-
-
 const Box = styled.div`
   flex-grow: 2;
   min-height: 300px;

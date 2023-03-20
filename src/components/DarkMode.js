@@ -39,29 +39,28 @@ export const DarkMode = () => {
 
     return (
       <div>
-        {/* <Nav style={{ height: window === false ? 120 : 70 }}>
+        <Nav style={{ height: window === false ? 120 : 70 }}>
 
           <Burger onClick={toggleMenu}>
             <Icon onClick={() => openClose()} isActive={isActive}>
               <LogoStyle src={isOpen ? "img/cross.svg" : "img/menu.svg"} alt="MENU" />
             </Icon>
-          </Burger> */}
+          </Burger> 
 
-          {/* <Navigation style={{ display: window === false ? "inline-block" : "none" }}>
-              <Link href="project" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>PROJECTS.</LabelStyle></Link>
-              <Link to="whatcan" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>MY TOOLKIT.</LabelStyle></Link>
-              <Link to="education" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>EDUCATION.</LabelStyle></Link>
-              <Link to="about" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>ABOUT.</LabelStyle></Link>
-              <Link to="mail" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>MAIL.</LabelStyle></Link>
-             
-          </Navigation> */}
+          <Navigation style={{ display: window === false ? "inline-block" : "none" }}>
+              <Link to="project" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>Projects.</LabelStyle></Link>
+              <Link to="whatcan" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>My Toolkit.</LabelStyle></Link>
+              <Link to="education" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>Education.</LabelStyle></Link>
+              <Link to="about" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>About.</LabelStyle></Link>
+              <Link to="mail" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>Mail.</LabelStyle></Link>
+          </Navigation>
+
           <DarkWrapper> 
               <InputStyle type="checkbox" id="darlmode-toggle" onChange={toggleTheme} />
               <LabelStyle for="darlmode-toggle">TOGGLE DARK/LIGHT MODE.</LabelStyle>
           </DarkWrapper>
-        {/* </Nav> */}
 
-
+         </Nav> 
 
         <Gradient1 isDarkMode={isDarkMode} />
         <Gradient2 isDarkMode={isDarkMode} />
@@ -104,7 +103,7 @@ const DarkWrapper = styled.div`
   float:right;
   font-family: 'Helvetica Neue';
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.6em;
   color: #DCDCDC;
   color: var(--text);
   cursor:pointer;
@@ -118,9 +117,9 @@ const DarkWrapper = styled.div`
     text-align: right;
     margin: 2%;
     margin-top:7%;
+    font-size: 1em;
   }
 `
-
 const InputStyle = styled.input`
     -webkit-appearance: none;
 `
@@ -189,7 +188,7 @@ const Icon = styled.div`
 // ------- GRADIENTER ------- // 
 const IMG1 = styled.img`
   postion: relative;
-  z-index:-1;
+  z-index:1;
   position: fixed;
   top: 0;
   right: 0;
@@ -207,7 +206,7 @@ const IMG1 = styled.img`
 `
 const IMG2 = styled.img`
   postion: relative;
-  z-index:-1;
+  z-index:1;
   position: fixed;
   top: 0;
   right: 0;
@@ -226,7 +225,7 @@ const IMG2 = styled.img`
 `
 const IMG3 = styled.img`
   postion: relative;
-  z-index:-1;
+  z-index:1;
   position: fixed;
   top: 0;
   right: 0;

@@ -6,10 +6,10 @@ import { DarkMode } from './components/DarkMode'
 function App() {
   return (
     <div>
-      <Container>
+      {/* <Container> */}
         <DarkMode />
         <Hello />
-      </Container>
+      {/* </Container> */}
     </div>
   );
 }
@@ -19,9 +19,7 @@ export default App;
 const Container = styled.div`
   position: fixed;
   z-index: 8; 
-  
   background-color: var(--background);
-
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;

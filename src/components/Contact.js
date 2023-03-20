@@ -152,7 +152,7 @@ const LogoStyle = styled.img`
   cursor: pointer;
   &:hover {
     transition: all 0.3s ease-in-out;
-    transform: scale(1.3) translateY(-20px);
+    transform: scale(1.1) translateY(-20px);
   }
 
   @media (max-width: 600px) {

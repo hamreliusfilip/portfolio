@@ -66,12 +66,6 @@ export const DarkMode = () => {
           </CustomCheckboxContainer>
 
          </Nav> 
-{/* 
-         <CustomCheckboxContainer>           
-            <CustomCheckboxInput type="checkbox" id="darlmode-toggle" onChange={toggleTheme} />
-            <Text>TOGGLE DARK/LIGHT MODE.</Text>
-            <CustomCheckmark></CustomCheckmark>
-          </CustomCheckboxContainer> */}
 
         <Gradient1 isDarkMode={isDarkMode} />
         <Gradient2 isDarkMode={isDarkMode} />
@@ -119,7 +113,7 @@ const CustomCheckmark = styled.div`
   position: relative;
   height: 1.3em;
   width: 1.3em;
-  background: black;
+  background: white;
   border-radius: 50px;
   transition: all 0.7s;
   --spread: 20px;
@@ -148,11 +142,12 @@ const LabelStyle = styled.label`
     cursor: pointer;
     font-family: 'Helvetica Neue';
     font-weight: bold;
-    font-size: 1em;
+    font-size: 2em;
 `
 const Nav = styled.nav`
   background-color: #242424;
   width:100wv;
+  transition: all -5s;
 `
 const LogoStyle = styled.img`
   position: relative;
@@ -171,23 +166,15 @@ const Burger = styled.div`
   margin-top: -0.5%;
 `
 const Navigation = styled.div`
-
   position: relative;
   z-index: 999 !important;
 
   margin-top: 50px;
   margin-left: 200px;
 
-  font-family: 'Helvetica Neue';
-  font-weight: bold;
-  font-size: 2em;
   color: #DCDCDC;
 
   cursor:pointer;
-
-  display: flex;
-  justify-content: center; 
-  align-items: center;
 
   @media (max-width: 600px) {
     font-size: 0.7em;
@@ -204,8 +191,7 @@ const Icon = styled.div`
 
   ${(props) =>
     props.isActive &&`  
-    transition: all 0.5s ease;
-    transform: rotate(20deg);
+    transition: all 1s ease;
   `}
 `
 

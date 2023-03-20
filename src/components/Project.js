@@ -83,9 +83,9 @@ const TextWrapper = styled.div`
   padding: 10px 10px 0px 30px;
   text-align: "." center;
 `
-// const StyledA = styled.a`
-//   postion: relative;
-// `
+const StyledA = styled.a`
+  postion: relative;
+`
 const StyledDiv = styled.a`
   postion: relative;
 `

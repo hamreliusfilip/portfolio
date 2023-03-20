@@ -32,7 +32,7 @@ This website was built using the following technologies:
 
 To run the website locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/[hamreliusfilip]/[portfolio].git` or use GitHub Desktop.
+1. Clone the repository: `git clone https://github.com/hamreliusfilip/portfolio.git` or use GitHub Desktop.
 2. Install the dependencies: `npm install`
 3. Start the development server: `npm start`
 4. Open the website in your browser at: `http://localhost:3000` or `http://ChangeToIp:3000` on your mobile device, provided you are on the same network as the PC.

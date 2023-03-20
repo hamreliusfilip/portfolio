@@ -10,6 +10,7 @@ import SlideText from './SlideText'
 import Info from './Info'
 import Greeting from "./Greeting";
 // import Image from "./Image";
+// Add image
 
 const Hello = () => {
   return (

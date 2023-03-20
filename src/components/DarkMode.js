@@ -66,6 +66,12 @@ export const DarkMode = () => {
           </CustomCheckboxContainer>
 
          </Nav> 
+{/* 
+         <CustomCheckboxContainer>           
+            <CustomCheckboxInput type="checkbox" id="darlmode-toggle" onChange={toggleTheme} />
+            <Text>TOGGLE DARK/LIGHT MODE.</Text>
+            <CustomCheckmark></CustomCheckmark>
+          </CustomCheckboxContainer> */}
 
         <Gradient1 isDarkMode={isDarkMode} />
         <Gradient2 isDarkMode={isDarkMode} />
@@ -233,54 +239,56 @@ export const Gradient3 = ({ isDarkMode }) =>{
 };
 
 const IMG1 = styled.img`
-  postion: fixed;
-  z-index:1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: scaleY(-1);
-  margin-left: -30%;
-  margin-top: -30%;
-  @media (max-width: 600px) {
-    width: 80%;
-    height: 80%;
-    margin-left: 50%;
-    margin-top: -50%;
-  }
-`
-const IMG2 = styled.img`
-  postion: fixed;
-  z-index:1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin-left: 80%;
-  margin-top:20%;
-  transform: scaleY(-1);
-  transform: scaleX(-1);
-  @media (max-width: 600px) {
-    width: 70%;
-    height: 70%;
-    margin-left: -20%;
-    margin-top: 0%;
-  }
-`
-const IMG3 = styled.img`
-  postion: fixed;
-  z-index:1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: scaleY(-1);
-  transform: scaleX(-1);
-  @media (max-width: 600px) {
-    width: 120%;
-    height: 50%;
-    margin-left: 20%;
-    margin-top: 130%;
-  }
-`
+   position: fixed;
+   z-index:-1;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   transform: scaleY(-1);
+   margin-left: -30%;
+   margin-top: -30%;
 
+   @media (max-width: 600px) {
+     width: 80%;
+     height: 80%;
+     margin-left: 50%;
+     margin-top: -50%;
+   }
+ `
+ const IMG2 = styled.img`
+   position: fixed;
+   z-index:-1;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   margin-left: 80%;
+   margin-top:20%;
+   transform: scaleY(-1);
+   transform: scaleX(-1);
+
+   @media (max-width: 600px) {
+     width: 70%;
+     height: 70%;
+     margin-left: -20%;
+     margin-top: 0%;
+   }
+ `
+ const IMG3 = styled.img`
+   position: fixed;
+   z-index:-1;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   transform: scaleY(-1);
+   transform: scaleX(-1);
+
+   @media (max-width: 600px) {
+     width: 120%;
+     height: 50%;
+     margin-left: 20%;
+     margin-top: 130%;
+   }
+ `

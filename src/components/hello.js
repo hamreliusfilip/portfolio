@@ -5,7 +5,6 @@ import CourseMap from './CourseMap'
 import ProjectMap from './ProjectMap'
 import Typewriters from './TypeWriter'
 import Contact from './Contact'
-import Mail from './Mail'
 import SlideText from './SlideText'
 import Info from './Info'
 import Greeting from "./Greeting";
@@ -14,8 +13,7 @@ import Greeting from "./Greeting";
 
 const Hello = () => {
   return (
-    <div>
-
+    <Wrapper>
       <TitleWrapper id="title">
         <Greeting />
         <SlideText />
@@ -49,19 +47,21 @@ const Hello = () => {
         <Contact />
       </ContactWrapper>
 
-      <MailWrapper id="mail">
-        <Mail />
-      </MailWrapper>
-
       <Typewriters />
 
-    </div>
+    </Wrapper>
   );
 };
 export default Hello;
 
 
 // ------------------------------ WRAPPERS ------------------------------ // 
+
+const Wrapper = styled.div`
+  position: absolute;
+  z-index: 9; 
+  height: 100%;
+`
 
 const TitleWrapper = styled.div`
   postion: absolute;
@@ -104,27 +104,12 @@ const ContactWrapper = styled.div`
   width: 100vw;
   margin-top:15%;
 
-  @media (max-width: 600px) {
-    margin-top:35%;
-}
-`
-const MailWrapper = styled.div`
-  postion: absolute;
-  z-index: 999;
-  width: 100vw;
-  margin-top:15%;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
-
-  @media (max-width: 600px) {
+  @media (max-width: 1400px) {
     margin-top:35%;
     flex-direction: row;
     align-items: left; 
     justify-content: left; 
-    margin-left: 3%;
-}
+  }
 `
 // const ImageWrapper = styled.div`
 //   postion: absolute;

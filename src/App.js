@@ -19,8 +19,9 @@ export default App;
 const Container = styled.div`
   position: fixed;
   z-index: 8; 
-  background-color: var(--background);
-  height: 100vh;
+  min-height: 100%;
+  justify-content: space-evenly;
   width: 100vw;
   overflow-x: hidden;
+  background-color: var(--background);
 `

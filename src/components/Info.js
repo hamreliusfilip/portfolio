@@ -46,7 +46,7 @@ const Contairer = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media (max-width: 600px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
     padding: 30px;
     margin-top: -12%;
@@ -85,7 +85,7 @@ const Heading2 = styled.p`
 `
 const Box = styled.div`
   flex-grow: 1;
-  height: 350px;
+  height: 360px;
   width: 1025px;
   text-align: left;
   margin: -1.3% 20px 20px 20px;
@@ -93,11 +93,11 @@ const Box = styled.div`
   border-radius: 15px;
   margin-left: 2%;
 
-  @media (max-width: 600px) {
+  @media (max-width: 1000px) {
     margin: 30px;
-    height: 250px;
+    height: 295px;
     width: 90%;
-    margin: 30px 0px 0px 0px;
+    margin: 50px 0px 0px 0px;
     margin-right: 15%;
 }
 `

@@ -52,7 +52,7 @@ export const DarkMode = () => {
             </Icon>
           </Burger> 
 
-          <Navigation style={{ display: window === false ? "inline-block" : "none" }}>
+          <Navigation style={{ display: window === false ? "inline-block" : "none" }}> 
               <Link to="project" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>Projects.</LabelStyle></Link>
               <br></br>
               <Link to="whatcan" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>My Toolkit.</LabelStyle></Link>
@@ -87,9 +87,11 @@ const Text = styled.p`
   float: right;
   margin-right: 110%;
   margin-top: 40%;
+  transition: all 0.7s;
 `;
 
 const CustomCheckboxContainer = styled.label`
+transition: all 0.7s;
   display: block;
   position: relative;
   cursor: pointer;
@@ -99,13 +101,13 @@ const CustomCheckboxContainer = styled.label`
 `;
 
 const CustomCheckboxInput = styled.input`
+transition: all 0.7s;
   position: absolute;
   opacity: 0;
   cursor: pointer;
   height: 0;
   width: 0;
 `;
-
 const CustomCheckmark = styled.div`
   margin-right: 20%;
   margin-top: 44%;
@@ -128,7 +130,6 @@ const CustomCheckmark = styled.div`
     border-width: 0 0.15em 0.15em 0;
     transform: rotate(45deg);
   }
-
   ${CustomCheckboxInput}:checked ~ & {
     background: white;
     box-shadow: -10px -10px var(--spread) 0px #5B51D8, 0 -10px var(--spread) 0px #833AB4, 10px -10px var(--spread) 0px #E1306C, 10px 0 var(--spread) 0px #FD1D1D, 10px 10px var(--spread) 0px #F77737, 0 10px var(--spread) 0px #FCAF45, -10px 10px var(--spread) 0px #FFDC80;
@@ -234,7 +235,7 @@ export const Gradient3 = ({ isDarkMode }) =>{
 
 const IMG1 = styled.img`
   postion: relative;
-  z-index:1;
+  z-index:-1;
   position: fixed;
   top: 0;
   right: 0;
@@ -252,7 +253,7 @@ const IMG1 = styled.img`
 `
 const IMG2 = styled.img`
   postion: relative;
-  z-index:1;
+  z-index:-1;
   position: fixed;
   top: 0;
   right: 0;
@@ -271,7 +272,7 @@ const IMG2 = styled.img`
 `
 const IMG3 = styled.img`
   postion: relative;
-  z-index:1;
+  z-index:-1;
   position: fixed;
   top: 0;
   right: 0;

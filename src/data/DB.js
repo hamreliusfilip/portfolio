@@ -7,7 +7,7 @@ const courseData = [
   { coursecCode: 'TNA005', name: 'APPLIED MATHEMATICS IN SCIENCE AND TECHNOLOGY', preCourse: 'TNA001, TNA002', literature: 'MATLAB-beräkningar inabout teknik och naturvetenskap : med symbolisk matematik#Matematisk analys, en variabel#Linjär algebra TNA002', link: 'https://studieinfo.liu.se/kurs/TNA005/ht-2023' },
   { coursecCode: 'TNA003', name: 'CALCULUS I', preCourse: 'TNA001', literature: 'Matematisk analys, en variabel', link: 'https://studieinfo.liu.se/kurs/TNA003' },
   { coursecCode: 'TND002', name: 'OBJECT-ORIENTED PROGRAMMING JAVA', preCourse: 'TND012', literature: '', link: 'https://studieinfo.liu.se/kurs/TND002' },
-  { coursecCode: 'TND002', name: 'CALCULUS II', preCourse: 'TNA003', literature: 'Matematisk analys, en variabel', link: 'https://studieinfo.liu.se/kurs/TND002' },
+  { coursecCode: 'TNA004', name: 'CALCULUS II', preCourse: 'TNA003', literature: 'Matematisk analys, en variabel', link: 'https://studieinfo.liu.se/kurs/TND002' },
   { coursecCode: 'TNM046', name: 'COMPUTER GRAPHICS', preCourse: 'TND012, TNA002, TND002', literature: '', link: 'https://studieinfo.liu.se/kurs/TNM046' },
   { coursecCode: 'TNA006', name: 'CALCULUS III', preCourse: 'TNA004, TNA003, TNA001', literature: 'Neymark, Mats, (2017) Matematisk analys: flera variabler#Problemsamling för kursen TNA006', link: 'https://studieinfo.liu.se/kurs/TNA006' },
   { coursecCode: 'TNE043', name: 'MECHANICS AND WAVE PHYSICS', preCourse: 'TNA002, TNA003, TNA004', literature: 'Principles of physics#Experimentell problemlösning', link: 'https://studieinfo.liu.se/kurs/TNE043' },

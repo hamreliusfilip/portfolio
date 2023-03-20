@@ -55,13 +55,11 @@ const Heading1 = styled.h1`
   color: var(--text);
   display: flex;
 `
-
 const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 20px;
-`;
-
+`
 const Input = styled.input`
   max-width: 90%;
   height: 30px;

@@ -27,8 +27,6 @@ const Greeting = () => {
     font-size: 2em;
   }
 `
-
 const Wrapper = styled.div`
 max-width: 50%;
-
 `

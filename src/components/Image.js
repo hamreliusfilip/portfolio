@@ -49,16 +49,3 @@ const StyledIMG = styled.img`
     margin-left: 1%;
     border-radius: 15px;
 `
-
-const Box = styled.div`
-width: 300px;
-height: 300px;
-  background-color: #242424;
-  border-radius: 15px;
-
-  @media (max-width: 600px) {
-    height: 255px;
-    min-width: 350px;
-    margin: 10px 10px 10px 10px;
-  }
-`

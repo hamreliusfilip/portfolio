@@ -9,21 +9,20 @@ const Project = (props) => {
         <Info>{props.projectDesc}</Info>
       </TextWrapper> 
 
-          <StyledA href = {props.githubInfo} target="_blank"> 
+          <div href = {props.githubInfo} target="_blank"> 
           {
            props.githubInfo ? (<StyledA href={props.githubInfo} target="_blank" rel="noopener noreferrer"><LogoStyle src={"loggor/githubgrey.svg"} alt="github" /></StyledA>) : (null)
           }
-          </StyledA>
+          </div>
           
-          <StyledA href = {props.urlInfo} target="_blank"> 
+          <div href = {props.urlInfo} target="_blank"> 
           {
             props.urlInfo ? (<StyledA href={props.urlInfo} target="_blank" rel="noopener noreferrer"><LogoStyle src={"loggor/www.svg"} alt="project" /></StyledA>) : (null)
           } 
-          </StyledA>
+          </div>
     </Box>
   )
 }
-
 export default Project
 
 const Box = styled.div`

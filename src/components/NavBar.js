@@ -22,14 +22,14 @@ const CustomNav = () => {
   
   return (
     <NavbarMenu style={{ width: window === false ? 350 : 50 }}>
-
+{/* 
     <Burger onClick={toggleMenu}>
       <Icon onClick={() => openClose()} isActive={isActive}>
         <LogoStyle src={isOpen ? "img/cross.svg" : "img/menu.svg"} alt="burger" />
       </Icon>
-    </Burger>
+    </Burger> */}
 
-      <NavbarList>
+      {/* <NavbarList>
         <Navigation style={{ display: window === false ? "inline-block" : "none" }}>
           <Link to="hello" spy={true} smooth={true} offset={-20} duration={500}><Button><SP>About.</SP></Button></Link>
           <br></br>
@@ -38,8 +38,8 @@ const CustomNav = () => {
           <Link to="education" spy={true} smooth={true} duration={500}><Button><SP>Education.</SP></Button></Link>
           <br></br>
           <Link to="about" spy={true} smooth={true} offset={-20} duration={500}><Button><SP>Contact.</SP></Button></Link>
-        </Navigation>
-      </NavbarList>
+        </Navigation> */}
+      {/* </NavbarList> */}
     </NavbarMenu>
 
 

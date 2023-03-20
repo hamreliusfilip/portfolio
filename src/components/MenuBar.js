@@ -30,14 +30,14 @@ const MenuBar = () => {
       </Burger>
 
       <Navigation style={{ display: window === false ? "inline-block" : "none" }}>
-
+{/* 
       <Link to = "title"> TOP.</Link>
       <Link to = "project"> PROJECTS.</Link>
       <Link to = "whatcan"> MY TOOLKIT.</Link>
       <Link to = "education"> EDUCATION.</Link>
       <Link to = "about"> ABOUT.</Link>
       <Link to = "mail"> MAIL.</Link>
-     
+      */}
 
       </Navigation>
     </Nav>

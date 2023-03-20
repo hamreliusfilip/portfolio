@@ -6,10 +6,10 @@ import { DarkMode } from './components/DarkMode'
 function App() {
   return (
     <div>
-      {/* <Container> */}
+      <Container>
         <DarkMode />
         <Hello />
-      {/* </Container> */}
+      </Container>
     </div>
   );
 }

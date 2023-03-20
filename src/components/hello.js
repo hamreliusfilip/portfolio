@@ -13,7 +13,7 @@ import Image from "./Image";
 
 const Hello = () => {
   return (
-    <WrapperTotal>
+    <div>
 
       <TitleWrapper id="title">
         <Greeting />
@@ -54,20 +54,13 @@ const Hello = () => {
 
       <Typewriters />
 
-    </WrapperTotal>
+    </div>
   );
 };
 export default Hello;
 
 
 // ------------------------------ WRAPPERS ------------------------------ // 
-
-const WrapperTotal = styled.div`
-  position: relative;
-  z-index: -2;
-background-color: var(--background);
-
-`
 
 const TitleWrapper = styled.div`
   postion: absolute;

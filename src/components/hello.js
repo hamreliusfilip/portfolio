@@ -56,13 +56,11 @@ export default Hello;
 
 
 // ------------------------------ WRAPPERS ------------------------------ // 
-
 const Wrapper = styled.div`
   position: absolute;
   z-index: 9; 
-  height: 100%;
+  height: 100vh;
 `
-
 const TitleWrapper = styled.div`
   postion: absolute;
   z-index: 3;
@@ -167,4 +165,3 @@ const Text = styled.p`
     width: 90%;
 }
 `
-// ------------------------------ END TEXT ------------------------------ //

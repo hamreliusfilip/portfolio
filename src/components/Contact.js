@@ -37,10 +37,10 @@ const Contact = () => {
 
           <Heading1>behind site.</Heading1>
           <Text>This website was built using React js. This is an open source project. You can clone or download the project via my Github repository. </Text>
-          <LogoStyleStatic src="loggor/react.svg" />
-          <LogoStyleStatic src="loggor/js.svg" />
+          <LogoStyleStatic src="/loggor/react.svg" />
+          <LogoStyleStatic src="/loggor/js.svg" />
           <StyledA href="https://github.com/hamreliusfilip/portfolio" target="_blank">
-            <LogoStyle src="loggor/githubgrey.svg" />
+            <LogoStyle src="/loggor/githubgrey.svg" />
           </StyledA>
         </Box>
 

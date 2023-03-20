@@ -9,17 +9,17 @@ const Project = (props) => {
         <Info>{props.projectDesc}</Info>
       </TextWrapper> 
 
-          <div href = {props.githubInfo} target="_blank"> 
+          <StyledA href = {props.githubInfo} target="_blank"> 
           {
            props.githubInfo ? (<StyledA href={props.githubInfo} target="_blank" rel="noopener noreferrer"><LogoStyle src={"loggor/githubgrey.svg"} alt="github" /></StyledA>) : (null)
           }
-          </div>
+          </StyledA>
           
-          <div href = {props.urlInfo} target="_blank"> 
+          <StyledA href = {props.urlInfo} target="_blank"> 
           {
             props.urlInfo ? (<StyledA href={props.urlInfo} target="_blank" rel="noopener noreferrer"><LogoStyle src={"loggor/www.svg"} alt="project" /></StyledA>) : (null)
           } 
-          </div>
+          </StyledA>
     </Box>
   )
 }
@@ -84,5 +84,8 @@ const TextWrapper = styled.div`
   text-align: "." center;
 `
 const StyledA = styled.a`
+  postion: relative;
+`
+const StyledDiv = styled.a`
   postion: relative;
 `

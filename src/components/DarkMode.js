@@ -37,6 +37,8 @@ export const DarkMode = () => {
         else setLightMode();
     }
 
+    const path = isDarkMode ? "grad/darkgradient.png" : "grad/gradient.png";
+
     return (
       <div>
         <Nav style={{ height: window === false ? 290 : 80 }}>
@@ -67,9 +69,12 @@ export const DarkMode = () => {
 
          </Nav> 
 
-        <Gradient1 isDarkMode={isDarkMode} />
-        <Gradient2 isDarkMode={isDarkMode} />
-        <Gradient3 isDarkMode={isDarkMode} />
+         <div> 
+          <IMG1 src = {path}  />
+          <IMG2 src = {path}  />
+          <IMG3 src = {path}  />
+        </div>
+       
       </div>
     )
 }; 
@@ -97,6 +102,11 @@ transition: all 0.7s;
   font-size: 2em;
   user-select: none;
   float: right;
+
+  @media (max-width: 600px) {
+   margin-left: 80%;
+   margin-top: -40%;
+  }
 `;
 
 const CustomCheckboxInput = styled.input`
@@ -179,6 +189,8 @@ const Navigation = styled.div`
   @media (max-width: 600px) {
     font-size: 0.7em;
     width: 50%;
+    margin-top: 16%;
+    margin-left: 20px;
   }
 `
 const Icon = styled.div`
@@ -196,34 +208,6 @@ const Icon = styled.div`
 `
 
 // ------- GRADIENTER ------- // 
-
-export const Gradient1 = ({ isDarkMode }) =>{
-  const path = isDarkMode ? "grad/darkgradient.png" : "grad/gradient.png";
-  return (
-    <div> 
-      <IMG1 src = {path} />
-    </div>
-  );
-};
-
-export const Gradient2 = ({ isDarkMode }) =>{
-  const path = isDarkMode ? "grad/darkgradient.png" : "grad/gradient.png";
-  return (
-    <div> 
-      <IMG2 src = {path}  />
-    </div>
-  );
-};
-
-export const Gradient3 = ({ isDarkMode }) =>{
-  const path = isDarkMode ? "grad/darkgradient.png" : "grad/gradient.png";
-  return (
-    <div> 
-      <IMG3 src = {path}  />
-    </div>
-  );
-};
-
 const IMG1 = styled.img`
    position: fixed;
    z-index:-1;

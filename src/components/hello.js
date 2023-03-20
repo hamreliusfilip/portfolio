@@ -63,7 +63,10 @@ export default Hello;
 // ------------------------------ WRAPPERS ------------------------------ // 
 
 const WrapperTotal = styled.div`
+  position: relative;
+  z-index: -2;
 background-color: var(--background);
+
 `
 
 const TitleWrapper = styled.div`
@@ -83,7 +86,7 @@ const ProjectWrapper = styled.div`
 `
 const WrapperEducation = styled.div`
   postion: absolute;
-  z-index: 3;
+  z-index: 999;
   width: 100vw;
   margin-top:15%;
 
@@ -93,7 +96,7 @@ const WrapperEducation = styled.div`
 `
 const WhatCan = styled.div`
   postion: absolute;
-  z-index: 3;
+  z-index: 999;
   width: 100vw;
   margin-top:15%;
 
@@ -103,7 +106,7 @@ const WhatCan = styled.div`
 `
 const ContactWrapper = styled.div`
   postion: absolute;
-  z-index: 3;
+  z-index: 999;
   width: 100vw;
   margin-top:15%;
 
@@ -113,7 +116,7 @@ const ContactWrapper = styled.div`
 `
 const MailWrapper = styled.div`
   postion: absolute;
-  z-index: 3;
+  z-index: 999;
   width: 100vw;
   margin-top:15%;
   display: flex;
@@ -131,7 +134,7 @@ const MailWrapper = styled.div`
 `
 const ImageWrapper = styled.div`
   postion: absolute;
-  z-index: 3;
+  z-index: 999;
   width: 100vw;
   margin-top:15%;
 

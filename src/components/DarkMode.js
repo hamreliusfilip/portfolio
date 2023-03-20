@@ -39,11 +39,6 @@ export const DarkMode = () => {
 
     return (
       <div>
-        <Gradient1 isDarkMode={isDarkMode} />
-        <Gradient2 isDarkMode={isDarkMode} />
-        <Gradient3 isDarkMode={isDarkMode} />
-
-
         <Nav style={{ height: window === false ? 290 : 80 }}>
 
           <Burger onClick={toggleMenu}>
@@ -71,6 +66,10 @@ export const DarkMode = () => {
           </CustomCheckboxContainer>
 
          </Nav> 
+
+        <Gradient1 isDarkMode={isDarkMode} />
+        <Gradient2 isDarkMode={isDarkMode} />
+        <Gradient3 isDarkMode={isDarkMode} />
       </div>
     )
 }; 
@@ -234,9 +233,8 @@ export const Gradient3 = ({ isDarkMode }) =>{
 };
 
 const IMG1 = styled.img`
-  postion: relative;
-  z-index:-1;
-  position: fixed;
+  postion: fixed;
+  z-index:1;
   top: 0;
   right: 0;
   bottom: 0;
@@ -252,9 +250,8 @@ const IMG1 = styled.img`
   }
 `
 const IMG2 = styled.img`
-  postion: relative;
-  z-index:-1;
-  position: fixed;
+  postion: fixed;
+  z-index:1;
   top: 0;
   right: 0;
   bottom: 0;
@@ -271,9 +268,8 @@ const IMG2 = styled.img`
   }
 `
 const IMG3 = styled.img`
-  postion: relative;
-  z-index:-1;
-  position: fixed;
+  postion: fixed;
+  z-index:1;
   top: 0;
   right: 0;
   bottom: 0;

@@ -86,10 +86,9 @@ export const DarkMode = () => {
 }; 
 
 const ButtonWrapper = styled.div`
-  position: relative;
+  display: block;
+  margin-right: 2%;
   float: right;
-  margin-right: 1%;
-  margin-top: 1%;
 
   @media (max-width: 600px) {
     margin-left: 60%;

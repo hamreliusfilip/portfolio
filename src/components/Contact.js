@@ -2,6 +2,13 @@ import React from "react";
 import styled from 'styled-components'
 import emailjs from 'emailjs-com'
 
+import github from '../loggor/githubgrey.svg'
+import facebook from '../loggor/facebook.svg'
+import linkedin from '../loggor/linkedin.svg'
+import instagram from '../loggor/instagram.svg'
+import react from '../loggor/react.svg'
+import js from '../loggor/js.svg'
+
 const Contact = () => {
 
   function sendEmail(e) {
@@ -21,26 +28,26 @@ const Contact = () => {
         <Heading>CONTACT</Heading>
         <Box>
           <Heading1>find me.</Heading1>
-          <Text>Feel free to contact me on your preffered platform. Or send me a email with form down below.</Text>
+          <Text>Feel free to contact me on your preffered platform. Or send me a email with form.</Text>
           <StyledA href="https://github.com/hamreliusfilip" target="_blank">
-            <LogoStyle src="loggor/githubgrey.svg" />
+            <LogoStyle src={github} />
           </StyledA>
           <StyledA href="https://www.facebook.com/filip.hamrelius/" target="_blank">
-            <LogoStyle src="loggor/facebook.svg" />
+            <LogoStyle src={facebook}/>
           </StyledA>
           <StyledA href="https://www.linkedin.com/in/filip-hamrelius/" target="_blank">
-            <LogoStyle src="loggor/linkedin.svg" />
+            <LogoStyle src={linkedin} />
           </StyledA>
           <StyledA href="https://www.instagram.com/filiphamrelius/" target="_blank">
-            <LogoStyle src="loggor/instagram.svg" />
+            <LogoStyle src={instagram} />
           </StyledA>
 
           <Heading1>behind site.</Heading1>
           <Text>This website was built using React js. This is an open source project. You can clone or download the project via my Github repository. </Text>
-          <LogoStyleStatic src="loggor/react.svg" />
-          <LogoStyleStatic src="loggor/js.svg" />
+          <LogoStyleStatic src={react} />
+          <LogoStyleStatic src={js} />
           <StyledA href="https://github.com/hamreliusfilip/portfolio" target="_blank">
-            <LogoStyle src="loggor/githubgrey.svg" />
+            <LogoStyle src={github} />
           </StyledA>
         </Box>
 
@@ -134,12 +141,12 @@ const Box = styled.div`
   background-color: #242424;
   border-radius: 15px;
   margin-left: 4%;
+  margin-top: 5%;
 
   @media (max-width: 1400px) {
     max-width: 500px;
     min-width: 400px;
     min-height: 550px;
-    margin-top: 5%;
 }
 `
 const LogoStyle = styled.img`
@@ -184,7 +191,7 @@ const ButtonWrapper = styled.div`
   margin-top: 20px;
 `
 const Input = styled.input`
-  max-width: 90%;
+  width: 80%;
   height: 30px;
   font-size: 0.6em;
   font-weight: bold;
@@ -209,7 +216,7 @@ const Input = styled.input`
   }
 `
 const InputText = styled.textarea`
-  max-width: 90%;
+  width: 80%;
   height: 30px;
   font-size: 0.6em;
   font-weight: bold;

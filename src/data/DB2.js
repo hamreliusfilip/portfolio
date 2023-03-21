@@ -5,7 +5,7 @@ const projectData = [
   value: '7', 
   github: null, 
   url: null, 
-  desc: 'A sole proprietorship with a focus on retail in web format.'
+  desc: 'A sole proprietorship with a focus on retail in web format. Web development & design with Shopify. Ad campaigns with Facebook & Instagram ads.'
   },
     { name: 'ROCKET SIMULATION', 
     value: '5', 

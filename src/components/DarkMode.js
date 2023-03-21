@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll"
 
+import light from '../grad/gradient.png'
+import dark from '../grad/darkgradient.png'
+import cross from '../loggor/cross.svg'
+import menu from '../loggor/menu.svg'
+
 export const DarkMode = () => { 
   const [window, setWindow] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
@@ -37,17 +42,20 @@ export const DarkMode = () => {
         else setLightMode();
     }
 
-    const path = isDarkMode ? "grad/darkgradient.png" : "grad/gradient.png";
+    const path = isDarkMode ? dark : light;
 
     return (
       <div>
         <Nav style={{ height: window === false ? 290 : 80 }}>
-
           <Burger onClick={toggleMenu}>
             <Icon onClick={() => openClose()} isActive={isActive}>
-              <LogoStyle src={isOpen ? "img/cross.svg" : "img/menu.svg"} alt="MENU" />
+              <LogoStyle src = {isOpen ? cross : menu} />  
             </Icon>
           </Burger> 
+
+          <ButtonWrapper style={{ display: window === false ? "none" : "inline-block" }}>
+            <Button><Link to = "about" spy={true} smooth={true} offset={-100} duration={500}>build a project with me.</Link></Button>
+          </ButtonWrapper>
 
           <Navigation style={{ display: window === false ? "inline-block" : "none" }}> 
               <Link to="project" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>Projects.</LabelStyle></Link>
@@ -56,9 +64,7 @@ export const DarkMode = () => {
               <br></br>
               <Link to="education" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>Education.</LabelStyle></Link>
               <br></br>
-              <Link to="about" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>About.</LabelStyle></Link>
-              <br></br>
-              <Link to="mail" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>Mail.</LabelStyle></Link>
+              <Link to="about" spy={true} smooth={true} offset={-200} duration={500}><LabelStyle>Contact.</LabelStyle></Link>
           </Navigation>
 
           <CustomCheckboxContainer style={{ display: window === false ? "inline-block" : "none" }}>           
@@ -79,6 +85,43 @@ export const DarkMode = () => {
     )
 }; 
 
+const ButtonWrapper = styled.div`
+  position: relative;
+  float: right;
+  margin-right: 1%;
+  margin-top: 1%;
+
+  @media (max-width: 600px) {
+    margin-left: 60%;
+    width: 300px;
+    margin-top: 3%;
+    margin-right: 3%;
+   }
+`;
+
+const Button = styled.button`
+font-size: 1em;
+font-weight: bold;
+color: #242424;
+background-color: #DCDCDC;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 13px 20px;
+font-family: 'Helvetica Neue';
+border-radius: 9px;
+
+@media (max-width: 600px) {
+  margin-left: 60%;
+  font-size: 0.7em;
+ }
+
+&:hover{
+  transition: 0.3s;
+  transform: scale(0.93);
+}
+`
+
 const Text = styled.p`
   position: relative;
   z-index: 999 !important;
@@ -92,11 +135,18 @@ const Text = styled.p`
   margin-right: 110%;
   margin-top: 40%;
   transition: all 0.7s;
-`;
+
+  @media (max-width: 600px) {
+    width: 50%;
+    float: right;
+    margin-right: 110%;
+    margin-top: 40%;
+    font-size: 0em;
+   }
+  `;
 
 const CustomCheckboxContainer = styled.label`
-transition: all 0.7s;
-  display: block;
+  transition: all 0.7s;
   position: relative;
   cursor: pointer;
   font-size: 2em;
@@ -104,13 +154,13 @@ transition: all 0.7s;
   float: right;
 
   @media (max-width: 600px) {
-   margin-left: 80%;
-   margin-top: -40%;
+   font-size: 1em;
+   margin-right: 5%;
   }
 `;
 
 const CustomCheckboxInput = styled.input`
-transition: all 0.7s;
+  transition: all 0.7s;
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -127,6 +177,10 @@ const CustomCheckmark = styled.div`
   border-radius: 50px;
   transition: all 0.7s;
   --spread: 20px;
+
+  @media (max-width: 600px) {
+    padding: 20px;
+   }
 
   &:after {
     content: "";
@@ -153,6 +207,10 @@ const LabelStyle = styled.label`
     font-family: 'Helvetica Neue';
     font-weight: bold;
     font-size: 2em;
+
+    @media (max-width: 600px) {
+      width: 20px;
+    }
 `
 const Nav = styled.nav`
   background-color: #242424;
@@ -179,18 +237,18 @@ const Navigation = styled.div`
   position: relative;
   z-index: 999 !important;
 
-  margin-top: 50px;
-  margin-left: 200px;
+  margin-top: 5%;
+  margin-left: 7%;
 
   color: #DCDCDC;
 
   cursor:pointer;
 
   @media (max-width: 600px) {
-    font-size: 0.7em;
+    font-size: 0.9em;
     width: 50%;
-    margin-top: 16%;
-    margin-left: 20px;
+    margin-top: 20%;
+    margin-left: 10%;
   }
 `
 const Icon = styled.div`
@@ -262,3 +320,5 @@ const IMG1 = styled.img`
      margin-top: 130%;
    }
  `
+
+

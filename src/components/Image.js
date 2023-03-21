@@ -22,29 +22,26 @@ const Image = () => {
         </Wrapper>
     )
 }
-
-  export default Image
+export default Image
 
 const Wrapper = styled.div`
     width: 100vw;
     position: relative;
     margin-top: -10%;
 `
-
 const Total = styled.div`
-  position: relative;
-  overflow: scroll;
-  display: flex;
-  color: #DCDCDC;
-  width: 100vw;
+    position: relative;
+    overflow: scroll;
+    display: flex;
+    color: #DCDCDC;
+    width: 100vw;
   
   &::-webkit-scrollbar {
   display: none;
 }
 `
-
 const StyledIMG = styled.img`
-    width:auto;
+    width:auto;     
     height:50%;
     margin-left: 1%;
     border-radius: 15px;

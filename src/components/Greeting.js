@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Greeting = () => {
-
     const date = new Date();
     const hour = date.getHours();
 
@@ -20,7 +19,7 @@ const Greeting = () => {
   margin-left: 2%;
   font-family: 'Helvetica Neue';
   font-weight: bold;
-  font-size: 6em;
+  font-size: 8em;
   color: var(--text);
 
   @media (max-width: 1000px) {

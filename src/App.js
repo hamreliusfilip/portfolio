@@ -8,6 +8,7 @@ import Contact from './components/Contact'
 import SlideText from './components/SlideText'
 import Info from './components/Info'
 import Greeting from "./components/Greeting";
+import BackTop from './components/backTop'
 
 function App() {
   return (
@@ -41,6 +42,8 @@ function App() {
         <Contact />
       </ContactWrapper>
       <Typewriters />
+
+      <BackTop />
     </Wrapper>
   );
 }
@@ -51,9 +54,9 @@ const Wrapper = styled.div`
   position: relative;
   z-index: 1;
   background-color: var(--background);
+  overflow: hidden;
 
 `
-
 const TitleWrapper = styled.div`
   postion: absolute;
   z-index: 3;

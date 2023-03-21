@@ -1,25 +1,48 @@
 import styled from 'styled-components'
 
+import www from '../loggor/www.svg'
+import github from '../loggor/githubgrey.svg'
+
 const Project = (props) => {
 
   return (
     <Box>
         <Name>{props.projectName}</Name>
-      <TextWrapper> 
-        <Info>{props.projectDesc}</Info>
-      </TextWrapper> 
 
-          <StyledDiv href = {props.githubInfo} target="_blank"> 
+        <TextWrapper> 
+          <Info>{props.projectDesc}</Info>
+        </TextWrapper> 
+
+        {/* <StyledDiv href = {props.githubInfo} target="_blank"> 
           {
-           props.githubInfo ? (<StyledA href={props.githubInfo} target="_blank" rel="noopener noreferrer"><LogoStyle src={"loggor/githubgrey.svg"} alt="github" /></StyledA>) : (null)
+           props.githubInfo ? (<StyledDiv href={props.githubInfo} target="_blank" rel="noopener noreferrer"><LogoStyle src={github} alt="github" /></StyledDiv>) : (null)
           }
-          </StyledDiv>
+        </StyledDiv>
           
-          <StyledDiv href = {props.urlInfo} target="_blank"> 
+        <StyledDiv href = {props.urlInfo} target="_blank"> 
           {
-            props.urlInfo ? (<StyledA href={props.urlInfo} target="_blank" rel="noopener noreferrer"><LogoStyle src={"loggor/www.svg"} alt="project" /></StyledA>) : (null)
+            props.urlInfo ? (<StyledDiv href={props.urlInfo} target="_blank" rel="noopener noreferrer"><LogoStyle src={www} alt="project" /></StyledDiv>) : (null)
           } 
-          </StyledDiv>
+        </StyledDiv> */}
+
+
+      <Links>
+        {
+          props.githubInfo ? (<a href={props.githubInfo} target="_blank" rel="noopener noreferrer"><LogoStyle src={github} alt="GITHUB" /></a>) : (null)
+        }
+        {
+          props.urlInfo ? (<a href={props.urlInfo} target="_blank" rel="noopener noreferrer"><LogoStyle src={www} alt="WEBSITE" /></a>) : (null)
+        }
+      </Links>
+
+
+
+
+
+
+
+
+
     </Box>
   )
 }
@@ -45,11 +68,11 @@ const LogoStyle = styled.img`
   width: 3em;
   height: 3em;
   padding: 20px 20px 0px 30px;
-
   cursor:ponter;
+
   &:hover {
     transition: all 300ms ease-in-out;
-    transform: rotate(25deg);
+    transform: scale(1.15);
   }
 
   @media (max-width: 600px) {
@@ -83,9 +106,10 @@ const TextWrapper = styled.div`
   padding: 10px 10px 0px 30px;
   text-align: "." center;
 `
-const StyledA = styled.a`
-  postion: relative;
-`
-const StyledDiv = styled.a`
-  postion: relative;
+
+const Links = styled.div`
+display: flex;
+justify-content: flex-end;
+margin: -5px -4px;
+float: left; 
 `

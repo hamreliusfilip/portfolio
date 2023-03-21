@@ -1,5 +1,16 @@
 import styled from 'styled-components'
 
+const Course = (props) => {
+  return (
+    <StyledA href={props.courseLink} target="_blank">
+      <Box>
+        <Name>{props.courseName}</Name>
+      </Box>
+    </StyledA>
+  )
+}
+export default Course
+
 const Box = styled.div`
   height: 180px;
   width: 300px;
@@ -47,15 +58,3 @@ const StyledA = styled.a`
   text-decoration: none;
   text-align: center;
 `
-
-const Course = (props) => {
-  return (
-    <StyledA href={props.courseLink} target="_blank">
-      <Box>
-        <Name>{props.courseName}</Name>
-      </Box>
-    </StyledA>
-  )
-}
-
-export default Course

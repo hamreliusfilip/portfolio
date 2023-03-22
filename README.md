@@ -18,6 +18,7 @@ Welcome to my personal portfolio website! This website showcases my skills, proj
 - Easy navigation with a clear menu and smooth scrolling between sections
 - Dark/Light mode
 - Contact form that allows visitors to send me messages directly from the website
+- Interactive photo library
 
 ## Technologies
 

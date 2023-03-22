@@ -1,11 +1,11 @@
 :root{
-  --background: #DCDCDC; 
-  --text: #242424;
+  --background: #111314; 
+  --text: #DCDCDC;
 }
 
 [data-theme="dark"]{ 
-  --background: #111314; 
-  --text: #DCDCDC;
+  --background: #DCDCDC; 
+  --text: #242424;
 }
 
 * { 

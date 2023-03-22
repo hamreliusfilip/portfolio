@@ -7,29 +7,35 @@ import Typewriters from './components/TypeWriter'
 import Contact from './components/Contact'
 import SlideText from './components/SlideText'
 import Info from './components/Info'
-import Greeting from "./components/Greeting";
+import Greeting from "./components/Greeting"
 import BackTop from './components/backTop'
+import Image from './components/Image'
 
 function App() {
   return (
     <Wrapper>
       <DarkMode />
+
       <TitleWrapper id="title">
         <Greeting />
         <SlideText />
       </TitleWrapper>
+
       <ProjectWrapper id="project">
         <Heading1>SOME THINGS I'VE BUILT</Heading1>
         <ProjectMap />
       </ProjectWrapper>
+
       <WhatCan id="whatcan">
         <Heading1>MY TOOLKIT</Heading1>
         <Info />
       </WhatCan>
-      {/* <ImageWrapper> 
-        <Heading2>SOME BLENDER RENDERS</Heading2>
+
+      <ImageWrapper id = "gallery"> 
+        <Heading1>SOME RENDERS, DESIGNS & PROMOS </Heading1>
         <Image />
-      </ImageWrapper> */}
+      </ImageWrapper> 
+
       <WrapperEducation id="education">
         <Heading1>EDUCATION</Heading1>
         <Heading2> Third year M.Sc in Media Technology and Engineering </Heading2>
@@ -38,11 +44,12 @@ function App() {
           computer graphics, machine learning, interaction design and image processing.</Text>
         <CourseMap />
       </WrapperEducation>
+
       <ContactWrapper id="about">
         <Contact />
       </ContactWrapper>
-      <Typewriters />
 
+      <Typewriters />
       <BackTop />
     </Wrapper>
   );
@@ -55,7 +62,6 @@ const Wrapper = styled.div`
   z-index: 1;
   background-color: var(--background);
   overflow: hidden;
-
 `
 const TitleWrapper = styled.div`
   postion: absolute;
@@ -70,18 +76,7 @@ const ProjectWrapper = styled.div`
 
   @media (max-width: 600px) {
     margin-top:70%;
-}
-`
-const WrapperEducation = styled.div`
-  postion: absolute;
-  z-index: 999;
-  width: 100vw;
-  margin-top:15%;
-
-  @media (max-width: 600px) {
-    margin-top:35%;
-}
-`
+}`
 const WhatCan = styled.div`
   postion: absolute;
   z-index: 999;
@@ -90,8 +85,7 @@ const WhatCan = styled.div`
 
   @media (max-width: 600px) {
     margin-top:35%;
-}
-`
+}`
 const ContactWrapper = styled.div`
   postion: absolute;
   z-index: 999;
@@ -103,18 +97,29 @@ const ContactWrapper = styled.div`
     flex-direction: row;
     align-items: left; 
     justify-content: left; 
-  }
-`
-// const ImageWrapper = styled.div`
-//   postion: absolute;
-//   z-index: 999;
-//   width: 100vw;
-//   margin-top:15%;
+  }`
+  
+const ImageWrapper = styled.div`
+  postion: absolute;
+  z-index: 999;
+  width: 100vw;
+  margin-top:13%;
+  background-color: #242424;
+  padding: 0.1% 0 0.1% 0;
 
-//   @media (max-width: 600px) {
-//     margin-top:35%;
-// }
-// `
+  @media (max-width: 600px) {
+    margin-top:35%;
+}
+`
+const WrapperEducation = styled.div`
+  postion: absolute;
+  z-index: 999;
+  width: 100vw;
+  margin-top:15%;
+
+  @media (max-width: 1000px) {
+    margin-top:35%;
+}`
 // ------------------------------ END WRAPPERS ------------------------------ //
 
 // ---------------------------------- TEXT ---------------------------------- //

@@ -56,19 +56,19 @@ const Contact = () => {
           <Heading1>send me a message.</Heading1>
           <form onSubmit={sendEmail}>
             <Label>
-              <Input type="text" name="subject" placeholder="subject." />
+              <Input type="text" name="subject" placeholder="subject." required/>
             </Label>
 
             <Label>
-              <Input type="text" name="name" placeholder="name." />
+              <Input type="text" name="name" placeholder="name." required/>
             </Label>
 
             <Label>
-              <Input type="email" name="email" placeholder="email." />
+              <Input type="email" name="email" placeholder="email." required/>
             </Label>
 
             <Label>
-              <InputText type="text" name="message" placeholder="message." />
+              <InputText type="text" name="message" placeholder="message." required/>
             </Label>
 
             <ButtonWrapper>

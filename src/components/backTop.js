@@ -6,7 +6,7 @@ function BackTop() {
     return (
         <Wrapper>
           <Marquee gradientWidth = '0' speed = '200' > 
-            <Link to = "title" spy={true} smooth={true} offset={-500} duration={500}> <Text>GO TO TOP_GO TO TOP_GO TO TOP_GO TO TOP_</Text> </Link>
+            <Link to = "title" spy={true} smooth={true} offset={-500} duration={500}> <Text>GO TO TOP_GO TO TOP_GO TO TOP_GO TO TOP_GO TO TOP_GO TO TOP_GO TO TOP_</Text> </Link>
           </Marquee>
         </Wrapper>
     )

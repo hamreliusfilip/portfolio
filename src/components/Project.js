@@ -13,19 +13,6 @@ const Project = (props) => {
           <Info>{props.projectDesc}</Info>
         </TextWrapper> 
 
-        {/* <StyledDiv href = {props.githubInfo} target="_blank"> 
-          {
-           props.githubInfo ? (<StyledDiv href={props.githubInfo} target="_blank" rel="noopener noreferrer"><LogoStyle src={github} alt="github" /></StyledDiv>) : (null)
-          }
-        </StyledDiv>
-          
-        <StyledDiv href = {props.urlInfo} target="_blank"> 
-          {
-            props.urlInfo ? (<StyledDiv href={props.urlInfo} target="_blank" rel="noopener noreferrer"><LogoStyle src={www} alt="project" /></StyledDiv>) : (null)
-          } 
-        </StyledDiv> */}
-
-
       <Links>
         {
           props.githubInfo ? (<a href={props.githubInfo} target="_blank" rel="noopener noreferrer"><LogoStyle src={github} alt="GITHUB" /></a>) : (null)
@@ -34,15 +21,6 @@ const Project = (props) => {
           props.urlInfo ? (<a href={props.urlInfo} target="_blank" rel="noopener noreferrer"><LogoStyle src={www} alt="WEBSITE" /></a>) : (null)
         }
       </Links>
-
-
-
-
-
-
-
-
-
     </Box>
   )
 }

@@ -42,7 +42,7 @@ export const DarkMode = () => {
         else setLightMode();
     }
 
-    const path = isDarkMode ? dark : light;
+    const path = isDarkMode ? light : dark;
 
     return (
       <div>
@@ -62,6 +62,8 @@ export const DarkMode = () => {
               <StyledLink to="project" spy={true} smooth={true} offset={0} duration={500}>Projects.</StyledLink>
               <br></br> 
               <StyledLink to="whatcan" spy={true} smooth={true} offset={0} duration={500}>My Toolkit.</StyledLink>
+              <br></br> 
+              <StyledLink to="gallery" spy={true} smooth={true} offset={0} duration={500}>Gallery.</StyledLink>
               <br></br>
               <StyledLink to="education" spy={true} smooth={true} offset={0} duration={500}>Education.</StyledLink>
               <br></br>
@@ -244,7 +246,7 @@ const Navigation = styled.div`
   position: relative;
   z-index: 600;
 
-  margin-top: 5%;
+  margin-top: 2%;
   margin-left: 7%;
 
   color: #DCDCDC;

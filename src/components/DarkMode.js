@@ -47,6 +47,7 @@ export const DarkMode = () => {
     return (
       <div>
         <Nav style={{ height: window === false ? 290 : 80 }}>
+
           <Burger onClick={toggleMenu}>
             <Icon onClick={() => openClose()} isActive={isActive}>
               <LogoStyle src = {isOpen ? cross : menu} />  
@@ -58,13 +59,13 @@ export const DarkMode = () => {
           </ButtonWrapper>
 
           <Navigation style={{ display: window === false ? "inline-block" : "none" }}> 
-              <Link to="project" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>Projects.</LabelStyle></Link>
+              <StyledLink to="project" spy={true} smooth={true} offset={0} duration={500}>Projects.</StyledLink>
+              <br></br> 
+              <StyledLink to="whatcan" spy={true} smooth={true} offset={0} duration={500}>My Toolkit.</StyledLink>
               <br></br>
-              <Link to="whatcan" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>My Toolkit.</LabelStyle></Link>
+              <StyledLink to="education" spy={true} smooth={true} offset={0} duration={500}>Education.</StyledLink>
               <br></br>
-              <Link to="education" spy={true} smooth={true} offset={0} duration={500}><LabelStyle>Education.</LabelStyle></Link>
-              <br></br>
-              <Link to="about" spy={true} smooth={true} offset={-200} duration={500}><LabelStyle>Contact.</LabelStyle></Link>
+              <StyledLink to="about" spy={true} smooth={true} offset={-140} duration={500}>Contact.</StyledLink>
           </Navigation>
 
           <CustomCheckboxContainer style={{ display: window === false ? "inline-block" : "none" }}>           
@@ -72,7 +73,6 @@ export const DarkMode = () => {
             <Text>TOGGLE DARK/LIGHT MODE.</Text>
             <CustomCheckmark></CustomCheckmark>
           </CustomCheckboxContainer>
-
          </Nav> 
 
          <div> 
@@ -80,7 +80,6 @@ export const DarkMode = () => {
           <IMG2 src = {path}  />
           <IMG3 src = {path}  />
         </div>
-       
       </div>
     )
 }; 
@@ -112,18 +111,19 @@ border-radius: 9px;
 
 @media (max-width: 600px) {
   margin-left: 60%;
-  font-size: 0.7em;
+  font-size: 0.5em;
  }
 
 &:hover{
-  transition: 0.3s;
-  transform: scale(0.93);
+  transition: all -0.7s;
+  background-color: black;
+  color: #DCDCDC;
 }
 `
 
 const Text = styled.p`
   position: relative;
-  z-index: 999 !important;
+  z-index: 650;
   font-family: 'Helvetica Neue';
   font-weight: bold;
   font-size: 0.6em;
@@ -142,6 +142,7 @@ const Text = styled.p`
     margin-top: 40%;
     font-size: 0em;
    }
+   
   `;
 
 const CustomCheckboxContainer = styled.label`
@@ -201,15 +202,22 @@ const CustomCheckmark = styled.div`
     }
   }
 `;
-const LabelStyle = styled.label`
-    cursor: pointer;
-    font-family: 'Helvetica Neue';
-    font-weight: bold;
-    font-size: 2em;
 
-    @media (max-width: 600px) {
-      width: 20px;
-    }
+const StyledLink = styled(Link)`
+  cursor: pointer;
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  font-size: 1.7em;
+  line-height: 1.5em;
+
+  @media (max-width: 600px) {
+    width: 20px;
+  }
+
+  &:hover{
+    transition: 0.3s;
+    color: black;
+  }
 `
 const Nav = styled.nav`
   background-color: #242424;
@@ -228,13 +236,13 @@ const LogoStyle = styled.img`
 `
 const Burger = styled.div`
   position: relative;
-  z-index: 999 !important;
+  z-index: 600;
   cursor: pointer;
   margin-top: -0.5%;
 `
 const Navigation = styled.div`
   position: relative;
-  z-index: 999 !important;
+  z-index: 600;
 
   margin-top: 5%;
   margin-left: 7%;

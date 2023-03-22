@@ -23,9 +23,10 @@ const Contact = () => {
       e.target.reset();
   };
 
-    return (
+  return (
+    <div>
+      <Heading>CONTACT</Heading>
       <Contairer>
-        <Heading>CONTACT</Heading>
         <Box>
           <Heading1>find me.</Heading1>
           <Text>Feel free to contact me on your preffered platform. Or send me a email with form.</Text>
@@ -33,7 +34,7 @@ const Contact = () => {
             <LogoStyle src={github} />
           </StyledA>
           <StyledA href="https://www.facebook.com/filip.hamrelius/" target="_blank">
-            <LogoStyle src={facebook}/>
+            <LogoStyle src={facebook} />
           </StyledA>
           <StyledA href="https://www.linkedin.com/in/filip-hamrelius/" target="_blank">
             <LogoStyle src={linkedin} />
@@ -52,31 +53,32 @@ const Contact = () => {
         </Box>
 
         <Box>
-        <Heading1>send me a message.</Heading1>
-        <form onSubmit={sendEmail}>
-          <Label>
-            <Input type="text" name="subject" placeholder="subject." />
-          </Label>
+          <Heading1>send me a message.</Heading1>
+          <form onSubmit={sendEmail}>
+            <Label>
+              <Input type="text" name="subject" placeholder="subject." />
+            </Label>
 
-          <Label>
-            <Input type="text" name="name" placeholder="name."/>
-          </Label>
+            <Label>
+              <Input type="text" name="name" placeholder="name." />
+            </Label>
 
-          <Label>
-            <Input type="email" name="email" placeholder="email." />
-          </Label>
+            <Label>
+              <Input type="email" name="email" placeholder="email." />
+            </Label>
 
-          <Label>
-            <InputText type="text" name="message" placeholder="message." />
-          </Label>
-          
-          <ButtonWrapper> 
-            <Button type="submit" value="Send" >send.</Button>
-          </ButtonWrapper>
+            <Label>
+              <InputText type="text" name="message" placeholder="message." />
+            </Label>
 
-        </form>
+            <ButtonWrapper>
+              <Button type="submit" value="Send" >send.</Button>
+            </ButtonWrapper>
+
+          </form>
         </Box>
-      </Contairer> 
+      </Contairer>
+    </div> 
     )
   }
   
@@ -87,7 +89,7 @@ const Contairer = styled.div`
   flex-direction: row;
   width: 63%;
 
-  @media (max-width: 1500px) {
+  @media (max-width: 1200px) {
     flex-direction: column;
 }
 `

@@ -23,7 +23,8 @@ const Greeting = () => {
   color: var(--text);
 
   @media (max-width: 1000px) {
-    font-size: 2em;
+    font-size: 3em;
+    max-width: 95%;
   }
 `
 const Wrapper = styled.div`

@@ -1,6 +1,7 @@
 :root{
   --background: #111314; 
   --text: #DCDCDC;
+  
 }
 
 [data-theme="dark"]{ 

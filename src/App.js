@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 import { DarkMode } from './components/DarkMode'
-import CourseMap from './components/CourseMap'
 import ProjectMap from './components/ProjectMap'
 import Typewriters from './components/TypeWriter'
 import Contact from './components/Contact'
@@ -10,6 +9,7 @@ import Info from './components/Info'
 import Greeting from "./components/Greeting"
 import BackTop from './components/backTop'
 import Image from './components/Image'
+import CourseMap from './components/CourseMap'
 
 function App() {
   return (
@@ -21,18 +21,18 @@ function App() {
         <SlideText />
       </TitleWrapper>
 
-      <ProjectWrapper id="project">
-        <Heading1>SOME THINGS I'VE BUILT</Heading1>
-        <ProjectMap />
-      </ProjectWrapper>
-
       <WhatCan id="whatcan">
         <Heading1>MY TOOLKIT</Heading1>
         <Info />
       </WhatCan>
 
+      <ProjectWrapper id="project">
+        <Heading1>SOME THINGS I'VE BUILT</Heading1>
+        <ProjectMap />
+      </ProjectWrapper>
+
       <ImageWrapper id = "gallery"> 
-        <Heading1>SOME RENDERS, DESIGNS & PROMOS </Heading1>
+        <HeadingImage>SOME RENDERS, DESIGNS & PROMOS </HeadingImage>
         <Image />
       </ImageWrapper> 
 
@@ -130,6 +130,19 @@ const Heading1 = styled.h1`
   font-weight: 700;
   font-size: 5em;
   color: var(--text);
+
+  @media (max-width: 600px) {
+    font-size: 3em;
+    margin-right: 10%;
+}
+`
+const HeadingImage = styled.h1`
+  position: relative;
+  margin-left: 2%;
+  font-family: 'Helvetica Neue';
+  font-weight: 700;
+  font-size: 3em;
+  color: #DCDCDC;
 
   @media (max-width: 600px) {
     font-size: 3em;

@@ -21,6 +21,12 @@ const projectData = [
   url: 'https://filipbagen.github.io/merit/',
   desc: 'App prototype to gather relevant information for Media Technology students at LiU. Winner of the annual MT Section Gray Cube: An annual award for the most technically challenging project. The user must be able to see important information such as their schedule, upcoming exams and exam statistics. ' 
 },
+{ 
+    name: 'SVENSKA KLUBBEN - LAUSANNE', 
+    value: '1', github: null , 
+    url: 'https://www.svenska-klubben.ch', 
+    desc: 'The Swedish Club Lausanne-Genève was founded in 1962 with the aim of promoting cohesion between Swedes living around Lake Geneva. The project included website design & development as well as restructuring of newsletters & social media.' 
+},
   
   { 
   name: 'VIRTUAL GUIDE', 
@@ -44,14 +50,5 @@ const projectData = [
   url: null, 
   desc: 'A lab part of the bachlor project course. Complete system deisgn and implementation from the ground up. Built with, Catch2, Vcpkg & Tracy'
 },
-{ 
-    name: 'SVENSKA KLUBBEN - LAUSANNE', 
-    value: '1', github: null , 
-    url: 'https://www.svenska-klubben.ch', 
-    desc: 'The Swedish Club Lausanne-Genève was founded in 1962 with the aim of promoting cohesion between Swedes living around Lake Geneva. The project included website design & development as well as restructuring of newsletters & social media.' 
-  }
-
-
-
 ]
 export { projectData }

@@ -1,11 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { ImagesData } from '../data/Images'
 import styled from 'styled-components'
 
+import arrow from '../loggor/arrow.svg'
+
 const Image = () => {
+
+    const ref1 = useRef(0);
+    const [scrollLeft1, setScrollLeft1] = useState(0);
 
     const [viewImage, setViewImage] = useState(ImagesData[0].img);
     const [viewImageAlt, setViewImageAlt] = useState(ImagesData[0].alt);
+
+    const handleScroll1 = (scrollOffset) => {
+        ref1.current.scrollLeft += scrollOffset;
+        setScrollLeft1(ref1.current.scrollLeft);
+      };
 
     return (
         <Wrapper>
@@ -13,7 +23,10 @@ const Image = () => {
                 <LargeImage src={viewImage} alt={viewImageAlt} />
             </ViewImagWrapper>
 
-            <Total>
+            <ButtonWrapperLeft disabled={scrollLeft1 === 0} onClick={() => handleScroll1(-180)}>
+            <ImageLeft src={arrow} />
+        </ButtonWrapperLeft>
+            <Total ref = {ref1}>
                 {ImagesData.map((image) => (
                     <StyledIMG
                         key={image.key}
@@ -25,6 +38,9 @@ const Image = () => {
                         }} />
                 ))}
             </Total>
+            <ButtonWrapperRight disabled={scrollLeft1 === ref1.current.scrollWidth - ref1.current.clientWidth} onClick={() => handleScroll1(180)}>
+            <ImageRight src={arrow} />
+        </ButtonWrapperRight>
         </Wrapper>
     )
 }
@@ -80,4 +96,55 @@ border-radius: 15px;
     height: 95%;
     width: 95%;
 }
+`
+
+const ButtonWrapperLeft = styled.button`
+  all: unset;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999!important;
+  background-color: white; 
+  opacity: 0;
+  height: 20%;
+
+  margin-top: 475px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 15px;
+
+  &:hover {
+    opacity: 0.2;
+    transition: 0.5s;
+  }
+`
+const ButtonWrapperRight = styled.button`
+  all: unset;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999!important;
+  background-color: white; 
+  opacity: 0;
+  height: 20%;
+  margin-top: 475px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 15px;
+
+  &:hover {
+    opacity: 0.2;
+    transition: 0.5s;
+  }
+`
+const ImageLeft = styled.img`
+  right:0;
+  height: 20%;
+  transform: scaleX(-1);
+`
+const ImageRight = styled.img`
+  left: 0;
+  height: 20%;
+  cursor: pointer;
 `

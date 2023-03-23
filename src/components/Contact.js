@@ -26,7 +26,7 @@ const Contact = () => {
   return (
     <div>
       <Heading>CONTACT</Heading>
-      <Contairer>
+      <Wrapper>
         <Box>
           <Heading1>find me.</Heading1>
           <Text>Feel free to contact me on your preffered platform. Or send me a email with form.</Text>
@@ -77,22 +77,23 @@ const Contact = () => {
 
           </form>
         </Box>
-      </Contairer>
+      </Wrapper>
     </div> 
     )
   }
-  
   export default Contact
 
-const Contairer = styled.div`
+  const Wrapper = styled.div`
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  width: 63%;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
+    justify-content: center; 
+    align-items: center;
 }
 `
+
 const Heading = styled.h1`
   flex-grow: 1;
   position: relative;
@@ -135,20 +136,21 @@ const Text = styled.p`
 }
 `
 const Box = styled.div`
-  flex-grow: 2;
-  min-height: 550px;
-  max-width: 600px;
-  min-width: 500px;
-  margin: -4% 20px 20px 20px;
+  flex-grow: 1;
+  width: 40rem;
+  height: auto;
+  text-align: left;
+  margin: 20px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
+
   background-color: #242424;
   border-radius: 15px;
-  margin-left: 4%;
-  margin-top: 5%;
 
-  @media (max-width: 1400px) {
-    max-width: 500px;
-    min-width: 400px;
-    min-height: 550px;
+  @media (max-width: 600px) {
+    width: 90%;
+    height: auto;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 5px 20px 5px;
 }
 `
 const LogoStyle = styled.img`
@@ -167,7 +169,7 @@ const LogoStyle = styled.img`
   @media (max-width: 600px) {
     width: 3em;
     height: 3em;
-    padding: 0px 6% 0px 6%;
+    padding: 0px 2% 0px 6%;
 }
 `
 const LogoStyleStatic = styled.img`
@@ -193,7 +195,7 @@ const ButtonWrapper = styled.div`
   margin-top: 20px;
 `
 const Input = styled.input`
-  width: 80%;
+  width: 85%;
   height: 30px;
   font-size: 0.6em;
   font-weight: bold;
@@ -216,10 +218,17 @@ const Input = styled.input`
     color: #DCDCDC;
     border-radius: 15px;
   }
+
+  @media (max-width: 600px) {
+    width: 70%;
+}
 `
 const InputText = styled.textarea`
-  width: 80%;
+  min-width: 85%;
+  max-width: 85%;
   height: 30px;
+  resize: vertical; 
+  max-height: 120px;
   font-size: 0.6em;
   font-weight: bold;
   border: 2px solid transparent;
@@ -241,6 +250,15 @@ const InputText = styled.textarea`
     color: #DCDCDC;
     border-radius: 15px;
   }
+
+  &::-webkit-resizer {
+    display: none;
+  }
+
+  @media (max-width: 600px) {
+    min-width: 70%;
+    max-width: 70%;
+}
 `
 const Label = styled.label`
   flex-grow: 1;

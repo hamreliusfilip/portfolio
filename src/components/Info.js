@@ -17,51 +17,53 @@ import resolve from '../loggor/resolve.svg'
 
 const Info = () => {
     return (
-      <Contairer>
+      <Wrapper>
         <Box>
           <Heading1>PROGRAMMING & DEVELOPMENT</Heading1>
           <Heading2>I have a strong understanding of development and programming, with experience working with various languages and frameworks. </Heading2>
+            <LogoWrapper> 
             <LogoStyle src={c} />
             <LogoStyle src={python} />
             <LogoStyle src={matlab} />
             <LogoStyle src={reactcolor} />
             <LogoStyle src={jscolor} />
             <LogoStyle src={three} />
+            </LogoWrapper>
         </Box>
 
         <Box>
           <Heading1>DESIGN & 3D</Heading1>
           <Heading2> In my free time, I have developed a fascinating interest in design, especially in the realm of 3D elements. I am skilled in a range of tools, from Figma to Blender. </Heading2>
+            <LogoWrapper>
             <LogoStyle src={blender} />
             <LogoStyle src={figma} />
             <LogoStyle src={resolve} />
             <LogoStyle src={canva} />
             <LogoStyle src={ps} />
+            </LogoWrapper>
         </Box>
 
         <Box>
           <Heading1>SALES & PACKAGING</Heading1>
           <Heading2> Through my experiences in both freelancing and school, I've discovered a passion and skill for technical sales and packaging for products and brands.</Heading2>
+            <LogoWrapper> 
             <LogoStyle src={wix} />
             <LogoStyle src={shopify} />
+            </LogoWrapper>
         </Box>
-      </Contairer> 
+      </Wrapper> 
     )
   }
 export default Info
 
-const Contairer = styled.div`
-  display: flex;
-  flex-direction: row;
+const Wrapper = styled.div`
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
-    padding: 30px;
-    margin-top: 5%;
+    justify-content: center; 
+    align-items: center;
 }
 `
 const Heading1 = styled.p`
@@ -74,7 +76,7 @@ const Heading1 = styled.p`
   margin-left: 5%;
   margin-top: 4%;
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1000px) {
     font-size: 1.5em;
     width: 90%;
   }
@@ -90,38 +92,42 @@ const Heading2 = styled.p`
   margin-left: 5%;
   margin-top: 4%;
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1000px) {
     font-size: 0.7em;
     width: 90%;
   }
 `
 const Box = styled.div`
   flex-grow: 1;
-  height: 440px;
-  width: 1025px;
+  width: 20rem;
+  height: auto;
   text-align: left;
-  margin: -1.3% 20px 20px 20px;
+  margin: 20px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
+
   background-color: #242424;
   border-radius: 15px;
-  margin-left: 2%;
 
-  @media (max-width: 1300px) {
-    margin: 30px;
-    height: 320px;
-    width: 90%;
-    margin: 50px 0px 0px 0px;
-    margin-right: 15%;
+  @media (max-width: 600px) {
+    width: 80%;
+    height: auto;
+    margin: 10px 10px 10px 10px;
+    padding: 20px 20px 20px 20px;
 }
 `
 const LogoStyle = styled.img`
   position: relative;
   width: 6em;
   height: 6em;
-  padding: 1% 1% 1% 6%;
+  padding: 1% 1% 1% 1%;
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1000px) {
     width: 5em;
     height: 5em;
   }
+`
+const LogoWrapper = styled.div`
+position: relative;
+widht: 100%;
 `
 

@@ -42,6 +42,7 @@ export default CourseMap
 
 const Total = styled.div`
   position: relative;
+  z-index: 999!important;
   overflow: scroll;
   display: flex;
   color: #DCDCDC;

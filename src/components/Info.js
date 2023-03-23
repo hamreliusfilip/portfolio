@@ -19,7 +19,7 @@ const Info = () => {
     return (
       <Wrapper>
         <Box>
-          <Heading1>PROGRAMMING & DEVELOPMENT</Heading1>
+          <Heading1>SOFTWARE</Heading1>
           <Heading2>I have a strong understanding of development and programming, with experience working with various languages and frameworks. </Heading2>
             <LogoWrapper> 
             <LogoStyle src={c} />
@@ -66,6 +66,34 @@ const Wrapper = styled.div`
     align-items: center;
 }
 `
+const Box = styled.div`
+  flex-grow: 1;
+  width: 20rem;
+  height: auto;
+  text-align: left;
+  margin: 20px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
+
+  background-color: #242424;
+  border-radius: 15px;
+
+  @media (max-width: 600px) {
+    width: 80%;
+    height: auto;
+    margin: 10px 10px 10px 10px;
+    padding: 20px 20px 20px 20px;
+}
+`
+const LogoWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+`
+
+
 const Heading1 = styled.p`
   postion: relative;
   text-align: left;
@@ -86,7 +114,7 @@ const Heading2 = styled.p`
   text-align: left;
   font-family: 'Helvetica Neue';
   font-weight: 700;
-  width: 70%;
+  width: 90%;
   font-size: 1em;
   color: #DCDCDC;
   margin-left: 5%;
@@ -96,24 +124,6 @@ const Heading2 = styled.p`
     font-size: 0.7em;
     width: 90%;
   }
-`
-const Box = styled.div`
-  flex-grow: 1;
-  width: 20rem;
-  height: auto;
-  text-align: left;
-  margin: 20px 20px 20px 20px;
-  padding: 20px 20px 20px 20px;
-
-  background-color: #242424;
-  border-radius: 15px;
-
-  @media (max-width: 600px) {
-    width: 80%;
-    height: auto;
-    margin: 10px 10px 10px 10px;
-    padding: 20px 20px 20px 20px;
-}
 `
 const LogoStyle = styled.img`
   position: relative;
@@ -126,8 +136,5 @@ const LogoStyle = styled.img`
     height: 5em;
   }
 `
-const LogoWrapper = styled.div`
-position: relative;
-widht: 100%;
-`
+
 

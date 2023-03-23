@@ -11,7 +11,7 @@ const projectData = [
     value: '5', 
     github: 'https://github.com/hamreliusfilip/Rocket', 
     url: 'https://filipbagen.github.io/rocket-simulation/', 
-    desc: 'A rocket simulation first developed in Matlab and then completed in Javascript with three.js and glb assets. A real time simulation with parameters such drag, gravity, mass change, thrust change, terminal velocity, air density and much more.'
+    desc: 'A rocket simulation first developed in Matlab and then completed in Javascript with three.js and glb assets. A real time simulation with parameters such as drag, gravity, mass change, thrust change, terminal velocity, air density and much more.'
   },
   
   { 
@@ -30,7 +30,7 @@ const projectData = [
   
   { 
   name: 'VIRTUAL GUIDE', 
-  value: '3', 
+  value: '3',
   github: 'https://github.com/hamreliusfilip/virtual-guide', 
   url: null, 
   desc: 'Virtual Guide, a comprehensive solution for visitors in an exhibition environment to retrieve information and guidance from. The system offers the user verbal and visual feedback to questions or claims regarding the exhibition in question.'

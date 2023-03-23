@@ -97,7 +97,6 @@ border-radius: 15px;
     width: 95%;
 }
 `
-
 const ButtonWrapperLeft = styled.button`
 all: unset;
 position: absolute;

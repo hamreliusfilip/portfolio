@@ -36,7 +36,6 @@ const CourseMap = () => {
     </Wrapper>
   );
 };
-
 export { courseData }
 export default CourseMap
 

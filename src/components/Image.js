@@ -86,8 +86,8 @@ align-items: center;
 margin-top:5%;
 `
 const LargeImage = styled.img`
-height: 50%;
-width: 50%;
+height: 70%;
+width: 70%;
 
 margin-bottom: 5%;
 border-radius: 15px;

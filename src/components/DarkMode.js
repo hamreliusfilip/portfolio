@@ -54,9 +54,11 @@ export const DarkMode = () => {
             </Icon>
           </Burger> 
 
-          <ButtonWrapper style={{ display: window === false ? "none" : "inline-block" }}>
-            <Button><Link to = "about" spy={true} smooth={true} offset={-100} duration={500}>build a project with me.</Link></Button>
-          </ButtonWrapper>
+          <CustomCheckboxContainer>           
+            <CustomCheckboxInput type="checkbox" id="darlmode-toggle" onChange={toggleTheme} />
+            <Text>TOGGLE DARK/LIGHT MODE.</Text>
+            <CustomCheckmark></CustomCheckmark>
+          </CustomCheckboxContainer>
 
           <Navigation style={{ display: window === false ? "inline-block" : "none" }}> 
               <StyledLink to="project" spy={true} smooth={true} offset={0} duration={500}>Projects.</StyledLink>
@@ -69,12 +71,6 @@ export const DarkMode = () => {
               <br></br>
               <StyledLink to="about" spy={true} smooth={true} offset={-140} duration={500}>Contact.</StyledLink>
           </Navigation>
-
-          <CustomCheckboxContainer style={{ display: window === false ? "inline-block" : "none" }}>           
-            <CustomCheckboxInput type="checkbox" id="darlmode-toggle" onChange={toggleTheme} />
-            <Text>TOGGLE DARK/LIGHT MODE.</Text>
-            <CustomCheckmark></CustomCheckmark>
-          </CustomCheckboxContainer>
          </Nav> 
 
          <div> 
@@ -86,81 +82,38 @@ export const DarkMode = () => {
     )
 }; 
 
-const ButtonWrapper = styled.div`
-  display: block;
-  margin-right: 2%;
-  float: right;
-
-  @media (max-width: 600px) {
-    margin-left: 60%;
-    width: 300px;
-    margin-top: 3%;
-    margin-right: 3%;
-   }
-`;
-
-const Button = styled.button`
-font-size: 1em;
-font-weight: bold;
-color: #242424;
-background-color: #DCDCDC;
-border: none;
-outline: none;
-cursor: pointer;
-padding: 13px 20px;
-font-family: 'Helvetica Neue';
-border-radius: 9px;
-
-@media (max-width: 600px) {
-  margin-left: 60%;
-  font-size: 0.5em;
- }
-
-&:hover{
-  transition: all -0.7s;
-  background-color: black;
-  color: #DCDCDC;
-}
-`
-
 const Text = styled.p`
   position: relative;
   z-index: 650;
   font-family: 'Helvetica Neue';
   font-weight: bold;
   font-size: 0.6em;
-  color: #DCDCDC;
+  color: var(--text);
   text-align: right;
   width: 50%;
-  float: right;
-  margin-right: 110%;
-  margin-top: 40%;
   transition: all 0.7s;
+  margin-left: 30%;
 
   @media (max-width: 600px) {
-    width: 50%;
-    float: right;
-    margin-right: 110%;
-    margin-top: 40%;
     font-size: 0em;
    }
-   
   `;
-
-const CustomCheckboxContainer = styled.label`
+  const CustomCheckboxContainer = styled.label`
   transition: all 0.7s;
+  display: flex;
   position: relative;
   cursor: pointer;
-  font-size: 2em;
+  font-size: 1.5em;
   user-select: none;
   float: right;
+  margin-right: 1%;
 
   @media (max-width: 600px) {
-   font-size: 1em;
-   margin-right: 5%;
+   font-size: 0em;
+   margin-right: 7%;
+   margin-top: 4%;
   }
 `;
-
 const CustomCheckboxInput = styled.input`
   transition: all 0.7s;
   position: absolute;
@@ -170,20 +123,18 @@ const CustomCheckboxInput = styled.input`
   width: 0;
 `;
 const CustomCheckmark = styled.div`
-  margin-right: 20%;
-  margin-top: 44%;
   position: relative;
-  height: 1.3em;
-  width: 1.3em;
+  height: 2em;
+  width: 2em;
   background: white;
   border-radius: 50px;
   transition: all 0.7s;
+  margin-top: 7.5%;
+  margin-left: 5%;
   --spread: 20px;
-
   @media (max-width: 600px) {
     padding: 20px;
    }
-
   &:after {
     content: "";
     position: absolute;
@@ -198,33 +149,43 @@ const CustomCheckmark = styled.div`
   ${CustomCheckboxInput}:checked ~ & {
     background: white;
     box-shadow: -10px -10px var(--spread) 0px #5B51D8, 0 -10px var(--spread) 0px #833AB4, 10px -10px var(--spread) 0px #E1306C, 10px 0 var(--spread) 0px #FD1D1D, 10px 10px var(--spread) 0px #F77737, 0 10px var(--spread) 0px #FCAF45, -10px 10px var(--spread) 0px #FFDC80;
-
     &:after {
       display: block;
     }
   }
 `;
-
 const StyledLink = styled(Link)`
   cursor: pointer;
   font-family: 'Helvetica Neue';
   font-weight: bold;
   font-size: 1.7em;
   line-height: 1.5em;
+  color: var(--text);
 
-  @media (max-width: 600px) {
-    width: 20px;
-  }
-
-  &:hover{
-    transition: 0.3s;
-    color: black;
-  }
+  &:hover {
+    transition: all 0.4s;
+    color: var(--background);
+  } 
 `
 const Nav = styled.nav`
-  background-color: #242424;
   width:100wv;
-  transition: all -5s;
+  transition: all -3s;
+  border-bottom: 2px solid #DCDCDC;
+`
+const Navigation = styled.div`
+  position: relative;
+  z-index: 600;
+
+  margin-top: 2%;
+  margin-left: 7%;
+
+  cursor:pointer;
+
+  @media (max-width: 600px) {
+    font-size: 0.9em;
+    margin-left: 3%;
+    margin-top: 17%;
+  }
 `
 const LogoStyle = styled.img`
   position: relative;
@@ -242,24 +203,7 @@ const Burger = styled.div`
   cursor: pointer;
   margin-top: -0.5%;
 `
-const Navigation = styled.div`
-  position: relative;
-  z-index: 600;
 
-  margin-top: 2%;
-  margin-left: 7%;
-
-  color: #DCDCDC;
-
-  cursor:pointer;
-
-  @media (max-width: 600px) {
-    font-size: 0.9em;
-    width: 50%;
-    margin-top: 20%;
-    margin-left: 10%;
-  }
-`
 const Icon = styled.div`
   position: absolute;
   width: 30px;
@@ -290,7 +234,7 @@ const IMG1 = styled.img`
      width: 80%;
      height: 80%;
      margin-left: 50%;
-     margin-top: -50%;
+     margin-top: -10%;
    }
  `
  const IMG2 = styled.img`
@@ -309,7 +253,7 @@ const IMG1 = styled.img`
      width: 70%;
      height: 70%;
      margin-left: -20%;
-     margin-top: 0%;
+     margin-top: -40%;
    }
  `
  const IMG3 = styled.img`

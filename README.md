@@ -13,21 +13,22 @@ Welcome to my personal portfolio website! This website showcases my skills, proj
 
 ## Features
 
-- Responsive design for desktop, tablet, and mobile devices
-- Showcases skills, projects & education.
-- Easy navigation with a clear menu and smooth scrolling between sections
-- Dark/Light mode
-- Contact form that allows visitors to send me messages directly from the website
-- Interactive photo library
+- Responsive design for desktop, tablet, and mobile devices.
+- Showcases skills, projects, education & designs.
+- Easy navigation with a clear menu and smooth scrolling between sections.
+- Dark/Light mode.
+- Contact form that allows visitors to send me mail directly from the website.
+- Interactive photo library.
 
 ## Technologies
 
 This website was built using the following technologies:
 
-- React.js for building the UI components
-- JavaScript for adding interactivity and functionality
-- Node.js for running the development server
-- GitHub Pages for hosting the website
+- React.js for building the UI components.
+- JavaScript for adding interactivity and functionality.
+- Node.js for running the development server.
+- GitHub Pages for hosting the website.
+- Photoshop & Canva for graphical elements.
 
 ## Installation and Usage
 

@@ -68,7 +68,7 @@ const StyledIMG = styled.img`
 position: relative;
 z-index: 800;
 margin-left: 2.5%;
-border-radius: 15px;
+border-radius: 7px;
 height: 14%;
 width: 14%;
 cursor: pointer;
@@ -76,7 +76,7 @@ cursor: pointer;
 @media (max-width: 600px) {
     height: 25%;
     width: 25%;
-    border-radius:10px;
+    border-radius:7px;
 }
 `
 const ViewImagWrapper = styled.div`
@@ -90,7 +90,7 @@ height: 70%;
 width: 70%;
 
 margin-bottom: 5%;
-border-radius: 15px;
+border-radius: 7px;
 
 @media (max-width: 600px) {
     height: 95%;

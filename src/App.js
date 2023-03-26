@@ -72,7 +72,7 @@ const ProjectWrapper = styled.div`
   postion: absolute;
   z-index: 3;
   width: 100vw;
-  margin-top:25%;
+  margin-top:15%;
 
   @media (max-width: 600px) {
     margin-top:70%;
@@ -103,7 +103,7 @@ const ImageWrapper = styled.div`
   postion: absolute;
   z-index: 999;
   width: 100vw;
-  margin-top:13%;
+  margin-top:15%;
   background-color: #242424;
   padding: 0.1% 0 0.1% 0;
 
@@ -145,7 +145,7 @@ const HeadingImage = styled.h1`
   color: #DCDCDC;
 
   @media (max-width: 600px) {
-    font-size: 3em;
+    font-size: 1.5em;
     margin-right: 10%;
 }
 `

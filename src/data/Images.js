@@ -13,8 +13,18 @@ import a12 from '../assets/a12.png'
 import a13 from '../assets/a13.png'
 import a14 from '../assets/a14.png'
 
+import a15 from '../assets/a15.png'
+import a16 from '../assets/a16.png'
+import a17 from '../assets/a17.png'
+import a18 from '../assets/a18.png'
+
 const ImagesData = [
 
+{
+  img: a16,
+  alt: "Reload page.",
+  key: '16'
+},
 {
   img: a5,
   alt: "Reload page.",
@@ -36,6 +46,11 @@ const ImagesData = [
   key: '14'
 },
 {
+  img: a18,
+  alt: "Reload page.",
+  key: '18'
+},
+{
   img: a10,
   alt: "Reload page.",
   key: '10'
@@ -44,6 +59,11 @@ const ImagesData = [
   img: a12,
   alt: "Reload page.",
   key: '12'
+},
+{
+  img: a17,
+  alt: "Reload page.",
+  key: '17'
 },
 {
   img: a2,
@@ -81,9 +101,16 @@ const ImagesData = [
   key: '8'
 },
 {
+  img: a15,
+  alt: "Reload page.",
+  key: '15'
+},
+{
   img: a9,
   alt: "Reload page.",
   key: '9'
 },
+
+
 ]
 export { ImagesData }

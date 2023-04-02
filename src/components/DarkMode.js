@@ -85,7 +85,7 @@ export const DarkMode = () => {
 const Text = styled.p`
   position: relative;
   z-index: 650;
-  font-family: 'Helvetica Neue';
+  font-family: 'HelveticaAll';
   font-weight: bold;
   font-size: 0.6em;
   color: var(--text);
@@ -156,7 +156,7 @@ const CustomCheckmark = styled.div`
 `;
 const StyledLink = styled(Link)`
   cursor: pointer;
-  font-family: 'Helvetica Neue';
+  font-family: 'HelveticaAll';
   font-weight: bold;
   font-size: 1.7em;
   line-height: 1.5em;

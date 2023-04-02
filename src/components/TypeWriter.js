@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const Text = styled.h1`
 position: relative;
 margin-left: 2%;
-font-family: 'Helvetica Neue';
+font-family: 'HelveticaAll';
 font-weight: bold;
 font-size: 2em;
 color: var(--text);

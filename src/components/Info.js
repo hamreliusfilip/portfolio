@@ -97,7 +97,7 @@ const LogoWrapper = styled.div`
 const Heading1 = styled.p`
   postion: relative;
   text-align: left;
-  font-family: 'Helvetica Neue';
+  font-family: 'HelveticaAll';
   font-weight: 700;
   font-size: 2em;
   color: #DCDCDC;
@@ -112,7 +112,7 @@ const Heading1 = styled.p`
 const Heading2 = styled.p`
   postion: relative;
   text-align: left;
-  font-family: 'Helvetica Neue';
+  font-family: 'HelveticaAll';
   font-weight: 700;
   width: 90%;
   font-size: 1em;

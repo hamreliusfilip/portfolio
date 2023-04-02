@@ -16,8 +16,9 @@ const Greeting = () => {
 
   const Hellotext = styled.h2`
   position: relative;
-  margin-left: 2%;
-  font-family: 'Helvetica Neue';
+  margin-left: 7%;
+  margin-top: 3%;
+  font-family: 'HelveticaAll';
   font-weight: bold;
   font-size: 8em;
   color: var(--text);

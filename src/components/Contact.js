@@ -98,7 +98,7 @@ const Heading = styled.h1`
   flex-grow: 1;
   position: relative;
   margin-left: 3%;
-  font-family: 'Helvetica Neue';
+  font-family: 'HelveticaAll';
   font-weight: 700;
   font-size: 5em;
   color: var(--text);
@@ -111,7 +111,7 @@ const Heading = styled.h1`
 `
 const Heading1 = styled.p`
   postion: relative;
-  font-family: 'Helvetica Neue';
+  font-family: 'HelveticaAll';
   font-weight: 700;
   font-size: 2em;
   color: #DCDCDC;
@@ -123,7 +123,7 @@ const Heading1 = styled.p`
 `
 const Text = styled.p`
   postion: relative;
-  font-family: 'Helvetica Neue';
+  font-family: 'HelveticaAll';
   font-weight: 700;
   font-size: 1em;
   color: #DCDCDC;
@@ -206,7 +206,7 @@ const Input = styled.input`
   background-color: #242424;
   padding: 5px;
   transition: .5s linear;
-  font-family: helvetica neue;
+  font-family: 'HelveticaAll';
   letter-spacing: 1px;
 
   padding: 10px;
@@ -238,7 +238,7 @@ const InputText = styled.textarea`
   background-color: #242424;
   padding: 5px;
   transition: .5s linear;
-  font-family: helvetica neue;
+  font-family: 'HelveticaAll';
   letter-spacing: 1px;
 
   padding: 10px;
@@ -265,7 +265,7 @@ const Label = styled.label`
   font-size: 45px;
   font-weight: bold;
   padding: 20px 20px 20px 20px;
-  font-family: 'Helvetica Neue';
+  font-family: 'HelveticaAll';
   text-color: #DCDCDC;
   max-width:700px;
   text-decoration: none;
@@ -280,7 +280,7 @@ const Button = styled.button`
   outline: none;
   cursor: pointer;
   padding: 13px 30px;
-  font-family: 'Helvetica Neue';
+  font-family: 'HelveticaAll';
   border-radius: 9px;
   max-width: 50%;
 

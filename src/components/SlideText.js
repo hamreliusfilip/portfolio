@@ -18,7 +18,7 @@ function SlideText() {
 export default SlideText; 
 
 const Text = styled.h1`
-font-family: 'Helvetica Neue';
+font-family: 'HelveticaAll';
 font-weight: bold;
 font-size: 4em;
 color: var(--text);
@@ -29,7 +29,7 @@ color: var(--text);
 }
 `
 const Name = styled.h1`
-font-family: 'Helvetica Neue';
+font-family: 'HelveticaAll';
 font-weight: bold;
 font-size: 4em;
 color: var(--text);

@@ -14,7 +14,7 @@ function BackTop() {
 export default BackTop; 
 
 const Text = styled.h1`
-font-family: 'Helvetica Neue';
+font-family: 'HelveticaAll';
 font-weight: 500;
 font-size: 5em;
 color: var(--text);

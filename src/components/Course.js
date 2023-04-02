@@ -40,7 +40,7 @@ const Name = styled.div`
   z-index: 500; 
   text-align: center; 
   font-size: 1.4em;
-  font-family: 'Helvetica Neue';
+  font-family: 'HelveticaAll';
   font-weight: 800;
   color: #DCDCDC;
   padding: 10%;

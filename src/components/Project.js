@@ -78,7 +78,7 @@ const Info = styled.a`
   }
 `
 const TextWrapper = styled.div`
-  font-family: 'Helvetica Neue';
+  font-family: 'HelveticaAll';
   max-width:95%;
   text-decoration: none;
   padding: 10px 10px 0px 30px;

@@ -27,3 +27,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face{ 
+  font-family: 'HelveticaAll'; 
+  src: local('Helvetica'),
+  url('./fonts/Helvetica.ttf') format('truetype');
+  font-weight: 500; 
+}

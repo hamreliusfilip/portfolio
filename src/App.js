@@ -126,7 +126,7 @@ const WrapperEducation = styled.div`
 const Heading1 = styled.h1`
   position: relative;
   margin-left: 2%;
-  font-family: 'Helvetica Neue';
+  font-family: 'HelveticaAll';
   font-weight: 700;
   font-size: 5em;
   color: var(--text);
@@ -139,7 +139,7 @@ const Heading1 = styled.h1`
 const HeadingImage = styled.h1`
   position: relative;
   margin-left: 2%;
-  font-family: 'Helvetica Neue';
+  font-family: 'HelveticaAll';
   font-weight: 700;
   font-size: 3em;
   color: #DCDCDC;
@@ -152,7 +152,7 @@ const HeadingImage = styled.h1`
 const Heading2 = styled.p`
   position: relative;
   margin-left: 2%;
-  font-family: 'Helvetica Neue';
+  font-family: 'HelveticaAll';
   font-weight: 700;
   font-size: 2em;
   color: var(--text);
@@ -167,7 +167,7 @@ const Text = styled.p`
   position: relative;
   margin-left: 2%;
   width: 40%;
-  font-family: 'Helvetica Neue';
+  font-family: 'HelveticaAll';
   font-weight: 700;
   font-size: 1.3em;
   color: var(--text);

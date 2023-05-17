@@ -16,10 +16,17 @@ const projectData = [
   
   { 
   name: 'MERIT', 
-  value: '2', 
+  value: '7', 
   github: 'https://github.com/hamreliusfilip/merit', 
   url: 'https://filipbagen.github.io/merit/',
   desc: 'App prototype to gather relevant information for Media Technology students at LiU. Winner of the annual MT Section Gray Cube: An annual award for the most technically challenging project. The user must be able to see important information such as their schedule, upcoming exams and exam statistics. ' 
+},
+{
+  name: 'Feline & Franciska',
+  value: '2', 
+  github: 'https://github.com/hamreliusfilip/Feline-Franciska',
+  url: null, 
+  desc: 'A website with portfolio, webshop, document reader and contact forms. Displaying arts & Illustrations for the company Feline & Franciska. Built with Javascript and React.'
 },
 { 
     name: 'SVENSKA KLUBBEN - LAUSANNE', 

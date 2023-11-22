@@ -4,7 +4,7 @@ import { DarkMode } from './components/DarkMode'
 import ProjectMap from './components/ProjectMap'
 import Typewriters from './components/TypeWriter'
 import Contact from './components/Contact'
-import SlideText from './components/SlideText'
+//import SlideText from './components/SlideText'
 import Info from './components/Info'
 import Greeting from "./components/Greeting"
 import BackTop from './components/backTop'
@@ -18,7 +18,8 @@ function App() {
 
       <TitleWrapper id="title">
         <Greeting />
-        <SlideText />
+        {/* <SlideText /> */}
+        <NewGreeting>I'm Filip, currently pursuing a master's degree in Media Technology and Engineering. Explore my portfolio to learn more! </NewGreeting>
       </TitleWrapper>
 
       <WhatCan id="whatcan">
@@ -38,7 +39,7 @@ function App() {
 
       <WrapperEducation id="education">
         <Heading1>EDUCATION</Heading1>
-        <Heading2> Third year M.Sc in Media Technology and Engineering </Heading2>
+        <Heading2> Fourth year M.Sc in Media Technology and Engineering </Heading2>
         <Text> master of science in media technology is a broad program of study in engineering,
           where the classic subjects of engineering are mixed with topics such as visualization,
           computer graphics, machine learning, interaction design and image processing.</Text>
@@ -56,6 +57,24 @@ function App() {
 }
 
 export default App;
+
+const NewGreeting = styled.p`
+  position: relative;
+  margin-left: 3.8%;
+  margin-bottom: 40%;
+  width: 40%;
+  font-family: 'HelveticaAll';
+  font-weight: 700;
+  font-size: 2.5em;
+  color: var(--text);
+  text-align: "." center;
+
+  @media (max-width: 600px) {
+    font-size: 0.7em;
+    margin-right: 10%;
+    width: 90%;
+  }
+`
 
 const Wrapper = styled.div`
   position: relative;

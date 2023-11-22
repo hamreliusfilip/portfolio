@@ -20,7 +20,7 @@ const Info = () => {
       <Wrapper>
         <Box>
           <Heading1>SOFTWARE</Heading1>
-          <Heading2>I have a strong understanding of development and programming, with experience working with various languages and frameworks. </Heading2>
+          <Heading2>I have a strong understanding of development and programming, with experience working with various languages and frameworks. My primary interests lie in the fields of visualization, data science, and image processing.</Heading2>
             <LogoWrapper> 
             <LogoStyle src={c} />
             <LogoStyle src={python} />

@@ -25,6 +25,13 @@ const courseData = [
   { coursecCode: 'TNG022', name: 'MODELLING AND SIMULATION', preCourse: 'TNG006, TNG028', literature: 'Modellbygge och simulering#Modellbygge och simulering, Övningsbok', link: 'https://studieinfo.liu.se/kurs/TNG022' },
   { coursecCode: 'TNM087', name: 'IMAGE PROCESSING AND ANALYSIS', preCourse: 'TNA002, TNA006, TNG015, TNA005, TNM059, TNG032', literature: 'Digital Image Processing', link: 'https://studieinfo.liu.se/kurs/TNM087' },
   { coursecCode: 'TNM085', name: 'MODELLING PROJECT', preCourse: 'TNG022', literature: '', link: 'https://studieinfo.liu.se/kurs/TNM085' },
-  { coursecCode: 'TND004', name: 'DATA STRUCTURES', preCourse: 'TNG033', literature: 'Data Structure and Algorithm Analysis in C++', link: 'https://studieinfo.liu.se/kurs/TND004' }
+  { coursecCode: 'TND004', name: 'DATA STRUCTURES', preCourse: 'TNG033', literature: 'Data Structure and Algorithm Analysis in C++', link: 'https://studieinfo.liu.se/kurs/TND004' },
+  
+  { courseCode:'TNM108' , name:'Machine Learning for Social Media', preCourse:'' , literature:'' , link:'https://studieinfo.liu.se/en/kurs/tnm108/' },
+  { courseCode:'TNM034' , name:'Advanced Image Processing', preCourse:'' , literature:'' , link:'https://studieinfo.liu.se/en/kurs/tnm034' },
+  { courseCode:'TNM067' , name:'Scientific Visualization', preCourse:'' , literature:'' , link:'https://studieinfo.liu.se/en/kurs/tnm067/ht-2018' },
+  { courseCode:'TGTU94' , name:'Technology and Ethics', preCourse:'' , literature:'' , link:'https://studieinfo.liu.se/en/kurs/tgtu94' },
+  { courseCode:'TEAE11' , name:'Intellectual Property Rights', preCourse:'' , literature:'' , link:'https://studieinfo.liu.se/en/kurs/teae11' },
+
 ]
 export { courseData }

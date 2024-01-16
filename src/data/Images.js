@@ -19,6 +19,8 @@ import a19 from '../assets/a19.png'
 import a20 from '../assets/a20.png'
 import a21 from '../assets/a21.png'
 
+import a22 from '../assets/a22.png'
+
 const ImagesData = [
 {
   img: a20,
@@ -26,14 +28,29 @@ const ImagesData = [
   key: '20'
 },
 {
-  img: a21,
+  img: a13,
   alt: "Reload page.",
-  key: '21'
+  key: '13'
 },
 {
   img: a16,
   alt: "Reload page.",
   key: '16'
+},
+{
+  img: a5,
+  alt: "Reload page.",
+  key: '1'
+},
+{
+  img: a21,
+  alt: "Reload page.",
+  key: '21'
+},
+{
+  img: a22,
+  alt: "Reload page.",
+  key: '22'
 },
 {
   img: a18,
@@ -46,19 +63,9 @@ const ImagesData = [
   key: '15'
 },
 {
-  img: a13,
-  alt: "Reload page.",
-  key: '13'
-},
-{
   img: a14,
   alt: "Reload page.",
   key: '14'
-},
-{
-  img: a5,
-  alt: "Reload page.",
-  key: '1'
 },
 {
   img: a10,

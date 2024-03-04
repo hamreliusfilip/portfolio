@@ -39,4 +39,17 @@ To run the website locally, follow these steps:
 3. Start the development server: `npm start`
 4. Open the website in your browser at: `http://localhost:3000` or `http://ChangeToIp:3000` on your mobile device, provided you are on the same network as the PC.
 
+## Screenshots 
+
+![image](https://github.com/hamreliusfilip/portfolio/assets/91670593/8989c394-916c-4122-b681-eccfaa10871c)
+
+![image](https://github.com/hamreliusfilip/portfolio/assets/91670593/a767ac47-811e-4e3f-ab53-7e439bc06db4)
+
+![image](https://github.com/hamreliusfilip/portfolio/assets/91670593/c433245c-549d-438f-bf9c-53809509e03f)
+
+![image](https://github.com/hamreliusfilip/portfolio/assets/91670593/5864aa98-bbd9-4990-b1c7-7f470ceb414a)
+
+![image](https://github.com/hamreliusfilip/portfolio/assets/91670593/44f04ca1-56b7-4fe6-98e8-68276c7f2507)
+
+
 

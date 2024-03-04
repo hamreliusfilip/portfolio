@@ -20,7 +20,7 @@ const Greeting = () => {
   margin-top: 3%;
   font-family: 'HelveticaAll';
   font-weight: bold;
-  font-size: 8em;
+  font-size: 3em;
   color: var(--text);
 
   @media (max-width: 1000px) {

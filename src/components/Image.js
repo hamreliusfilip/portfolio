@@ -26,6 +26,7 @@ const Image = () => {
             <ButtonWrapperLeft disabled={scrollLeft1 === 0} onClick={() => handleScroll1(-180)}>
                 <ImageLeft src={arrow} />
             </ButtonWrapperLeft>
+
             <Total ref={ref1}>
                 {ImagesData.map((image) => (
                     <StyledIMG
@@ -38,9 +39,11 @@ const Image = () => {
                         }} />
                 ))}
             </Total>
+
             <ButtonWrapperRight disabled={scrollLeft1 === ref1.current.scrollWidth - ref1.current.clientWidth} onClick={() => handleScroll1(180)}>
                 <ImageRight src={arrow} />
             </ButtonWrapperRight>
+            
         </Wrapper>
     )
 }
@@ -61,7 +64,7 @@ display: flex;
 const Wrapper = styled.div`
 width: 100vw;
 position: relative;
-padding: 0 0 70px 0;
+padding: 0 0 30px 0;
 
 `
 const StyledIMG = styled.img`     
@@ -74,9 +77,10 @@ width: 14%;
 cursor: pointer;
 
 @media (max-width: 600px) {
-    height: 25%;
-    width: 25%;
+    height: 35%;
+    width: 35%;
     border-radius:7px;
+    margin-top: 4%;
 }
 `
 const ViewImagWrapper = styled.div`
@@ -86,15 +90,17 @@ align-items: center;
 margin-top:5%;
 `
 const LargeImage = styled.img`
-height: 70%;
-width: 70%;
+height: 50%;
+width: 50%;
 
-margin-bottom: 5%;
+margin-top: -4%;
+margin-bottom: 2%;
 border-radius: 7px;
 
 @media (max-width: 600px) {
     height: 95%;
     width: 95%;
+    margin-top: 1%;
 }
 `
 const ButtonWrapperLeft = styled.button`

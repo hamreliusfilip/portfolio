@@ -3,22 +3,23 @@ import Typewriter from 'typewriter-effect'
 import styled from 'styled-components'
 
 const Text = styled.h1`
-position: relative;
-margin-left: 2%;
-font-family: 'HelveticaAll';
-font-weight: bold;
-font-size: 2em;
-color: var(--text);
-padding: 15% 0px 200px 0px;
-display: flex;
-justify-content: center;
-align-items: center;
+  position: relative;
+  margin-left: 2%;
+  font-family: 'HelveticaAll';
+  font-weight: bold;
+  font-size: 2em;
+  color: var(--text);
+  padding: 15% 0px 200px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Align vertically in the middle */
 
-@media (max-width: 600px) {
+  @media (max-width: 600px) {
     font-size: 1em;
     padding: 25% 0px 200px 0px;
   }
-`
+`;
+
 function Typewriters() {
     return (
         <div>

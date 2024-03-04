@@ -27,16 +27,16 @@ const Project = (props) => {
 export default Project
 
 const Box = styled.div`
-  height: 160px;
+  height: 200px;
   width: 500px;
-  min-height: 270px;
+  min-height: 300px;
   min-width: 600px;
   margin: 20px 20px 20px 20px;
   background-color: #242424;
   border-radius: 15px;
 
   @media (max-width: 600px) {
-    height: 255px;
+    min-height: 290px;
     min-width: 350px;
     margin: 10px 10px 10px 10px;
   }
@@ -45,7 +45,7 @@ const LogoStyle = styled.img`
   postion: relative;
   width: 3em;
   height: 3em;
-  padding: 20px 20px 0px 30px;
+  padding: 20px 20px 20px 30px;
   cursor:ponter;
 
   &:hover {
@@ -65,16 +65,16 @@ const Name = styled.div`
   color: #DCDCDC;
 
   @media (max-width: 600px) {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 `
 const Info = styled.a`
-  font-size: 0.8em;
+  font-size: 1.3em;
   font-weight: 450;
   color: #DCDCDC;
 
   @media (max-width: 600px) {
-    font-size: 0.7em;
+    font-size: 1em;
   }
 `
 const TextWrapper = styled.div`

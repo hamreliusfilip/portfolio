@@ -2,14 +2,15 @@ import styled from 'styled-components'
 
 import { DarkMode } from './components/DarkMode'
 import ProjectMap from './components/ProjectMap'
-import Typewriters from './components/TypeWriter'
 import Contact from './components/Contact'
-//import SlideText from './components/SlideText'
 import Info from './components/Info'
 import Greeting from "./components/Greeting"
 import BackTop from './components/backTop'
 import Image from './components/Image'
 import CourseMap from './components/CourseMap'
+
+import { courseData } from './data/DB'
+import { courseData2 } from './data/DB3'
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
       <TitleWrapper id="title">
         <Greeting />
         {/* <SlideText /> */}
-        <NewGreeting>I'm Filip, currently pursuing a master's degree in Media Technology and Engineering. Explore my portfolio to learn more! </NewGreeting>
+        <NewGreeting>Hello, I'm Filip, currently pursuing a master's degree in Media Technology and Engineering. Explore my portfolio by scrolling down to learn more! </NewGreeting>
       </TitleWrapper>
 
       <WhatCan id="whatcan">
@@ -40,17 +41,22 @@ function App() {
       <WrapperEducation id="education">
         <Heading1>EDUCATION</Heading1>
         <Heading2> Fourth year M.Sc in Media Technology and Engineering </Heading2>
-        <Text> master of science in media technology is a broad program of study in engineering,
+        <Text> Media Technology a broad engineering program,
           where the classic subjects of engineering are mixed with topics such as visualization,
           computer graphics, machine learning, interaction design and image processing.</Text>
-        <CourseMap />
+
+        <Text2 > Bachelor's Courses: </Text2>
+        <CourseMap courseData={courseData}> </CourseMap>
+
+        <Text2> Master's Courses: </Text2>
+        <CourseMap courseData={courseData2}> </CourseMap>
+        
       </WrapperEducation>
 
       <ContactWrapper id="about">
         <Contact />
       </ContactWrapper>
 
-      <Typewriters />
       <BackTop />
     </Wrapper>
   );
@@ -60,21 +66,25 @@ export default App;
 
 const NewGreeting = styled.p`
   position: relative;
-  margin-left: 3.8%;
-  margin-bottom: 40%;
-  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 25%;
+  margin-top: 20%;
+  width: 70%;
   font-family: 'HelveticaAll';
   font-weight: 700;
-  font-size: 2.5em;
+  font-size: 2em;
   color: var(--text);
-  text-align: "." center;
+  text-align: center;
 
   @media (max-width: 600px) {
-    font-size: 0.7em;
-    margin-right: 10%;
+    font-size: 1.2em;
+    margin-top: 20vh; 
+    transform: translateY(-50%); /* Centering trick */
     width: 90%;
   }
-`
+`;
+
+
 
 const Wrapper = styled.div`
   position: relative;
@@ -188,12 +198,30 @@ const Text = styled.p`
   width: 40%;
   font-family: 'HelveticaAll';
   font-weight: 700;
-  font-size: 1.3em;
+  font-size: 1.4em;
   color: var(--text);
   text-align: "." center;
 
   @media (max-width: 600px) {
-    font-size: 0.7em;
+    font-size: 1em;
+    margin-right: 10%;
+    width: 90%;
+}
+`
+
+const Text2 = styled.p`
+  position: relative;
+  margin-left: 2%;
+  width: 40%;
+  font-family: 'HelveticaAll';
+  font-weight: 800;
+  font-size: 2.5em;
+  color: var(--text);
+  text-align: "." center;
+  margin-bottom: -4%;
+
+  @media (max-width: 600px) {
+    font-size: 1.4em;
     margin-right: 10%;
     width: 90%;
 }

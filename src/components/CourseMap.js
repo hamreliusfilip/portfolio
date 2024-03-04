@@ -1,10 +1,9 @@
 import React from 'react';
 import Course from './Course'
 import styled from 'styled-components'
-import { courseData } from '../data/DB'
 import Marquee from 'react-fast-marquee'
 
-const CourseMap = () => {
+const CourseMap = ({ courseData }) => {
 
   const course1 = courseData.slice(0, courseData.length / 2);
   const course2 = courseData.slice(courseData.length / 2);
@@ -17,7 +16,7 @@ const CourseMap = () => {
             <Course
               courseName={course.name}
               courseLink={course.link}
-              key={course.coursecCode}
+              key={course.key}
             />
           ))}
         </Marquee>
@@ -28,7 +27,7 @@ const CourseMap = () => {
             <Course
               courseName={course.name}
               courseLink={course.link}
-              key={course.coursecCode}
+              key={course.key}
             />
           ))}
         </Marquee>
@@ -36,7 +35,6 @@ const CourseMap = () => {
     </Wrapper>
   );
 };
-export { courseData }
 export default CourseMap
 
 const Total = styled.div`

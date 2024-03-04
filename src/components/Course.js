@@ -12,8 +12,8 @@ const Course = (props) => {
 export default Course
 
 const Box = styled.div`
-  height: 180px;
-  width: 300px;
+  height: 100px;
+  width: 500px;
   margin: 10px;
   text-decoration: none;
   background-color: #242424;
@@ -25,12 +25,12 @@ const Box = styled.div`
 
   &:hover {
     transition: all 300ms ease-in-out;
-    transform: scale(1.07);
+    transform: scale(1.05);
   }
 
   @media (max-width: 600px) {
-    font-size: 1em;
-    height: 140px;
+    font-size: 0.8em;
+    height: 100px;
     width: 225px;
     margin: 10px;
   }

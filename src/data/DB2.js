@@ -1,7 +1,7 @@
 const projectData = [
 
   {
-  name: 'Sentiment Analysis - Support Vector Machine from scratch', 
+  name: 'Sentiment Analysis - Support Vector Machine', 
   value: '1', 
   github: 'https://github.com/hamreliusfilip/Sentiment_Analysis_SVM', 
   url: null, 
@@ -22,7 +22,7 @@ const projectData = [
   desc: 'App prototype to gather relevant information for Media Technology students at LiU. Winner of the annual MT Section Gray Cube: An annual award for the most technically challenging project. The user must be able to see important information such as their schedule, upcoming exams and exam statistics. ' 
 },
 {
-  name: 'Feline & Franciska',
+  name: 'Feline & Franciska - Portfolio Website',
   value: '4', 
   github: 'https://github.com/hamreliusfilip/Feline-Franciska',
   url: null, 
@@ -63,6 +63,20 @@ const projectData = [
   github: 'https://github.com/hamreliusfilip/Facial_Recognition', 
   url: null, 
   desc: 'Advanced Image Processing: Facial recognition program in MATLAB. This program can identify faces in a database and compare them to predefined images of individuals who have been granted access.'
+},
+{ 
+  name: 'Image reproduction in MATLAB', 
+  value: '10', 
+  github: 'https://github.com/hamreliusfilip/Image_Reproduction_Database', 
+  url: null, 
+  desc: 'A program to replicate a user-inputted image using a predefined database with other images. Based on the CIELAB colorspace and structural similarity.'
+},
+{ 
+  name: 'Node graph in JS', 
+  value: '11', 
+  github: 'https://github.com/hamreliusfilip/Image_Reproduction_Database', 
+  url: null, 
+  desc: 'A graphing program to display connections between Star Wars characters, a lab in the course Information Visualization. Built in JS with D3.js'
 },
 ]
 export { projectData }

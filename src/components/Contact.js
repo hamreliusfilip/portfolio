@@ -28,7 +28,7 @@ const Contact = () => {
       <Heading>CONTACT</Heading>
       <Wrapper>
         <Box>
-          <Heading1>find me.</Heading1>
+          <Heading1>Find me</Heading1>
           <Text>Feel free to contact me on your preffered platform. Or send me a email with form.</Text>
           <StyledA href="https://github.com/hamreliusfilip" target="_blank">
             <LogoStyle src={github} />
@@ -43,7 +43,7 @@ const Contact = () => {
             <LogoStyle src={instagram} />
           </StyledA>
 
-          <Heading1>behind site.</Heading1>
+          <Heading1>Behind site</Heading1>
           <Text>This website was built using React js. This is an open source project. You can clone or download the project via my Github repository. </Text>
           <LogoStyleStatic src={react} />
           <LogoStyleStatic src={js} />
@@ -53,26 +53,26 @@ const Contact = () => {
         </Box>
 
         <Box>
-          <Heading1>send me a message.</Heading1>
+          <Heading1>Send me a message</Heading1>
           <form onSubmit={sendEmail}>
             <Label>
-              <Input type="text" name="subject" placeholder="subject." required/>
+              <Input type="text" name="subject" placeholder="Subject" required/>
             </Label>
 
             <Label>
-              <Input type="text" name="name" placeholder="name." required/>
+              <Input type="text" name="name" placeholder="Name" required/>
             </Label>
 
             <Label>
-              <Input type="email" name="email" placeholder="email." required/>
+              <Input type="email" name="email" placeholder="Email" required/>
             </Label>
 
             <Label>
-              <InputText type="text" name="message" placeholder="message." required/>
+              <InputText type="text" name="message" placeholder="Message" required/>
             </Label>
 
             <ButtonWrapper>
-              <Button type="submit" value="Send" >send.</Button>
+              <Button type="submit" value="Send" >Send</Button>
             </ButtonWrapper>
 
           </form>
@@ -84,10 +84,14 @@ const Contact = () => {
   export default Contact
 
   const Wrapper = styled.div`
-  width: 100%;
+  width: 60%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 
   @media (max-width: 1000px) {
+    width: 100%;
     flex-direction: column;
     justify-content: center; 
     align-items: center;
@@ -137,8 +141,8 @@ const Text = styled.p`
 `
 const Box = styled.div`
   flex-grow: 1;
-  width: 40rem;
-  height: auto;
+  width: 50rem;
+  height: 35rem;
   text-align: left;
   margin: 20px 20px 20px 20px;
   padding: 20px 20px 20px 20px;

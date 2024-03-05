@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.41577eba.css",
-    "main.js": "/static/js/main.72146e66.js",
+    "main.js": "/static/js/main.ca7556a9.js",
     "static/js/787.423db693.chunk.js": "/static/js/787.423db693.chunk.js",
-    "static/media/gradient.png": "/static/media/gradient.d0251430eaf3e91cac43.png",
     "static/media/a20.png": "/static/media/a20.f21104bd5b6cf6322a45.png",
     "static/media/darkgradient.png": "/static/media/darkgradient.b85f0d1e78273e335b21.png",
     "static/media/a2.png": "/static/media/a2.5a5bc0ddc2aabb2c092a.png",
@@ -51,11 +50,11 @@
     "static/media/arrow.svg": "/static/media/arrow.85fa6b8cef05b15c297dab4b08c48c6a.svg",
     "index.html": "/index.html",
     "main.41577eba.css.map": "/static/css/main.41577eba.css.map",
-    "main.72146e66.js.map": "/static/js/main.72146e66.js.map",
+    "main.ca7556a9.js.map": "/static/js/main.ca7556a9.js.map",
     "787.423db693.chunk.js.map": "/static/js/787.423db693.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.41577eba.css",
-    "static/js/main.72146e66.js"
+    "static/js/main.ca7556a9.js"
   ]
 }

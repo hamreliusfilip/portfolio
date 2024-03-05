@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll"
 
-import light from '../grad/gradient.png'
 import dark from '../grad/darkgradient.png'
+
+import light from '../grad/test.png'
+
 import cross from '../loggor/cross.svg'
 import menu from '../loggor/menu.svg'
 

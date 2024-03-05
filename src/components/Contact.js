@@ -141,8 +141,13 @@ const Text = styled.p`
 `
 const Box = styled.div`
   flex-grow: 1;
-  width: 50rem;
-  height: 35rem;
+
+  width: 450px;
+  height: 550px;
+
+  min-width: 450px;
+  min-height: 550px;
+
   text-align: left;
   margin: 20px 20px 20px 20px;
   padding: 20px 20px 20px 20px;

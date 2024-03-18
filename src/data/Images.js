@@ -18,10 +18,15 @@ import a18 from '../assets/a18.png'
 import a19 from '../assets/a19.png'
 import a20 from '../assets/a20.png'
 import a21 from '../assets/a21.png'
-
 import a22 from '../assets/a22.png'
+import a23 from '../assets/a23.png'
 
 const ImagesData = [
+{
+  img: a23,
+  alt: "Reload page.",
+  key: '23'
+},
 {
   img: a20,
   alt: "Reload page.",

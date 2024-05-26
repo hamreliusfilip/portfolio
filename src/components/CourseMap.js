@@ -1,6 +1,6 @@
 import React from 'react';
-import Course from './Course'
 import styled from 'styled-components'
+import Course from './Course'
 import Marquee from 'react-fast-marquee'
 
 const CourseMap = ({ courseData }) => {
@@ -44,14 +44,11 @@ const Total = styled.div`
   display: flex;
   color: #DCDCDC;
   width: 100vw;
-  
-  &::-webkit-scrollbar {
-  display: none;
-}
+
 `
+
 const Wrapper = styled.div`
   margin-top: 5%;
   width: 100vw;
   position: relative;
 `
-

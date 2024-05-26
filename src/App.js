@@ -8,9 +8,11 @@ import Greeting from "./components/Greeting"
 import BackTop from './components/backTop'
 import Image from './components/Image'
 import CourseMap from './components/CourseMap'
+import CourseMap2 from './components/CourseMap2'
 
 import { courseData } from './data/DB'
 import { courseData2 } from './data/DB3'
+import { courseData3 } from './data/DB4'
 
 function App() {
   return (
@@ -20,26 +22,26 @@ function App() {
       <TitleWrapper id="title">
         <Greeting />
         {/* <SlideText /> */}
-        <NewGreeting>Hello, I'm Filip, currently pursuing a master's degree in Media Technology and Engineering. Explore my portfolio by scrolling down to learn more! </NewGreeting>
+        <NewGreeting>Hello, I'm Filip, currently pursuing a master's degree in Media Technology and Engineering. Explore my portfolio by scrolling down to learn more. </NewGreeting>
       </TitleWrapper>
 
       <WhatCan id="whatcan">
-        <Heading1>MY TOOLKIT</Heading1>
+        <Heading1>My toolkit</Heading1>
         <Info />
       </WhatCan>
 
       <ProjectWrapper id="project">
-        <Heading1>SOME THINGS I'VE BUILT</Heading1>
+        <Heading1>Some things I have built</Heading1>
         <ProjectMap />
       </ProjectWrapper>
 
       <ImageWrapper id = "gallery"> 
-        <HeadingImage>SOME RENDERS, DESIGNS & PROMOS </HeadingImage>
+        <HeadingImage>Renders, designs & promos </HeadingImage>
         <Image />
       </ImageWrapper> 
 
       <WrapperEducation id="education">
-        <Heading1>EDUCATION</Heading1>
+        <Heading1>Education</Heading1>
         <Heading2> Fourth year M.Sc in Media Technology and Engineering </Heading2>
         <Text> Media Technology a broad engineering program,
           where the classic subjects of engineering are mixed with topics such as visualization,
@@ -49,7 +51,10 @@ function App() {
         <CourseMap courseData={courseData}> </CourseMap>
 
         <Text2> Master's Courses: </Text2>
-        <CourseMap courseData={courseData2}> </CourseMap>
+        <CourseMap2 courseData={courseData2}> </CourseMap2>
+
+        <Text2> Standalone Courses: </Text2>
+        <CourseMap2 courseData={courseData3}> </CourseMap2>
         
       </WrapperEducation>
 

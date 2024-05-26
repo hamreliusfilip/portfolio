@@ -21,7 +21,52 @@ import a21 from '../assets/a21.png'
 import a22 from '../assets/a22.png'
 import a23 from '../assets/a23.png'
 
+import a25 from '../Project_Info/p2.png';
+import a26 from '../Project_Info/p3.png';
+import a29 from '../Project_Info/p6.png';
+import a32 from '../Project_Info/p9.png';
+import a34 from '../Project_Info/p11.png';
+import a35 from '../Project_Info/p12.png';
+import a36 from '../Project_Info/p13.png';
+
+
 const ImagesData = [
+  {
+    img: a34,
+    alt: "Reload page.",
+    key: '34'
+  },
+  {
+    img: a25,
+    alt: "Reload page.",
+    key: '25'
+  },
+  {
+    img: a26,
+    alt: "Reload page.",
+    key: '26'
+  },
+  
+  {
+    img: a29,
+    alt: "Reload page.",
+    key: '29'
+  },
+  {
+    img: a32,
+    alt: "Reload page.",
+    key: '32'
+  },
+  {
+    img: a35,
+    alt: "Reload page.",
+    key: '35'
+  },
+  {
+    img: a36,
+    alt: "Reload page.",
+    key: '36'
+  },
 {
   img: a23,
   alt: "Reload page.",
@@ -131,7 +176,6 @@ const ImagesData = [
   img: a19,
   alt: "Reload page.",
   key: '19'
-},
-
+}
 ]
 export { ImagesData }

@@ -4,6 +4,7 @@ import { Link } from "react-scroll"
 
 import light from '../grad/gradient.png'
 import dark from '../grad/darkgradient.png'
+
 import cross from '../loggor/cross.svg'
 import menu from '../loggor/menu.svg'
 
@@ -61,15 +62,16 @@ export const DarkMode = () => {
           </CustomCheckboxContainer>
 
           <Navigation style={{ display: window === false ? "inline-block" : "none" }}> 
-              <StyledLink to="project" spy={true} smooth={true} offset={0} duration={500}>Projects.</StyledLink>
+              
+              <StyledLink to="whatcan" spy={true} smooth={true} offset={0} duration={500}>Toolkit</StyledLink>
               <br></br> 
-              <StyledLink to="whatcan" spy={true} smooth={true} offset={0} duration={500}>My Toolkit.</StyledLink>
+              <StyledLink to="project" spy={true} smooth={true} offset={0} duration={500}>Projects</StyledLink>
               <br></br> 
-              <StyledLink to="gallery" spy={true} smooth={true} offset={0} duration={500}>Gallery.</StyledLink>
+              <StyledLink to="gallery" spy={true} smooth={true} offset={0} duration={500}>Gallery</StyledLink>
               <br></br>
-              <StyledLink to="education" spy={true} smooth={true} offset={0} duration={500}>Education.</StyledLink>
+              <StyledLink to="education" spy={true} smooth={true} offset={0} duration={500}>Education</StyledLink>
               <br></br>
-              <StyledLink to="about" spy={true} smooth={true} offset={-140} duration={500}>Contact.</StyledLink>
+              <StyledLink to="about" spy={true} smooth={true} offset={-140} duration={500}>Contact</StyledLink>
           </Navigation>
          </Nav> 
 
@@ -177,7 +179,7 @@ const Navigation = styled.div`
   z-index: 600;
 
   margin-top: 2%;
-  margin-left: 7%;
+  margin-left: 4%;
 
   cursor:pointer;
 

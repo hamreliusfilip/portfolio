@@ -34,3 +34,10 @@ code {
   url('./fonts/Helvetica.ttf') format('truetype');
   font-weight: 500; 
 }
+
+/* @font-face{ 
+  font-family: 'Times New Roman'; 
+  src: local('Times New Roman'),
+  url('./fonts/Times.otf') format('truetype');
+  font-weight: 500; 
+} */

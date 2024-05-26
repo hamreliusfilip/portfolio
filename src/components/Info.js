@@ -1,55 +1,22 @@
 import React from "react";
 import styled from 'styled-components'
 
-import c from '../loggor/c.svg'
-import python from '../loggor/python.svg'
-import matlab from '../loggor/matlab.svg'
-import reactcolor from '../loggor/reactcolor.svg'
-import jscolor from '../loggor/jscolor.svg'
-import three from '../loggor/three.svg'
-import blender from '../loggor/blender.svg'
-import figma from '../loggor/figma.svg'
-import canva from '../loggor/canva.svg'
-import ps from '../loggor/ps.svg'
-import wix from '../loggor/wix.svg'
-import shopify from '../loggor/shopify.svg'
-import resolve from '../loggor/resolve.svg'
-
 const Info = () => {
     return (
       <Wrapper>
         <Box>
-          <Heading1>SOFTWARE</Heading1>
-          <Heading2>I have a strong understanding of development and programming, with experience working with various languages and frameworks. My primary interests lie in the fields of visualization, data science, and image processing.</Heading2>
-            <LogoWrapper> 
-            <LogoStyle src={c} />
-            <LogoStyle src={python} />
-            <LogoStyle src={matlab} />
-            <LogoStyle src={reactcolor} />
-            <LogoStyle src={jscolor} />
-            <LogoStyle src={three} />
-            </LogoWrapper>
+          <Heading1>Software</Heading1>
+          <Heading2>I have a strong understanding of development and programming, with experience working with various languages and frameworks. My primary interests lie in the fields of visualization, machine learning, and image processing.</Heading2>
         </Box>
 
         <Box>
-          <Heading1>DESIGN & 3D</Heading1>
-          <Heading2> In my free time, I have developed a fascinating interest in design, especially in the realm of 3D elements. I am skilled in a range of tools, from Figma to Blender. </Heading2>
-            <LogoWrapper>
-            <LogoStyle src={blender} />
-            <LogoStyle src={figma} />
-            <LogoStyle src={resolve} />
-            <LogoStyle src={canva} />
-            <LogoStyle src={ps} />
-            </LogoWrapper>
+          <Heading1>Design</Heading1>
+          <Heading2> Within my studies, as well as through projects outside of school, I have developed a skill set in design, covering everything from UI & UX to project structure and interactive visualizations. </Heading2>
         </Box>
 
         <Box>
-          <Heading1>SALES & PACKAGING</Heading1>
-          <Heading2> Through my experiences in both freelancing and school, I've discovered a passion and skill for technical sales and packaging for products and brands.</Heading2>
-            <LogoWrapper> 
-            <LogoStyle src={wix} />
-            <LogoStyle src={shopify} />
-            </LogoWrapper>
+          <Heading1>Social science </Heading1>
+          <Heading2> Beyond my technical interests and engineering studies, I have also delved into social science and history courses. I maintain a strong interest in defense engineering as well as security and defense policy, complemented by my military and security experience.</Heading2>
         </Box>
       </Wrapper> 
     )
@@ -73,8 +40,9 @@ const Box = styled.div`
   text-align: left;
   margin: 20px 20px 20px 20px;
   padding: 20px 20px 20px 20px;
+  padding-bottom: 55px;
 
-  background-color: #242424;
+  background-color: white;
   border-radius: 15px;
 
   @media (max-width: 600px) {
@@ -84,15 +52,6 @@ const Box = styled.div`
     padding: 20px 20px 20px 20px;
 }
 `
-const LogoWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-  flex-wrap: wrap;
-  align-items: flex-start;
-`
-
 
 const Heading1 = styled.p`
   postion: relative;
@@ -100,7 +59,7 @@ const Heading1 = styled.p`
   font-family: 'HelveticaAll';
   font-weight: 700;
   font-size: 2em;
-  color: #DCDCDC;
+  color: black;
   margin-left: 5%;
   margin-top: 4%;
 
@@ -116,24 +75,13 @@ const Heading2 = styled.p`
   font-weight: 700;
   width: 90%;
   font-size: 1em;
-  color: #DCDCDC;
+  color: black;
   margin-left: 5%;
   margin-top: 4%;
 
   @media (max-width: 1000px) {
     font-size: 0.7em;
     width: 90%;
-  }
-`
-const LogoStyle = styled.img`
-  position: relative;
-  width: 6em;
-  height: 6em;
-  padding: 1% 1% 1% 1%;
-
-  @media (max-width: 1000px) {
-    width: 5em;
-    height: 5em;
   }
 `
 

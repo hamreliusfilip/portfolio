@@ -44,7 +44,7 @@ const Contact = () => {
           </StyledA>
 
           <Heading1>Behind site</Heading1>
-          <Text>This website was built using React js. This is an open source project. You can clone or download the project via my Github repository. </Text>
+          <Text>This website was built using React.JS. You checkout the project trough Github with the link below. </Text>
           <LogoStyleStatic src={react} />
           <LogoStyleStatic src={js} />
           <StyledA href="https://github.com/hamreliusfilip/portfolio" target="_blank">
@@ -172,7 +172,7 @@ const LogoStyle = styled.img`
   cursor: pointer;
   &:hover {
     transition: all 0.3s ease-in-out;
-    transform: scale(1.1) translateY(-20px);
+    transform: scale(1.1) translateY(-5px);
   }
 
   @media (max-width: 600px) {

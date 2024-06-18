@@ -31,6 +31,16 @@ import p13_pdf from '../Project_Info/p13_pdf.pdf';
 const ProjectMap = () => {
   const projectData = [
     {
+      name: 'Myndighetshandboken',
+      value: '11',
+      github: 'https://github.com/hamreliusfilip/Myndighetshandboken',
+      url: "https://www.myndighetshandboken.se",
+      desc: 'A extensive website built and designed from the ground up - including creating the databases and collecting the data. A website of the Swedish government to gather all information in one place.',
+      img: p11,
+      alt: 'Myndighetshandboken',
+      pdf: ''
+    },
+    {
       name: 'Sentiment Analysis - Support Vector Machine',
       value: '1',
       github: 'https://github.com/hamreliusfilip/Sentiment_Analysis_SVM',
@@ -90,16 +100,7 @@ const ProjectMap = () => {
       alt: 'Node graph in JS',
       pdf: ''
     },
-    {
-      name: 'Myndighetshandboken',
-      value: '11',
-      github: 'https://github.com/hamreliusfilip/tddd27_2024',
-      url: null,
-      desc: 'A extensive website built and designed from the ground up - including creating the databases and collecting the data. A website of the Swedish government to gather all information in one place.',
-      img: p11,
-      alt: 'Myndighetshandboken',
-      pdf: ''
-    },
+  
     {
       name: 'Visual Data Analysis - Graphs in large data - D3 js + Python',
       value: '12',

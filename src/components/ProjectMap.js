@@ -18,6 +18,9 @@ import p11 from '../Project_Info/p11.png';
 import p12 from '../Project_Info/p12.png';
 import p13 from '../Project_Info/p13.png';
 
+import p14 from '../Project_Info/p14.png';
+import p14_pdf from '../Project_Info/p14_pdf.pdf';
+
 import p1_pdf from '../Project_Info/pdf_p1.pdf';
 import p2_pdf from '../Project_Info/p2_pdf.pdf';
 import p3_pdf from '../Project_Info/p3_pdf.pdf';
@@ -39,6 +42,36 @@ const ProjectMap = () => {
       img: p11,
       alt: 'Myndighetshandboken',
       pdf: ''
+    },
+    {
+      name: 'Facial recognition program in MATLAB',
+      value: '8',
+      github: 'https://github.com/hamreliusfilip/Facial_Recognition',
+      url: null,
+      desc: 'Advanced Image Processing: Facial recognition program in MATLAB. This program can identify faces in a database and compare them to predefined images of individuals who have been granted access.',
+      img: p8,
+      alt: 'Facial recognition program in MATLAB',
+      pdf: p8_pdf
+    },
+    {
+      name: 'Image reproduction in MATLAB',
+      value: '9',
+      github: 'https://github.com/hamreliusfilip/Image_Reproduction_Database',
+      url: null,
+      desc: 'A program to replicate a user-inputted image using a predefined database with other images. Based on the CIELAB colorspace and structural similarity.',
+      img: p9,
+      alt: 'Image reproduction in MATLAB',
+      pdf: p9_pdf
+    },
+    {
+      name: 'Self Driving Bus - NEAT',
+      value: '14',
+      github: 'https://github.com/hamreliusfilip/Self_Driving_Bus',
+      url: null,
+      desc: 'This project involves developing a self-driving bus that navigates a track with speed-sensitive zones using the NEAT (NeuroEvolution of Augmenting Topologies) library in a Python and PyGame environment. NEATs evolving neural networks, guided by a fitness function similar to Q-learning, allow the bus to adapt to complex conditions. ',
+      img: p14,
+      alt: 'Design prototype for a news application',
+      pdf: p14_pdf
     },
     {
       name: 'Sentiment Analysis - Support Vector Machine',
@@ -69,26 +102,6 @@ const ProjectMap = () => {
       img: p7,
       alt: 'Particle system - C++',
       pdf: ''
-    },
-    {
-      name: 'Facial recognition program in MATLAB',
-      value: '8',
-      github: 'https://github.com/hamreliusfilip/Facial_Recognition',
-      url: null,
-      desc: 'Advanced Image Processing: Facial recognition program in MATLAB. This program can identify faces in a database and compare them to predefined images of individuals who have been granted access.',
-      img: p8,
-      alt: 'Facial recognition program in MATLAB',
-      pdf: p8_pdf
-    },
-    {
-      name: 'Image reproduction in MATLAB',
-      value: '9',
-      github: 'https://github.com/hamreliusfilip/Image_Reproduction_Database',
-      url: null,
-      desc: 'A program to replicate a user-inputted image using a predefined database with other images. Based on the CIELAB colorspace and structural similarity.',
-      img: p9,
-      alt: 'Image reproduction in MATLAB',
-      pdf: p9_pdf
     },
     {
       name: 'Node graph in JS',

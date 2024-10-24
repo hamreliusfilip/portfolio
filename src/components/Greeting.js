@@ -17,10 +17,10 @@ const Greeting = () => {
   const Hellotext = styled.h2`
   position: relative;
   margin-left: 7%;
-  margin-top: 3%;
+  margin-top: 7%;
   font-family: 'HelveticaAll';
   font-weight: bold;
-  font-size: 3em;
+  font-size: 5em;
   color: var(--text);
 
   @media (max-width: 1000px) {

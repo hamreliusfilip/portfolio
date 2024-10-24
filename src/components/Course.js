@@ -12,7 +12,7 @@ const Course = (props) => {
 export default Course
 
 const Box = styled.div`
-  height: 100px;
+  height: 150px;
   width: 400px;
   margin: 10px;
   text-decoration: none;

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { DarkMode } from './components/DarkMode'
 import ProjectMap from './components/ProjectMap'
 import Contact from './components/Contact'
-import Info from './components/Info'
+// import Info from './components/Info'
 import Greeting from "./components/Greeting"
 import BackTop from './components/backTop'
 import Image from './components/Image'
@@ -25,27 +25,27 @@ function App() {
         <NewGreeting>Hello, I'm Filip, currently pursuing a master's degree in Media Technology and Engineering. Explore my portfolio by scrolling down to learn more. </NewGreeting>
       </TitleWrapper>
 
-      <WhatCan id="whatcan">
+      {/* <WhatCan id="whatcan">
         <Heading1>My toolkit</Heading1>
         <Info />
-      </WhatCan>
+      </WhatCan> */}
 
       <ProjectWrapper id="project">
         <Heading1>Some things I have built</Heading1>
         <ProjectMap />
       </ProjectWrapper>
 
-      <ImageWrapper id = "gallery"> 
-        <HeadingImage>Renders, designs & promos </HeadingImage>
+      <ImageWrapper id="gallery">
+        <HeadingImage>Screenshots from projects</HeadingImage>
         <Image />
-      </ImageWrapper> 
+      </ImageWrapper>
 
       <WrapperEducation id="education">
         <Heading1>Education</Heading1>
-        <Heading2> Fourth year M.Sc in Media Technology and Engineering </Heading2>
+        <Heading2> Fifth year M.Sc in Media Technology and Engineering </Heading2>
         <Text> Media Technology a broad engineering program,
           where the classic subjects of engineering are mixed with topics such as visualization,
-          computer graphics, machine learning, interaction design and image processing.</Text>
+          data analytics, machine learning and image processing.</Text>
 
         <Text2 > Bachelor's Courses: </Text2>
         <CourseMap courseData={courseData}> </CourseMap>
@@ -55,7 +55,7 @@ function App() {
 
         <Text2> Standalone Courses: </Text2>
         <CourseMap2 courseData={courseData3}> </CourseMap2>
-        
+
       </WrapperEducation>
 
       <ContactWrapper id="about">
@@ -111,15 +111,7 @@ const ProjectWrapper = styled.div`
   @media (max-width: 600px) {
     margin-top:70%;
 }`
-const WhatCan = styled.div`
-  postion: absolute;
-  z-index: 999;
-  width: 100vw;
-  margin-top:15%;
 
-  @media (max-width: 600px) {
-    margin-top:35%;
-}`
 const ContactWrapper = styled.div`
   postion: absolute;
   z-index: 999;
@@ -132,13 +124,12 @@ const ContactWrapper = styled.div`
     align-items: left; 
     justify-content: left; 
   }`
-  
+
 const ImageWrapper = styled.div`
   postion: absolute;
   z-index: 999;
   width: 100vw;
   margin-top:15%;
-  background-color: #242424;
   padding: 0.1% 0 0.1% 0;
 
   @media (max-width: 600px) {
@@ -175,11 +166,12 @@ const HeadingImage = styled.h1`
   margin-left: 2%;
   font-family: 'HelveticaAll';
   font-weight: 700;
-  font-size: 3em;
+  margin-bottom: 7%;
+  font-size: 5em; 
   color: #DCDCDC;
 
   @media (max-width: 600px) {
-    font-size: 1.5em;
+    font-size: 3em;
     margin-right: 10%;
 }
 `

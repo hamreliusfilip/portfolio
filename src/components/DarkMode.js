@@ -35,8 +35,7 @@ export const DarkMode = () => {
 
           <Navigation style={{ display: window === false ? "inline-block" : "none" }}> 
               
-              <StyledLink to="whatcan" spy={true} smooth={true} offset={0} duration={500}>Toolkit</StyledLink>
-              <br></br> 
+              
               <StyledLink to="project" spy={true} smooth={true} offset={0} duration={500}>Projects</StyledLink>
               <br></br> 
               <StyledLink to="gallery" spy={true} smooth={true} offset={0} duration={500}>Gallery</StyledLink>

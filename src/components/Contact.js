@@ -19,7 +19,7 @@ const Contact = () => {
           <StyledA href="https://www.linkedin.com/in/filip-hamrelius/" target="_blank">
             <LogoStyle src={linkedin} />
           </StyledA>
-          <StyledA href="https://www.facebook.com/filip.hamrelius" target="_blank">
+          <StyledA href="mailto:hamreliusfilip@gmail.com">
             <LogoStyle src={mail} />
           </StyledA>
         </Box>

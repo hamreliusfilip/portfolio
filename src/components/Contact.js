@@ -12,7 +12,7 @@ const Contact = () => {
       <Wrapper>
         <Box>
           <Heading1>Find me</Heading1>
-          <Text>Feel free to contact me on your preffered platform. Or send me a email with form.</Text>
+          <Text>Feel free to contact me on your preffered platform.</Text>
           <StyledA href="https://github.com/hamreliusfilip" target="_blank">
             <LogoStyle src={github} />
           </StyledA>
